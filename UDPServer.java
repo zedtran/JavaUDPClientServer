@@ -5,8 +5,8 @@ class UDPServer {
    
    public static void main(String args[]) throws Exception {
                    
-        // Create datagram socket at port: XXXX
-      DatagramSocket serverSocket = new DatagramSocket(9876);
+        // Create datagram socket at port: 10003
+      DatagramSocket serverSocket = new DatagramSocket(10003);
                 
       byte[] receiveData = new byte[256];
       byte[] sendData = new byte[256];

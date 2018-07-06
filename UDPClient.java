@@ -23,7 +23,7 @@ class UDPClient {
       
       
       // Begin UDP Datagram with data-to-send, length, IP Address, Port
-      DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, IPAddress, 9876); 
+      DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, IPAddress, 10003); 
       
       // Send datagram to server
       clientSocket.send(sendPacket);
