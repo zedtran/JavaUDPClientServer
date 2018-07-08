@@ -15,6 +15,8 @@ application, the segmentation and re-assembly function, an error detection funct
 gremlin function (that can corrupt packets with a specified probability). The overview of
 these software components is show in Figure 1 below.
 
+[!ProjectOverview](https://github.com/zedtran/UDP_Client_Server_Proj/blob/master/FIg1_Overview.png)
+
 The Web client initiates the communication by sending an HTTP request to the Web
 server. This outgoing HTTP request is not processed by the segmentation and reassembly,
 error detection or the Gremlin function. The HTTP request is sent through the
@@ -151,5 +153,5 @@ See also the list of [contributors](https://github.com/zedtran/UDP_Client_Server
 
 ## License
 
-This project is not under no license.
+This project is not under license.
 
