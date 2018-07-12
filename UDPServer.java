@@ -68,9 +68,29 @@ public class UDPServer {
  
             InetAddress clientAddress = requestPacket.getAddress();
             int clientPort = requestPacket.getPort();
- 
-            DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length, clientAddress, clientPort);
-            serverSocket.send(responsePacket);
+            
+            // send the number of packets in the file to the client so the receive loop exits
+            // once all packets have been sent
+            if (!sentNumPackets) {
+                  byte[] numPackets = packetsCountFile(new File(args[0]), 256);
+                  DatagramPacket numPacketsToBeSent = new DatagramPacket(numPackets, numPackets.length, clientAddress, clientPort);
+                  serverSocket.send(numPacketsToBeSent);
+                  sentNumPackets = true;
+            }
+
+            // end is the final index to be copied (exclusive), i is the initial index to be copied (inclusive)
+            int end, i = 0; 
+            while (i < buffer.length) {
+                  end = i + 256;
+                  if (end >= buffer.length) 
+                        end = buffer.length;
+                  
+                  byte[] packet_buffer = Arrays.copyOfRange(buffer, end);
+                  i += 256;
+
+                  DatagramPacket responsePacket = new DatagramPacket(packet_buffer, packet_buffer.length, clientAddress, clientPort);
+                  serverSocket.send(responsePacket);
+            }
         }
    }
    

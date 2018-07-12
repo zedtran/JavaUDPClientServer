@@ -53,9 +53,22 @@ public class UDPClient {
             // Read datagram from server //
             // IF using Latin-Lipsum.txt: Byte Count = 29097
             // IF using Latin-Lipsum.html: Byte Count = 30738
-            byte[] responseData = new byte[29097];
-            DatagramPacket responsePacket = new DatagramPacket(responseData, responseData.length);
-            clientSocket.receive(responsePacket);
+            
+            StringBuffer responseData = "";
+
+            // numPackets contains the number of packets that are being sent by the Server
+            // containing the file data
+            byte[] numPacketsBeingSent = new byte[256];
+            DatagramPacket firstResponse = new DatagramPacket(numPacketsBeingSent, numPacketsBeingSent.length);
+            int packetCount = numPacketsBeingSent[0];
+
+            while (packetCount < (int) numPacketsBeingSent[0]) {     
+                byte[] buffer = new byte[256];
+                DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length);
+                clientSocket.receive(responsePacket);
+                responseData.append(new String(buffer, StandardCharsets.UTF_8));
+                packetCount += 1;
+            }
                
             String loremIpsumString = new String(responsePacket.getData());
             System.out.println("\nFROM SERVER:" + loremIpsumString + "\n");
