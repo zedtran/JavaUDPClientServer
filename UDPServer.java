@@ -106,11 +106,12 @@ public class UDPServer {
    }
  
     
-    /**
-    private String getRandomLoremListString() {
-        int randomIndex = random.nextInt(loremList.size());
-        String randomLoremString = loremList.get(randomIndex);
-        return randomLoremString;
+    int checkSum(byte[] bytePacket) {
+      int sum = 0;
+      for (int i = 0; i < bytePacket.length; i++)
+      {
+            sum += bytePacket[i];
+      }
+      return sum;
     }
-    */ 
 }

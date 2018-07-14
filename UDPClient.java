@@ -86,4 +86,16 @@ public class UDPClient {
         } 
        
    }
+
+    private boolean detectErrors(byte[] packet, int checkSum) {
+        boolean errorsDetected = false;
+        int sum = 0;
+        for (int i = 0; i < packet.length; i++)
+        {
+            sum += packet[i];
+        }
+        if (sum != checkSum)
+            errorsDetected = true;
+        return errorsDetected
+    }
 }
