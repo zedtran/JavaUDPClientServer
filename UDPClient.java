@@ -15,6 +15,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 import java.io.*;
+import java.util.*;
 import java.nio.*;
 import java.net.*;
 
@@ -28,75 +29,75 @@ import java.net.*;
 */
 
 public class UDPClient {
-  
+ 
    public static void main(String[] args) throws Exception {
       if (args.length < 1) {
-            System.out.println("Syntax: UDPClient <port>");
-            return;
+         System.out.println("Syntax: UDPClient <port>");
+         return;
       }
- 
-        String hostname = InetAddress.getLocalHost().getHostName().trim();
-        int port = Integer.parseInt(args[0]);
-      
-        try {
-            
-            // Create Client Socket
-            DatagramSocket clientSocket = new DatagramSocket();
-      
-            // Translate hostname to IP address using DNS
-            InetAddress IPAddress = InetAddress.getByName(hostname);
-            
-            // Begin UDP Datagram with data-to-request, length, IP Address, Port
-            DatagramPacket requestPacket = new DatagramPacket(new byte[1], 1, IPAddress, port);
-            clientSocket.send(requestPacket);
-            System.out.println("\nRequest packet sent to server.\n");
-               
-            // Read datagram from server //
-            // IF using Latin-Lipsum.txt: Byte Count = 29097
-            // IF using Latin-Lipsum.html: Byte Count = 30738
-            
-            StringBuffer responseData = "";
-
-            // numPackets contains the number of packets that are being sent by the Server
-            // containing the file data
-            byte[] numPacketsBeingSent = new byte[256];
-            DatagramPacket firstResponse = new DatagramPacket(numPacketsBeingSent, numPacketsBeingSent.length);
-            int packetCount = numPacketsBeingSent[0];
-
-            while (packetCount < (int) numPacketsBeingSent[0]) {     
-                byte[] buffer = new byte[256];
-                DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length);
-                clientSocket.receive(responsePacket);
-                responseData.append(new String(buffer, StandardCharsets.UTF_8));
-                packetCount += 1;
-            }
-               
-            String loremIpsumString = new String(responsePacket.getData());
-            System.out.println("\nFROM SERVER:" + loremIpsumString + "\n");
-            clientSocket.close();   
-                
+   
+      String hostname = InetAddress.getLocalHost().getHostName().trim();
+      int port = Integer.parseInt(args[0]);
+    
+      try {
          
-        } catch (SocketTimeoutException ex) {
-            System.out.println("Timeout error: " + ex.getMessage());
-            ex.printStackTrace();
-        } catch (IOException ex) {
-            System.out.println("Client error: " + ex.getMessage());
-            ex.printStackTrace();
-        } catch (InterruptedException ex) {
-            ex.printStackTrace();
-        } 
-       
+         // Create Client Socket
+         DatagramSocket clientSocket = new DatagramSocket();
+      
+         // Translate hostname to IP address using DNS
+         InetAddress IPAddress = InetAddress.getByName(hostname);
+         
+         // Begin UDP Datagram with data-to-request, length, IP Address, Port
+         DatagramPacket requestPacket = new DatagramPacket(new byte[1], 1, IPAddress, port);
+         clientSocket.send(requestPacket);
+         System.out.println("\nRequest packet sent to server.\n");
+            
+         // Read datagram from server //
+         // IF using Latin-Lipsum.txt: Byte Count = 29097
+         // IF using Latin-Lipsum.html: Byte Count = 30738
+      
+         // numPackets contains the number of packets that are being sent by the Server
+         // containing the file data
+         byte[] numPacketsBeingSent = new byte[256];
+         DatagramPacket firstResponse = new DatagramPacket(numPacketsBeingSent, numPacketsBeingSent.length);
+         int packetCount = numPacketsBeingSent[0];
+         System.out.println("\nFROM SERVER: ");
+         while (packetCount < (int) numPacketsBeingSent[0]) {     
+            byte[] buffer = new byte[256];
+            DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length);
+            clientSocket.receive(responsePacket);
+            if (detectErrors(buffer))
+               System.out.println("This next packet has been corrupted.");
+            System.out.print(new String(buffer));
+            packetCount += 1;
+         }
+         clientSocket.close();   
+             
+      
+      } 
+      catch (SocketTimeoutException ex) {
+         System.out.println("Timeout error: " + ex.getMessage());
+         ex.printStackTrace();
+      } 
+      catch (IOException ex) {
+         System.out.println("Client error: " + ex.getMessage());
+         ex.printStackTrace();
+      } 
+     
    }
 
-    private boolean detectErrors(byte[] packet, int checkSum) {
-        boolean errorsDetected = false;
-        int sum = 0;
-        for (int i = 0; i < packet.length; i++)
-        {
-            sum += packet[i];
-        }
-        if (sum != checkSum)
-            errorsDetected = true;
-        return errorsDetected;
-    }
+   private static boolean detectErrors(byte[] packet) {
+      boolean errorsDetected = false;
+      int sum = 0, checkSum = 0;
+      byte[] chkSumBytes = new byte[4];
+      for (int i = 4; i < packet.length; i++)
+      {
+         sum += packet[i];
+      }
+      chkSumBytes = Arrays.copyOfRange(packet, 0, 4);
+      checkSum = ByteBuffer.wrap(chkSumBytes).order(ByteOrder.BIG_ENDIAN).getInt();
+      if (sum != checkSum)
+         errorsDetected = true;
+      return errorsDetected;
+   }
 }
