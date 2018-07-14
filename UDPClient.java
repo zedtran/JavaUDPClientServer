@@ -15,6 +15,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 import java.io.*;
+import java.nio.*;
 import java.net.*;
 
 /** 
@@ -96,6 +97,6 @@ public class UDPClient {
         }
         if (sum != checkSum)
             errorsDetected = true;
-        return errorsDetected
+        return errorsDetected;
     }
 }

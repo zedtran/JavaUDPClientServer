@@ -81,11 +81,11 @@ public class UDPServer {
             // end is the final index to be copied (exclusive), i is the initial index to be copied (inclusive)
             int end, i = 0; 
             while (i < buffer.length) {
-                  end = i + 256;
+                  end = i + 252;
                   if (end >= buffer.length) 
                         end = buffer.length;
                   
-                  byte[] packet_buffer = Arrays.copyOfRange(buffer, end);
+                  byte[] packet_buffer = Arrays.copyOfRange(buffer, i, end);
                   i += 256;
 
                   DatagramPacket responsePacket = new DatagramPacket(packet_buffer, packet_buffer.length, clientAddress, clientPort);
@@ -103,6 +103,25 @@ public class UDPServer {
         }
  
         reader.close();
+   }
+
+   /** 
+   * bytesCountFile calculates the number of packets that a file will be broken down in to
+   * based on the number of bytes per packet.
+   * 
+   * @param file  file to be broken into packets
+   * @param numBytesPerPacket number of bytes that will go into each packet 
+   * @return  number of packets the file will be broken in to in a byte array 
+   */
+   private byte[] packetsCountFile(File file, int numBytesPerPacket) {
+      int length = file.length() / numBytesPerPacket;
+      if (file.length() % numBytesPerPacket != 0)
+            length++;
+      byte[] numPackets = new byte[256];
+      byte[0] = length;       // This only works because the size of the ipsum file being sent divided by 256 bytes per packet
+                              // is less than the max value of a byte (-127 to 128). Might need to be changed in the future to 
+                              // dynamically accomodate much larger file sizes.
+      return numPackets;
    }
  
     
