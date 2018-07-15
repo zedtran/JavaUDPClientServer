@@ -206,7 +206,7 @@ public class UDPClient {
             // If there are only two bytes in the packet to consider
             else if (responseData.length == 2) {
                     // 50% chance of damaging 1 byte
-               if (0 <= randomProbability && randomProbability <= corruptOneUpperBound) {
+               if (0 <= randomProbability && randomProbability < corruptOneUpperBound) {
                   numBytesToCorrupt = 1;
                   corruptIndexOne = getRandomIntBetween(0, 2);
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
@@ -225,13 +225,13 @@ public class UDPClient {
             // If there are only 3 bytes in the packet to consider
             else if (responseData.length == 3) {
                 // 50% chance of damaging 1 byte
-               if (0 <= randomProbability && randomProbability <= corruptOneUpperBound) {
+               if (0 <= randomProbability && randomProbability < corruptOneUpperBound) {
                   numBytesToCorrupt = 1;
                   corruptIndexOne = getRandomIntBetween(0, 3);
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                }
                 // 30% chance of damaging 2 bytes
-               else if (corruptOneUpperBound <= randomProbability && randomProbability <= corruptTwoUpperBound) {
+               else if (corruptOneUpperBound <= randomProbability && randomProbability < corruptTwoUpperBound) {
                   numBytesToCorrupt = 2;
                   corruptIndexOne = getRandomIntBetween(0, 3);
                
