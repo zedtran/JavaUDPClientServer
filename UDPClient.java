@@ -69,27 +69,27 @@ public class UDPClient {
          DatagramPacket firstResponse = new DatagramPacket(numPacketsBeingSent, numPacketsBeingSent.length, InetAddress.getByName("131.204.14.55"), 10003);
          clientSocket.receive(firstResponse);
          int packetCount = ByteBuffer.wrap(numPacketsBeingSent).order(ByteOrder.BIG_ENDIAN).getInt();
-         System.out.println("\nClient received number of packets for requested file: " + (packetCount++));
+         System.out.println("\nClient received number of packets for requested file: " + (++packetCount) + "\n");
          
          
          while (j <= packetCount) {     
             byte[] buffer = new byte[256];
             DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length, InetAddress.getByName("131.204.14.55"), 10003);
             clientSocket.receive(responsePacket);
-            System.out.println("\nClient received packet # " + (j + 1) + "  of " + packetCount + "\n");  
+            System.out.println("\n\nClient received packet # " + (j + 1) + "  of " + packetCount);  
             clientGremlin(responsePacket, CORRUPT_PROBABILITY);
-            System.out.println("Client sent packet # " + (j + 1) + "  to client gremlin.\n");  
+            System.out.println("Client sent packet # " + (j + 1) + "  to client gremlin.");  
             
             // Performs error detection following client gremlin function (true if packet was corrupted, false otherwise)
             if (detectErrors(buffer)) {
-               System.out.println("Packet # " + (j + 1) + " of " + packetCount + ": ***CORRUPTED***\n");
+               System.out.println("Packet # " + (j + 1) + " of " + packetCount + ": ***CORRUPTED***");
             }
             else {
-               System.out.println("Packet # " + (j + 1) + " of " + packetCount + ": NOT CORRUPTED\n");
+               System.out.println("Packet # " + (j + 1) + " of " + packetCount + ": NOT CORRUPTED");
             }
             
             byte[] bufNoChkSum = Arrays.copyOfRange(buffer, 4, buffer.length);   
-            System.out.print("MESSAGE(Packet# " + (j + 1) + "): " + new String(bufNoChkSum) + "\n");
+            System.out.println("MESSAGE(Packet# " + (j + 1) + "): " + new String(bufNoChkSum));
             j++; // Increment packet index
          }
       
@@ -121,11 +121,11 @@ public class UDPClient {
       checkSum = ByteBuffer.wrap(chkSumBytes).order(ByteOrder.BIG_ENDIAN).getInt();
       if (sum != checkSum)
       {
-         System.out.println("***CHECKSUM ERROR***: ACTUAL checksum: " + sum + ", EXPECTED checksum: " + checkSum + "\n");
+         System.out.println("***CHECKSUM ERROR***: ACTUAL checksum: " + sum + ", EXPECTED checksum: " + checkSum);
          errorsDetected = true;
       }
       else {
-         System.out.println("--Checksum values OK--\n");
+         System.out.println("--Checksum values OK--");
       }
       return errorsDetected;
    }
