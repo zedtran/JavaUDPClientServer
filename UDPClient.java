@@ -169,23 +169,23 @@ public class UDPClient {
             // Conditional check for 50% chance of damaging 1 byte (0.0 <= P(X) < 0.5)
             if (0 <= randomProbability && randomProbability < corruptOneUpperBound) {
                numBytesToCorrupt = 1;
-               corruptIndexOne = getRandomIntBetween(4, responseData.length);
+               corruptIndexOne = getRandomIntBetween(4, responseData.length - 1);
                responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
             }
             // Conditional check for 30% chance of damaging 2 bytes (0.5 <= P(X) < 0.8)
             else if (corruptOneUpperBound <= randomProbability && randomProbability < corruptTwoUpperBound) {
                numBytesToCorrupt = 2;
-               corruptIndexOne = getRandomIntBetween(4, (int)(1/2)*(responseData.length + 4));
-               corruptIndexTwo = getRandomIntBetween((int)(1/2)*(responseData.length + 4), responseData.length);
+               corruptIndexOne = getRandomIntBetween(4, (int)(1/2)*(responseData.length + 3));
+               corruptIndexTwo = getRandomIntBetween((int)(1/2)*(responseData.length + 3), responseData.length - 1);
                responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                responseData[corruptIndexTwo] = reverseBitsByte(responseData[corruptIndexTwo]);
             }
             // Conditional check for 20% chance of damaging 3 bytes (0.8 <= P(X) < 1)
             else if (corruptTwoUpperBound <= randomProbability && randomProbability < 1) {
                numBytesToCorrupt = 3;
-               corruptIndexOne = getRandomIntBetween(4, (int)(1/3)*(responseData.length + 4));
-               corruptIndexTwo = getRandomIntBetween((int)(1/3)*(responseData.length + 4), (int)(2/3)*(responseData.length + 4));
-               corruptIndexThree = getRandomIntBetween((int)(2/3)*(responseData.length + 4), responseData.length);
+               corruptIndexOne = getRandomIntBetween(4, (int)(1/3)*(responseData.length + 3));
+               corruptIndexTwo = getRandomIntBetween((int)(1/3)*(responseData.length + 3), (int)(2/3)*(responseData.length + 3));
+               corruptIndexThree = getRandomIntBetween((int)(2/3)*(responseData.length + 3), responseData.length - 1);
                responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                responseData[corruptIndexTwo] = reverseBitsByte(responseData[corruptIndexTwo]);
                responseData[corruptIndexThree] = reverseBitsByte(responseData[corruptIndexThree]);
@@ -210,7 +210,7 @@ public class UDPClient {
                // 50% chance of damaging 1 byte
                if (0 <= randomProbability && randomProbability < corruptOneUpperBound) {
                   numBytesToCorrupt = 1;
-                  corruptIndexOne = getRandomIntBetween(4, 5);
+                  corruptIndexOne = getRandomIntBetween(4, responseData.length - 1);
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                }
                // 20% chance of damaging 3 bytes or 30% chance of damaging 2 bytes
@@ -230,17 +230,17 @@ public class UDPClient {
                 // 50% chance of damaging 1 byte
                if (0 <= randomProbability && randomProbability < corruptOneUpperBound) {
                   numBytesToCorrupt = 1;
-                  corruptIndexOne = getRandomIntBetween(4, 6);
+                  corruptIndexOne = getRandomIntBetween(4, responseData.length - 1);
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                }
                 // 30% chance of damaging 2 bytes
                else if (corruptOneUpperBound <= randomProbability && randomProbability < corruptTwoUpperBound) {
                   numBytesToCorrupt = 2;
-                  corruptIndexOne = getRandomIntBetween(4, 6);
+                  corruptIndexOne = getRandomIntBetween(4, responseData.length - 1);
                
                     // Randomly choose a byte index != to an index already selected
                   do {
-                     corruptIndexTwo = getRandomIntBetween(4, 6);
+                     corruptIndexTwo = getRandomIntBetween(4, responseData.length - 1);
                   } while (corruptIndexTwo == corruptIndexOne);
                
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
@@ -265,11 +265,7 @@ public class UDPClient {
 // Simply gets a random int value between two numbers
    private static int getRandomIntBetween(int low, int high) {
       Random rand = new Random();
-      int highLow = high - low;
-      if (highLow == 0) {
-         return low;
-      }
-      return rand.nextInt(high - low) + low;
+      return rand.nextInt((high - low) + 1) + low;
    }
 
 // Simply reverses the bits of a byte
