@@ -72,7 +72,7 @@ public class UDPClient {
          System.out.println("\nClient received number of packets for requested file: " + (++packetCount) + "\n");
          
          
-         while (j <= packetCount) {     
+         while (j < packetCount) {     
             byte[] buffer = new byte[256];
             DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length, InetAddress.getByName("131.204.14.55"), 10003);
             clientSocket.receive(responsePacket);

@@ -65,7 +65,8 @@ public class UDPServer {
    
    private void service(String[] args) throws IOException {
       boolean sentNumPackets = false;
-      while (true) {
+      boolean notFinished = true;
+      while (notFinished) {
          DatagramPacket requestPacket = new DatagramPacket(new byte[1], 1, InetAddress.getByName("131.204.14.65"), 10003);
          serverSocket.receive(requestPacket);
          System.out.println("\nServer received inital request packet\n");
@@ -117,8 +118,10 @@ public class UDPServer {
             String strToSend = new String(Arrays.copyOfRange(packet_buffer, 4, packet_buffer.length), StandardCharsets.UTF_8);
             System.out.println("Server sending: " + strToSend + " (From packet #: " + (packetNum++) + ")\n");
             DatagramPacket responsePacket = new DatagramPacket(packet_buffer, packet_buffer.length, clientAddress, clientPort);
-            serverSocket.send(responsePacket);             
+            serverSocket.send(responsePacket);            
          }
+         System.out.println("\n\n***SERVER FILE TRANSMISSION COMPLETE***\n\n");
+         notFinished = false;
       }
    }
 
