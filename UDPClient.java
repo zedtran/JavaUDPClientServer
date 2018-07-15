@@ -36,7 +36,7 @@ public class UDPClient {
          return;
       }
    
-      String hostname = InetAddress.getLocalHost().getHostName().trim();
+      //String hostname = InetAddress.getLocalHost().getHostName().trim();
       int port = Integer.parseInt(args[0]);
     
       try {
@@ -45,7 +45,7 @@ public class UDPClient {
          DatagramSocket clientSocket = new DatagramSocket();
       
          // Translate hostname to IP address using DNS
-         InetAddress IPAddress = InetAddress.getByName(hostname);
+         InetAddress IPAddress = InetAddress.getByName("131.204.14.65");
          
          // Begin UDP Datagram with data-to-request, length, IP Address, Port
          DatagramPacket requestPacket = new DatagramPacket(new byte[1], 1, IPAddress, port);
@@ -58,21 +58,28 @@ public class UDPClient {
       
          // numPackets contains the number of packets that are being sent by the Server
          // containing the file data
-         byte[] numPacketsBeingSent = new byte[256];
-         DatagramPacket firstResponse = new DatagramPacket(numPacketsBeingSent, numPacketsBeingSent.length);
-         int packetCount = numPacketsBeingSent[0];
+         byte[] numPacketsBeingSent = new byte[4];
+         int j = 0;
+         DatagramPacket firstResponse = new DatagramPacket(numPacketsBeingSent, numPacketsBeingSent.length, InetAddress.getByName("131.204.14.55"), 10003);
+         clientSocket.receive(firstResponse);
+         int packetCount = ByteBuffer.wrap(numPacketsBeingSent).order(ByteOrder.BIG_ENDIAN).getInt();
          System.out.println("\nFROM SERVER: ");
-         while (packetCount < (int) numPacketsBeingSent[0]) {     
+         //System.out.println(" " + packetCount + " ");
+         while (j < packetCount) {     
             byte[] buffer = new byte[256];
-            DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length);
+            DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length, InetAddress.getByName("131.204.14.55"), 10003);
             clientSocket.receive(responsePacket);
+            
             if (detectErrors(buffer))
-               System.out.println("This next packet has been corrupted.");
-            System.out.print(new String(buffer));
-            packetCount += 1;
-         }
+               System.out.println("\nThis next packet(#" + j + ") has been corrupted.\n");
+            
+            System.out.println("Packet number: " + j + " ");   
+            System.out.println("." + new String(buffer) + ".");
+            j++;
+        }
+      
          clientSocket.close();   
-             
+         System.out.println("\n\n Server finished sending.");    
       
       } 
       catch (SocketTimeoutException ex) {
@@ -83,7 +90,7 @@ public class UDPClient {
          System.out.println("Client error: " + ex.getMessage());
          ex.printStackTrace();
       } 
-     
+    
    }
 
    private static boolean detectErrors(byte[] packet) {
@@ -97,7 +104,9 @@ public class UDPClient {
       chkSumBytes = Arrays.copyOfRange(packet, 0, 4);
       checkSum = ByteBuffer.wrap(chkSumBytes).order(ByteOrder.BIG_ENDIAN).getInt();
       if (sum != checkSum)
-         errorsDetected = true;
+         System.out.println(sum + "\n");
+      System.out.println(checkSum + "\n"); 
+      errorsDetected = true;
       return errorsDetected;
    }
 }

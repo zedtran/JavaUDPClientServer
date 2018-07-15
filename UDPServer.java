@@ -47,6 +47,10 @@ public class UDPServer {
          return;
       }
    
+      // IP Address of server for client to transmit
+      String localHost = InetAddress.getLocalHost().getHostAddress().trim(); 
+      System.out.println("\nConnected to " + localHost); // Server IP      
+   
       String ipsumFile = args[0];
       int port = Integer.parseInt(args[1]);
    
@@ -67,9 +71,9 @@ public class UDPServer {
    private void service(String[] args) throws IOException {
       boolean sentNumPackets = false;
       while (true) {
-         DatagramPacket requestPacket = new DatagramPacket(new byte[1], 1);
+         DatagramPacket requestPacket = new DatagramPacket(new byte[1], 1, InetAddress.getByName("131.204.14.65"), 10003);
          serverSocket.receive(requestPacket);
-      
+         System.out.println("\nServer receiving request packet\n");
          String LoremIpsumString = loremList.toString();
          byte[] buffer = LoremIpsumString.getBytes();
       
@@ -80,6 +84,7 @@ public class UDPServer {
             // once all packets have been sent
          if (!sentNumPackets) {
             byte[] numPackets = packetsCountFile(new File(args[0]), 256);
+            System.out.println("Server Sending # Of packets in requested file .\n");
             DatagramPacket numPacketsToBeSent = new DatagramPacket(numPackets, numPackets.length, clientAddress, clientPort);
             serverSocket.send(numPacketsToBeSent);
             sentNumPackets = true;
@@ -87,15 +92,16 @@ public class UDPServer {
       
             // end is the final index to be copied (exclusive), i is the initial index to be copied (inclusive)
          int end, i = 0; 
+         int packetNum = 0;
          while (i < buffer.length) {
             end = i + 252;
             byte[] packet_buffer = new byte[256];
             int checksum = 0;
             if (end >= buffer.length) 
                end = buffer.length;
-                  
+
+            int j = 4;                  
             while(i < end) {
-               int j = 4;
                packet_buffer[j] = buffer[i];
                checksum += buffer[i];
                j++;
@@ -105,6 +111,9 @@ public class UDPServer {
             for (int k = 0; k < 4; k++) {
                packet_buffer[k] = chkSumBytes[k];
             }
+            System.out.println((packetNum++) + "\n");
+            String strToSend = new String(packet_buffer, java.nio.charset.StandardCharsets.UTF_8);
+            System.out.println("Server sending: " + strToSend + "(From packet #: " + (packetNum - 1) + ")");
             DatagramPacket responsePacket = new DatagramPacket(packet_buffer, packet_buffer.length, clientAddress, clientPort);
             serverSocket.send(responsePacket);             
          }
