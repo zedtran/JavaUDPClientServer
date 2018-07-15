@@ -84,7 +84,8 @@ public class UDPServer {
             // once all packets have been sent
          if (!sentNumPackets) {
             byte[] numPackets = packetsCountFile(new File(args[0]), 256);
-            System.out.println("Server Sending # Of packets in requested file .\n");
+            String numOfPacketsToSend = new String(numPackets);
+            System.out.println("Server sending # of packets in requested file: " + numOfPacketsToSend + "\n");
             DatagramPacket numPacketsToBeSent = new DatagramPacket(numPackets, numPackets.length, clientAddress, clientPort);
             serverSocket.send(numPacketsToBeSent);
             sentNumPackets = true;
@@ -92,28 +93,33 @@ public class UDPServer {
       
             // end is the final index to be copied (exclusive), i is the initial index to be copied (inclusive)
          int end, i = 0; 
-         int packetNum = 0;
+         int packetNum = 1;
+         int checksum;
+         Byte tempByte;
          while (i < buffer.length) {
             end = i + 252;
             byte[] packet_buffer = new byte[256];
-            int checksum = 0;
+            checksum = 0;
             if (end >= buffer.length) 
                end = buffer.length;
-
-            int j = 4;                  
+                  
+            int j = 4;
             while(i < end) {
                packet_buffer[j] = buffer[i];
-               checksum += buffer[i];
+               tempByte = buffer[i];
+               checksum += tempByte.intValue();
                j++;
                i++;  
             }
+            System.out.println("\nCHECKSUM: " + checksum);
             byte[] chkSumBytes = intToBytes(checksum);
             for (int k = 0; k < 4; k++) {
                packet_buffer[k] = chkSumBytes[k];
             }
-            System.out.println((packetNum++) + "\n");
-            String strToSend = new String(packet_buffer, java.nio.charset.StandardCharsets.UTF_8);
-            System.out.println("Server sending: " + strToSend + "(From packet #: " + (packetNum - 1) + ")");
+         
+            
+            String strToSend = new String(Arrays.copyOfRange(packet_buffer, 4, packet_buffer.length), java.nio.charset.StandardCharsets.UTF_8);
+            System.out.println("Server sending: " + strToSend + " (From packet #: " + (packetNum++) + ")\n");
             DatagramPacket responsePacket = new DatagramPacket(packet_buffer, packet_buffer.length, clientAddress, clientPort);
             serverSocket.send(responsePacket);             
          }
@@ -146,17 +152,10 @@ public class UDPServer {
    private byte[] packetsCountFile(File file, int numBytesPerPacket) {
       int length = (int) file.length() / numBytesPerPacket;
       if (file.length() % numBytesPerPacket != 0)
-         length++;
+         length += 3;
       return intToBytes(length);
    } 
  
     
-   int checkSum(byte[] bytePacket) {
-      int sum = 0;
-      for (int i = 0; i < bytePacket.length; i++)
-      {
-         sum += bytePacket[i];
-      }
-      return sum;
-   }
+  
 }
