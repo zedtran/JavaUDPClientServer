@@ -169,86 +169,89 @@ public class UDPClient {
             // Conditional check for 50% chance of damaging 1 byte (0.0 <= P(X) < 0.5)
             if (0 <= randomProbability && randomProbability < corruptOneUpperBound) {
                numBytesToCorrupt = 1;
-               corruptIndexOne = getRandomIntBetween(0, responseData.length);
+               corruptIndexOne = getRandomIntBetween(4, responseData.length);
                responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
             }
             // Conditional check for 30% chance of damaging 2 bytes (0.5 <= P(X) < 0.8)
             else if (corruptOneUpperBound <= randomProbability && randomProbability < corruptTwoUpperBound) {
                numBytesToCorrupt = 2;
-               corruptIndexOne = getRandomIntBetween(0, (int) (1/2)*responseData.length);
-               corruptIndexTwo = getRandomIntBetween((int)(1/2)*responseData.length, responseData.length);
+               corruptIndexOne = getRandomIntBetween(4, (int)(1/2)*(responseData.length + 4));
+               corruptIndexTwo = getRandomIntBetween((int)(1/2)*(responseData.length + 4), responseData.length);
                responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                responseData[corruptIndexTwo] = reverseBitsByte(responseData[corruptIndexTwo]);
             }
             // Conditional check for 20% chance of damaging 3 bytes (0.8 <= P(X) < 1)
-            else {
+            else if (corruptTwoUpperBound <= randomProbability && randomProbability < 1) {
                numBytesToCorrupt = 3;
-               corruptIndexOne = getRandomIntBetween(0, (int)(1/3)*responseData.length);
-               corruptIndexTwo = getRandomIntBetween((int)(1/3)*responseData.length, (int)(2/3)*responseData.length);
-               corruptIndexThree = getRandomIntBetween((int)(2/3)*responseData.length, responseData.length);
+               corruptIndexOne = getRandomIntBetween(4, (int)(1/3)*(responseData.length + 4));
+               corruptIndexTwo = getRandomIntBetween((int)(1/3)*(responseData.length + 4), (int)(2/3)*(responseData.length + 4));
+               corruptIndexThree = getRandomIntBetween((int)(2/3)*(responseData.length + 4), responseData.length);
                responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                responseData[corruptIndexTwo] = reverseBitsByte(responseData[corruptIndexTwo]);
                responseData[corruptIndexThree] = reverseBitsByte(responseData[corruptIndexThree]);
             }
          }
-         // Edge cases where packet length <= 3
+         // Edge cases where packet length data <= 3
          else {
             // If there is only one byte in the packet to consider
-            if (responseData.length == 1) {
+            // 4 bytes for checksum + 1 byte data
+            if (responseData.length == 5) {
                 /**
                  *  Here the probabilistic determination for which bytes get affected doesn't matter, because
                  *  there is only one byte to consider in this packet.
                  */
                numBytesToCorrupt = 1;
-               corruptIndexOne = 0;
-               responseData[0] = reverseBitsByte(responseData[0]);
+               corruptIndexOne = 4;
+               responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
             }
             // If there are only two bytes in the packet to consider
-            else if (responseData.length == 2) {
-                    // 50% chance of damaging 1 byte
+            // 4 bytes for checksum + 2 bytes for data
+            else if (responseData.length == 6) {
+               // 50% chance of damaging 1 byte
                if (0 <= randomProbability && randomProbability < corruptOneUpperBound) {
                   numBytesToCorrupt = 1;
-                  corruptIndexOne = getRandomIntBetween(0, 2);
+                  corruptIndexOne = getRandomIntBetween(4, 5);
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                }
-                    // 20% chance of damaging 3 bytes or 30% chance of damaging 2 bytes
-                    // Since we only have 2 bytes to consider in this packet, we will damage both bytes. We don't have a
-                    // third byte to consider.
-               else {
+               // 20% chance of damaging 3 bytes or 30% chance of damaging 2 bytes
+               // Since we only have 2 bytes to consider in this packet, we will damage both bytes. We don't have a
+               // third byte to consider.
+               else if (randomProbability != 1.0) {
                   numBytesToCorrupt = 2;
-                  corruptIndexOne = 0;
-                  corruptIndexTwo = 1;
+                  corruptIndexOne = 4;
+                  corruptIndexTwo = 5;
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                   responseData[corruptIndexTwo] = reverseBitsByte(responseData[corruptIndexTwo]);
                }
             }
             // If there are only 3 bytes in the packet to consider
-            else if (responseData.length == 3) {
+            // 4 bytes for checksum + 3 bytes for data
+            else if (responseData.length == 7) {
                 // 50% chance of damaging 1 byte
                if (0 <= randomProbability && randomProbability < corruptOneUpperBound) {
                   numBytesToCorrupt = 1;
-                  corruptIndexOne = getRandomIntBetween(0, 3);
+                  corruptIndexOne = getRandomIntBetween(4, 6);
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                }
                 // 30% chance of damaging 2 bytes
                else if (corruptOneUpperBound <= randomProbability && randomProbability < corruptTwoUpperBound) {
                   numBytesToCorrupt = 2;
-                  corruptIndexOne = getRandomIntBetween(0, 3);
+                  corruptIndexOne = getRandomIntBetween(4, 6);
                
                     // Randomly choose a byte index != to an index already selected
                   do {
-                     corruptIndexTwo = getRandomIntBetween(0, 3);
+                     corruptIndexTwo = getRandomIntBetween(4, 6);
                   } while (corruptIndexTwo == corruptIndexOne);
                
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                   responseData[corruptIndexTwo] = reverseBitsByte(responseData[corruptIndexTwo]);
                }
                 // 20% chance of damaging 3 bytes
-               else {
+               else if (randomProbability != 1.0) {
                   numBytesToCorrupt = 3;
-                  corruptIndexOne = 0;
-                  corruptIndexTwo = 1;
-                  corruptIndexThree = 2;
+                  corruptIndexOne = 4;
+                  corruptIndexTwo = 5;
+                  corruptIndexThree = 6;
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                   responseData[corruptIndexTwo] = reverseBitsByte(responseData[corruptIndexTwo]);
                   responseData[corruptIndexThree] = reverseBitsByte(responseData[corruptIndexThree]);
