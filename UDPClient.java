@@ -6,12 +6,6 @@
 // Lecturer's Name:  Dr. ALVIN LIM
 // Course Section:   001
 //
-//////////////////// CREDITS/SOURCES /////////////////////////////////////////
-//
-// Persons:          
-//
-// Online sources:   
-//
 //////////////////////////////////////////////////////////////////////////////
 
 import java.io.*;
@@ -36,14 +30,15 @@ public class UDPClient {
  
    public static void main(String[] args) throws Exception {
       if (args.length < 2) {
-         System.out.println("Syntax: UDPClient <port> <Probability of Corruption: (Between 0--inclusive and 1--exclusive)>");
+         System.out.println("Syntax: java UDPClient <port> <Probability of Corruption>");
          return;
       }
-   
+      // The probability of packet corruption
       final double CORRUPT_PROBABILITY = Double.parseDouble(args[1]);  // Ensure: 0 <= CORRUPT_PROBABILITY < 1
    
+      // Ensuring command line arg probability is between 0 and 1
       if (CORRUPT_PROBABILITY < 0 || CORRUPT_PROBABILITY >= 1) {
-         System.out.println("The argument for runtime probability of packet corruption must be between 0 (inclusive) and 1 (exclusive).");
+         System.out.println("\nThe argument for runtime probability of packet corruption must be between 0 (inclusive) and 1 (exclusive).\n");
          System.exit(0);
       }
    
@@ -55,13 +50,13 @@ public class UDPClient {
          // Create Client Socket
          DatagramSocket clientSocket = new DatagramSocket();
       
-         // Translate hostname to IP address using DNS
+         // Translate hostname to IP address using DNS (Server IP)
          InetAddress IPAddress = InetAddress.getByName("131.204.14.65");
          
          // Begin UDP Datagram with data-to-request, length, IP Address, Port
          DatagramPacket requestPacket = new DatagramPacket(new byte[1], 1, IPAddress, port);
          clientSocket.send(requestPacket);
-         System.out.println("\nRequest packet sent to server.\n");
+         System.out.println("\nInitial request packet sent to server.\n");
             
          // Read datagram from server //
          // IF using Latin-Lipsum.txt: Byte Count = 29097
@@ -74,27 +69,32 @@ public class UDPClient {
          DatagramPacket firstResponse = new DatagramPacket(numPacketsBeingSent, numPacketsBeingSent.length, InetAddress.getByName("131.204.14.55"), 10003);
          clientSocket.receive(firstResponse);
          int packetCount = ByteBuffer.wrap(numPacketsBeingSent).order(ByteOrder.BIG_ENDIAN).getInt();
-         System.out.println("\nFROM SERVER: ");
-         System.out.println("Packet Count is " + packetCount + " ");
+         System.out.println("\nClient received number of packets for requested file: " + packetCount);
+         
+         
          while (j <= packetCount) {     
-            System.out.println("j is " + j + "  Packet Count is " + packetCount);
             byte[] buffer = new byte[256];
             DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length, InetAddress.getByName("131.204.14.55"), 10003);
             clientSocket.receive(responsePacket);
-              
+            System.out.println("\nClient received packet # " + (j + 1) + "  of " + packetCount);  
             clientGremlin(responsePacket, CORRUPT_PROBABILITY);
-              
-            if (detectErrors(buffer))
-               System.out.println("This next packet(#" + (j + 1) + ") has been corrupted.\n");
+            System.out.println("\nClient sent packet # " + (j + 1) + "  to client gremlin.");  
             
-            System.out.println("Packet number: " + (j + 1) + "\n");
+            // Performs error detection following client gremlin function (true if packet was corrupted, false otherwise)
+            if (detectErrors(buffer)) {
+               System.out.println("\nPacket # " + (j + 1) + " of " + packetCount + ": ***CORRUPTED***\n");
+            }
+            else {
+               System.out.println("\nPacket # " + (j + 1) + " of " + packetCount + ": NOT CORRUPTED\n");
+            }
+            
             byte[] bufNoChkSum = Arrays.copyOfRange(buffer, 4, buffer.length);   
             System.out.print(new String(bufNoChkSum) + "\n");
-            j++;
+            j++; // Increment packet index
          }
       
          clientSocket.close();   
-         System.out.println("\n\n SERVER FINISHED.");    
+         System.out.println("\n\n ***SERVER FINISHED***");    
       
       } 
       catch (SocketTimeoutException ex) {
@@ -121,10 +121,12 @@ public class UDPClient {
       checkSum = ByteBuffer.wrap(chkSumBytes).order(ByteOrder.BIG_ENDIAN).getInt();
       if (sum != checkSum)
       {
-         System.out.println("\n\nCalculated CHECKSUM: " + sum + "\n");
+         System.out.println("\n\n ***CHECKSUM ERROR***: ACTUAL checksum: " + sum + ", EXPECTED checksum: " + checkSum + "\n");
          errorsDetected = true;
       }
-      System.out.println("\nFrom header CHECKSUM: " + checkSum + "\n"); 
+      else {
+         System.out.println("\n--Checksum values OK--\n");
+      }
       return errorsDetected;
    }
 
