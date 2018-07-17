@@ -79,8 +79,10 @@ public class UDPServer {
          // once all packets have been sent
          if (!sentNumPackets) {
             byte[] numPackets = packetsCountFile(new File(args[0]), 256);
-            String numOfPacketsToSend = new String(numPackets);
-            System.out.println("Server sending # of packets in requested file: " + numOfPacketsToSend + "\n");
+            int pNum = ByteBuffer.wrap(numPackets).order(ByteOrder.BIG_ENDIAN).getInt();
+	    pNum += 1;
+	    //String numOfPacketsToSend = new String(numPackets);
+            System.out.println("Server sending # of packets in requested file: " + pNum + "\n");
             DatagramPacket numPacketsToBeSent = new DatagramPacket(numPackets, numPackets.length, clientAddress, clientPort);
             serverSocket.send(numPacketsToBeSent);
             sentNumPackets = true;
