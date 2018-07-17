@@ -65,31 +65,31 @@ public class UDPClient {
          // numPackets contains the number of packets that are being sent by the Server
          // containing the file data
          byte[] numPacketsBeingSent = new byte[4];
-         int j = 0;
+         int j = 1;
          DatagramPacket firstResponse = new DatagramPacket(numPacketsBeingSent, numPacketsBeingSent.length, InetAddress.getByName("131.204.14.55"), 10003);
          clientSocket.receive(firstResponse);
          int packetCount = ByteBuffer.wrap(numPacketsBeingSent).order(ByteOrder.BIG_ENDIAN).getInt();
          System.out.println("\nClient received number of packets for requested file: " + (++packetCount) + "\n");
          
          
-         while (j < packetCount) {     
+         while (j < packetCount + 1) {     
             byte[] buffer = new byte[256];
             DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length, InetAddress.getByName("131.204.14.55"), 10003);
             clientSocket.receive(responsePacket);
-            System.out.println("\n\nClient received packet # " + (j + 1) + "  of " + packetCount);  
+            System.out.println("\n\nClient received packet # " + j + "  of " + packetCount);  
             clientGremlin(responsePacket, CORRUPT_PROBABILITY);
-            System.out.println("Client sent packet # " + (j + 1) + "  to client gremlin.");  
+            System.out.println("Client sent packet # " + j + "  to client gremlin.");  
             
             // Performs error detection following client gremlin function (true if packet was corrupted, false otherwise)
             if (detectErrors(buffer)) {
-               System.out.println("Packet # " + (j + 1) + " of " + packetCount + ": ***CORRUPTED***");
+               System.out.println("Packet # " + j + " of " + packetCount + ": ***CORRUPTED***");
             }
             else {
-               System.out.println("Packet # " + (j + 1) + " of " + packetCount + ": NOT CORRUPTED");
+               System.out.println("Packet # " + j + " of " + packetCount + ": NOT CORRUPTED");
             }
             
             byte[] bufNoChkSum = Arrays.copyOfRange(buffer, 4, buffer.length);   
-            System.out.println("MESSAGE(Packet# " + (j + 1) + "): " + new String(bufNoChkSum));
+            System.out.println("MESSAGE(Packet# " + j + "): " + new String(bufNoChkSum));
             j++; // Increment packet index
          }
       

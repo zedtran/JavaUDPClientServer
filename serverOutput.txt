@@ -1,5 +1,5 @@
-Script started on Mon 16 Jul 2018 08:12:20 PM CDT
-[?1034hbash-4.2$ java UDPClient 10003 0.3Server Latin-Lipsum.txt 10003
+Script started on Mon 16 Jul 2018 08:45:43 PM CDT
+[?1034hbash-4.2$ java UDPServer Latin-Lipsum.txt 10003
 
 Connected to 131.204.14.65
 
@@ -483,4 +483,4 @@ Server sending: e periculis ne his, ignota mentitum eu vim. Iracundia adversariu
 
 bash-4.2$ exit
 
-Script done on Mon 16 Jul 2018 08:12:50 PM CDT
+Script done on Mon 16 Jul 2018 08:46:33 PM CDT
