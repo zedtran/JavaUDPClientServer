@@ -65,8 +65,22 @@ public class UDPServer {
 
    private void service(String[] args) throws IOException 
    {
+       String LoremIpsumString = loremList.toString();
+       byte[] buffer = LoremIpsumString.getBytes();
+       InetAddress clientAddress = requestPacket.getAddress(); // Return IPAddress of client
+       int clientPort = requestPacket.getPort(); // Return port number of client
+       // create array with size equal to number of packets being sent
+
        int numPkts = packetsCountFile(new File(args[0]), 512);  // change to 512 bytes
        int[] window = {0, 1, 2, 3, 4, 5, 6, 7};
+       // segment file into 512 byte packets
+       DatagramPacket[] packets = segmentFile(buffer, numPkts, 512);
+       // this Array List will hold the packets that fit within the window and are to be sent or are awaiting ACKs
+       ArrayList<DatagramPacket> pktsInWindow = new ArrayList<DatagramPacket>(WINDOW_SIZE);
+       for (int i = 0; i < WINDOW_SIZE; i++)        // put first 8 elements into window
+       {
+           pktsInWindow.add(packets[i]);
+       }
 
        boolean sentNumPackets = false;
        boolean notFinished = true;
@@ -76,11 +90,6 @@ public class UDPServer {
            DatagramPacket requestPacket = new DatagramPacket(new byte[1], 1, InetAddress.getByName("131.204.14.65"), 10003);
            serverSocket.receive(requestPacket);
            System.out.println("\nServer received inital request packet\n");
-           String LoremIpsumString = loremList.toString();
-           byte[] buffer = LoremIpsumString.getBytes();
-           InetAddress clientAddress = requestPacket.getAddress(); // Return IPAddress of client
-           int clientPort = requestPacket.getPort(); // Return port number of client
-           // create array with size equal to number of packets being sent
 
            // send header packet containing number of packets to be sent
            // Client will use this info to make buffer or appropriate size
@@ -96,14 +105,13 @@ public class UDPServer {
                sentNumPackets = true;
            }
 
-           // segment file into 512 byte packets
-           DatagramPacket[] packets = segmentFile(buffer, numPkts, 512);
-           // send 8 packets (window size is 8)
-           for (int i = 0; i < window.length; i++)
+           // send first 8 packets (window size is 8)
+           for (int i = 0; i < WINDOW_SIZE; i++)
            {
-               String strToSend = new String(Arrays.copyOfRange(packet_buffer, 4, packet_buffer.length), StandardCharsets.UTF_8);
-               System.out.println("Server sending: " + strToSend + " (From packet #: " + (packetNum++) + ")\n");
-               serverSocket.send(responsePacket);  
+               if (window[i])
+               //String strToSend = new String(Arrays.copyOfRange(packet_buffer, 4, packet_buffer.length), StandardCharsets.UTF_8);
+               //System.out.println("Server sending: " + strToSend + " (From packet #: " + (packetNum++) + ")\n");
+               serverSocket.send(pktsInWindow.get(i));  
            }
 
            
@@ -124,6 +132,11 @@ public class UDPServer {
        System.out.println("\nServer received ACK for packet with Sequence Number " + seqNum + "\n");
        return seqNum;
    } 
+
+   private int extractSeqNum(byte[] packetData) {
+       byte[] temp = Arrays.copyOfRange(packetData, 4, 8);
+       return ByteBuffer.wrap(temp).order(ByteOrder.BIG_ENDIAN).getInt();
+   }
    
    private static DatagramPacket[] segmentFile(byte[] fileBuffer, int numPkts, int size) {
        DatagramPacket[] packets = new DatagramPacket[numPkts];
@@ -155,11 +168,12 @@ public class UDPServer {
            }
            
            byte[] chkSumBytes = intToBytes(checksum); // Creating checksum
-           byte[] sequenceNumber = getSequenceNumber(packetNum);
+           //byte[] sequenceNumber = getSequenceNumber(packetNum);
+           byte[] packetNumber = intToBytes(packetNum);
            // Populating outgoing packet with checksum header and sequence number
            for (int k = 0; k < 8; k++) 
            {
-               packet_buffer[k] = (k < 4) ? chkSumBytes[k] : sequenceNumber[k];
+               packet_buffer[k] = (k < 4) ? chkSumBytes[k] : packetNumber[k];
            }
            packets[packetNum++] = new DatagramPacket(packet_buffer, packet_buffer.length, clientAddress, clientPort);
        }
@@ -168,7 +182,7 @@ public class UDPServer {
    private static void shiftWindow(int [] ackBuffer) {
        for (int i = 0; i < WINDOW_SIZE; i++)
        {
-           ackBuffer[i] = (ackBuffer[i] + 1) % 24;
+           ackBuffer[i]++;
        }
    }
 
