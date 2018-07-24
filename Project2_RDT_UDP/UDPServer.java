@@ -105,6 +105,7 @@ public class UDPServer {
                sentNumPackets = true;
            }
 
+           ArrayList<boolean> ackBuffer = new ArrayList<boolean>(WINDOW_SIZE);
            // send first 8 packets (window size is 8)
            do {
                serverSocket.send(pktsInWindow.get(0));
@@ -115,38 +116,44 @@ public class UDPServer {
                    {
                        //String strToSend = new String(Arrays.copyOfRange(packet_buffer, 4, packet_buffer.length), StandardCharsets.UTF_8);
                        //System.out.println("Server sending: " + strToSend + " (From packet #: " + (packetNum++) + ")\n");
-                       serverSocket.send(pktsInWindow.get(i));  
+                       if (!ackBuffer.get(extractSeqNum(pktsInWindow.get(i))))
+                       {
+                           serverSocket.send(pktsInWindow.get(i));  
+                       }
                    }
-                   if (receiveACK() == extractSeqNum(pktsInWindow.get(0).getData()))
+                   receiveACK(ackBuffer);
+                   if (ackBuffer.get(0) == extractSeqNum(pktsInWindow.get(0).getData()))
                    {
-                       shiftWindow();
+                       // shift window
+                       pktsInWindow.remove(0);
+                       pktsInWindow.add(packets.get(0));
+                       packets.remove(0);
+                       ackBuffer.remove(0);
+                       ackBuffer.add(0);
                    }
                } 
                catch (SocketTimeoutException e)
                {
                    socket.send(pktsInWindow.get(0));
                }
-           } while (ackBuffer[0] != 1);
+           } while (packets.size() > 0);
            
            // wait for ACK
            // if ACK received for the first of the 8 packets, shift window by 1
            // send new packet that was added to the window
-
-
        }
    }
 
-   private static int receiveACK() {
+   private static void receiveACK(ArrayList<int> ackBuffer) {
        byte[] seqNumArray = new byte[5];
        DatagramPacket ackPacket = new DatagramPacket(seqNum, seqNum.length, InetAddress.getByName("131.204.14.65"), 10003);
        serverSocket.receive(ackPacket);
        int seqNum = ByteBuffer.wrap(seqNumArray).order(ByteOrder.BIG_ENDIAN).getInt();
        if (seqNumArray[4] == 1)
        {
-           ackBuffer[seqNum] = true;
+           ackBuffer.set(seqNum, true);
        }
        System.out.println("\nServer received ACK for packet with Sequence Number " + seqNum + "\n");
-       return seqNum;
    } 
 
    private static int extractSeqNum(byte[] packetData) {
@@ -193,10 +200,6 @@ public class UDPServer {
            }
            packets.add(new DatagramPacket(packet_buffer, packet_buffer.length, clientAddress, clientPort), packetNum++);
        }
-   }
-
-   private static void shiftWindow(ArrayList<DatagramPacket> packets) {
-       
    }
 
    private static byte[] intToBytes(int myInteger) {
