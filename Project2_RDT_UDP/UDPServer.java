@@ -106,6 +106,7 @@ public class UDPServer {
            }
 
            ArrayList<boolean> ackBuffer = new ArrayList<boolean>(WINDOW_SIZE);
+           ArrayList<int> seqBuffer = new ArrayList<boolean>(WINDOW_SIZE);
            boolean sentNextSeven = false;
            // send first 8 packets (window size is 8)
            serverSocket.send(pktsInWindow.get(0));
@@ -196,12 +197,11 @@ public class UDPServer {
            }
            
            byte[] chkSumBytes = intToBytes(checksum); // Creating checksum
-           //byte[] sequenceNumber = getSequenceNumber(packetNum);
-           byte[] packetNumber = intToBytes(packetNum);
+           byte[] sequenceNumber = getSequenceNumber(packetNum);
            // Populating outgoing packet with checksum header and sequence number
            for (int k = 0; k < 8; k++) 
            {
-               packet_buffer[k] = (k < 4) ? chkSumBytes[k] : packetNumber[k];
+               packet_buffer[k] = (k < 4) ? chkSumBytes[k] : sequenceNumber[k];
            }
            packets.add(new DatagramPacket(packet_buffer, packet_buffer.length, clientAddress, clientPort), packetNum++);
        }
