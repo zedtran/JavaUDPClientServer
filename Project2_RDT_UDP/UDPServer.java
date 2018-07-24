@@ -117,7 +117,7 @@ public class UDPServer {
                        //System.out.println("Server sending: " + strToSend + " (From packet #: " + (packetNum++) + ")\n");
                        serverSocket.send(pktsInWindow.get(i));  
                    }
-                   if (receiveACK() == extractSeqNum(pktsInWindow.get(0).getData())
+                   if (receiveACK() == extractSeqNum(pktsInWindow.get(0).getData()))
                    {
                        shiftWindow();
                    }
@@ -191,7 +191,7 @@ public class UDPServer {
            {
                packet_buffer[k] = (k < 4) ? chkSumBytes[k] : packetNumber[k];
            }
-           packets.add(new DatagramPacket(packet_buffer, packet_buffer.length, clientAddress, clientPort), packetNum++)
+           packets.add(new DatagramPacket(packet_buffer, packet_buffer.length, clientAddress, clientPort), packetNum++);
        }
    }
 
