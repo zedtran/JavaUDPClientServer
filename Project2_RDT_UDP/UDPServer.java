@@ -106,20 +106,21 @@ public class UDPServer {
            }
 
            ArrayList<boolean> ackBuffer = new ArrayList<boolean>(WINDOW_SIZE);
+           boolean sentNextSeven = false;
            // send first 8 packets (window size is 8)
-           do {
-               serverSocket.send(pktsInWindow.get(0));
-               socket.setSoTimeout(40);
-               try 
-               {
-                   for (int i = 1; i < WINDOW_SIZE; i++)
+           serverSocket.send(pktsInWindow.get(0));
+           socket.setSoTimeout(40);
+            do {
+                try {
+                   if (!sentNextSeven) 
                    {
-                       //String strToSend = new String(Arrays.copyOfRange(packet_buffer, 4, packet_buffer.length), StandardCharsets.UTF_8);
-                       //System.out.println("Server sending: " + strToSend + " (From packet #: " + (packetNum++) + ")\n");
-                       if (!ackBuffer.get(extractSeqNum(pktsInWindow.get(i))))
+                       for (int i = 1; i < WINDOW_SIZE; i++)
                        {
-                           serverSocket.send(pktsInWindow.get(i));  
+                           //String strToSend = new String(Arrays.copyOfRange(packet_buffer, 4, packet_buffer.length), StandardCharsets.UTF_8);
+                           //System.out.println("Server sending: " + strToSend + " (From packet #: " + (packetNum++) + ")\n");
+                           serverSocket.send(pktsInWindow.get(i));
                        }
+                       sentNextSeven = true;
                    }
                    receiveACK(ackBuffer);
                    if (ackBuffer.get(0) == extractSeqNum(pktsInWindow.get(0).getData()))
@@ -130,11 +131,15 @@ public class UDPServer {
                        packets.remove(0);
                        ackBuffer.remove(0);
                        ackBuffer.add(0);
+
+                       // send newly added packet
+                       serverSocket.send(pktsInWindow.get(WINDOW_SIZE - 1));
                    }
                } 
                catch (SocketTimeoutException e)
                {
                    socket.send(pktsInWindow.get(0));
+                   socket.setSoTimeout(40);
                }
            } while (packets.size() > 0);
            
