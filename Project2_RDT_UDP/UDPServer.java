@@ -106,14 +106,27 @@ public class UDPServer {
            }
 
            // send first 8 packets (window size is 8)
-           for (int i = 0; i < WINDOW_SIZE; i++)
-           {
-               if (window[i])
-               //String strToSend = new String(Arrays.copyOfRange(packet_buffer, 4, packet_buffer.length), StandardCharsets.UTF_8);
-               //System.out.println("Server sending: " + strToSend + " (From packet #: " + (packetNum++) + ")\n");
-               serverSocket.send(pktsInWindow.get(i));  
-           }
-
+           do {
+               serverSocket.send(pktsInWindow.get(0));
+               socket.setSoTimeout(40);
+               try 
+               {
+                   for (int i = 1; i < WINDOW_SIZE; i++)
+                   {
+                       //String strToSend = new String(Arrays.copyOfRange(packet_buffer, 4, packet_buffer.length), StandardCharsets.UTF_8);
+                       //System.out.println("Server sending: " + strToSend + " (From packet #: " + (packetNum++) + ")\n");
+                       serverSocket.send(pktsInWindow.get(i));  
+                   }
+                   if (receiveACK() == extractSeqNum(pktsInWindow.get(0).getData())
+                   {
+                       shiftWindow();
+                   }
+               } 
+               catch (SocketTimeoutException e)
+               {
+                   socket.send(pktsInWindow.get(0));
+               }
+           } while (ackBuffer[0] != 1);
            
            // wait for ACK
            // if ACK received for the first of the 8 packets, shift window by 1
@@ -124,22 +137,25 @@ public class UDPServer {
    }
 
    private static int receiveACK() {
-       byte[] seqNumArray = new byte[4];
+       byte[] seqNumArray = new byte[5];
        DatagramPacket ackPacket = new DatagramPacket(seqNum, seqNum.length, InetAddress.getByName("131.204.14.65"), 10003);
        serverSocket.receive(ackPacket);
        int seqNum = ByteBuffer.wrap(seqNumArray).order(ByteOrder.BIG_ENDIAN).getInt();
-       ackBuffer[seqNum] = true;
+       if (seqNumArray[4] == 1)
+       {
+           ackBuffer[seqNum] = true;
+       }
        System.out.println("\nServer received ACK for packet with Sequence Number " + seqNum + "\n");
        return seqNum;
    } 
 
-   private int extractSeqNum(byte[] packetData) {
+   private static int extractSeqNum(byte[] packetData) {
        byte[] temp = Arrays.copyOfRange(packetData, 4, 8);
        return ByteBuffer.wrap(temp).order(ByteOrder.BIG_ENDIAN).getInt();
    }
    
-   private static DatagramPacket[] segmentFile(byte[] fileBuffer, int numPkts, int size) {
-       DatagramPacket[] packets = new DatagramPacket[numPkts];
+   private static ArrayList<DatagramPacket> segmentFile(byte[] fileBuffer, int numPkts, int size) {
+       ArrayList<DatagramPacket> packets = new ArrayList<DatagramPacket>(numPkts);
        
        // end is the final index to be copied (exclusive), i is the initial index to be copied (inclusive)
        int end; 
@@ -175,15 +191,12 @@ public class UDPServer {
            {
                packet_buffer[k] = (k < 4) ? chkSumBytes[k] : packetNumber[k];
            }
-           packets[packetNum++] = new DatagramPacket(packet_buffer, packet_buffer.length, clientAddress, clientPort);
+           packets.add(new DatagramPacket(packet_buffer, packet_buffer.length, clientAddress, clientPort), packetNum++)
        }
    }
 
-   private static void shiftWindow(int [] ackBuffer) {
-       for (int i = 0; i < WINDOW_SIZE; i++)
-       {
-           ackBuffer[i]++;
-       }
+   private static void shiftWindow(ArrayList<DatagramPacket> packets) {
+       
    }
 
    private static byte[] intToBytes(int myInteger) {
