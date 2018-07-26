@@ -1,0 +1,1637 @@
+Script started on Thu 26 Jul 2018 04:16:54 PM CDT
+[?1034hbash-4.2$ java UDPServer Latin-Lipsum.txt 10003[C[C[C[C[C[C[C[C[C[Cls[Kjava UDPServer Latin-Lipsum.txt 10003[K1
+
+Connected to 131.204.14.65
+
+
+Server received inital request packet
+
+Server sending # of packets in requested file: 175
+
+Packet number 0 (Sequence Number 0) added to list.
+
+Packet number 1 (Sequence Number 1) added to list.
+
+Packet number 2 (Sequence Number 2) added to list.
+
+Packet number 3 (Sequence Number 3) added to list.
+
+Packet number 4 (Sequence Number 4) added to list.
+
+Packet number 5 (Sequence Number 5) added to list.
+
+Packet number 6 (Sequence Number 6) added to list.
+
+Packet number 7 (Sequence Number 7) added to list.
+
+Packet number 8 (Sequence Number 8) added to list.
+
+Packet number 9 (Sequence Number 9) added to list.
+
+Packet number 10 (Sequence Number 10) added to list.
+
+Packet number 11 (Sequence Number 11) added to list.
+
+Packet number 12 (Sequence Number 12) added to list.
+
+Packet number 13 (Sequence Number 13) added to list.
+
+Packet number 14 (Sequence Number 14) added to list.
+
+Packet number 15 (Sequence Number 15) added to list.
+
+Packet number 16 (Sequence Number 16) added to list.
+
+Packet number 17 (Sequence Number 17) added to list.
+
+Packet number 18 (Sequence Number 18) added to list.
+
+Packet number 19 (Sequence Number 19) added to list.
+
+Packet number 20 (Sequence Number 20) added to list.
+
+Packet number 21 (Sequence Number 21) added to list.
+
+Packet number 22 (Sequence Number 22) added to list.
+
+Packet number 23 (Sequence Number 23) added to list.
+
+Packet number 24 (Sequence Number 0) added to list.
+
+Packet number 25 (Sequence Number 1) added to list.
+
+Packet number 26 (Sequence Number 2) added to list.
+
+Packet number 27 (Sequence Number 3) added to list.
+
+Packet number 28 (Sequence Number 4) added to list.
+
+Packet number 29 (Sequence Number 5) added to list.
+
+Packet number 30 (Sequence Number 6) added to list.
+
+Packet number 31 (Sequence Number 7) added to list.
+
+Packet number 32 (Sequence Number 8) added to list.
+
+Packet number 33 (Sequence Number 9) added to list.
+
+Packet number 34 (Sequence Number 10) added to list.
+
+Packet number 35 (Sequence Number 11) added to list.
+
+Packet number 36 (Sequence Number 12) added to list.
+
+Packet number 37 (Sequence Number 13) added to list.
+
+Packet number 38 (Sequence Number 14) added to list.
+
+Packet number 39 (Sequence Number 15) added to list.
+
+Packet number 40 (Sequence Number 16) added to list.
+
+Packet number 41 (Sequence Number 17) added to list.
+
+Packet number 42 (Sequence Number 18) added to list.
+
+Packet number 43 (Sequence Number 19) added to list.
+
+Packet number 44 (Sequence Number 20) added to list.
+
+Packet number 45 (Sequence Number 21) added to list.
+
+Packet number 46 (Sequence Number 22) added to list.
+
+Packet number 47 (Sequence Number 23) added to list.
+
+Packet number 48 (Sequence Number 0) added to list.
+
+Packet number 49 (Sequence Number 1) added to list.
+
+Packet number 50 (Sequence Number 2) added to list.
+
+Packet number 51 (Sequence Number 3) added to list.
+
+Packet number 52 (Sequence Number 4) added to list.
+
+Packet number 53 (Sequence Number 5) added to list.
+
+Packet number 54 (Sequence Number 6) added to list.
+
+Packet number 55 (Sequence Number 7) added to list.
+
+Packet number 56 (Sequence Number 8) added to list.
+
+Packet number 57 (Sequence Number 9) added to list.
+
+Packet number 58 (Sequence Number 10) added to list.
+
+Packet number 59 (Sequence Number 11) added to list.
+
+Packet number 60 (Sequence Number 12) added to list.
+
+Packet number 61 (Sequence Number 13) added to list.
+
+Packet number 62 (Sequence Number 14) added to list.
+
+Packet number 63 (Sequence Number 15) added to list.
+
+Packet number 64 (Sequence Number 16) added to list.
+
+Packet number 65 (Sequence Number 17) added to list.
+
+Packet number 66 (Sequence Number 18) added to list.
+
+Packet number 67 (Sequence Number 19) added to list.
+
+Packet number 68 (Sequence Number 20) added to list.
+
+Packet number 69 (Sequence Number 21) added to list.
+
+Packet number 70 (Sequence Number 22) added to list.
+
+Packet number 71 (Sequence Number 23) added to list.
+
+Packet number 72 (Sequence Number 0) added to list.
+
+Packet number 73 (Sequence Number 1) added to list.
+
+Packet number 74 (Sequence Number 2) added to list.
+
+Packet number 75 (Sequence Number 3) added to list.
+
+Packet number 76 (Sequence Number 4) added to list.
+
+Packet number 77 (Sequence Number 5) added to list.
+
+Packet number 78 (Sequence Number 6) added to list.
+
+Packet number 79 (Sequence Number 7) added to list.
+
+Packet number 80 (Sequence Number 8) added to list.
+
+Packet number 81 (Sequence Number 9) added to list.
+
+Packet number 82 (Sequence Number 10) added to list.
+
+Packet number 83 (Sequence Number 11) added to list.
+
+Packet number 84 (Sequence Number 12) added to list.
+
+Packet number 85 (Sequence Number 13) added to list.
+
+Packet number 86 (Sequence Number 14) added to list.
+
+Packet number 87 (Sequence Number 15) added to list.
+
+Packet number 88 (Sequence Number 16) added to list.
+
+Packet number 89 (Sequence Number 17) added to list.
+
+Packet number 90 (Sequence Number 18) added to list.
+
+Packet number 91 (Sequence Number 19) added to list.
+
+Packet number 92 (Sequence Number 20) added to list.
+
+Packet number 93 (Sequence Number 21) added to list.
+
+Packet number 94 (Sequence Number 22) added to list.
+
+Packet number 95 (Sequence Number 23) added to list.
+
+Packet number 96 (Sequence Number 0) added to list.
+
+Packet number 97 (Sequence Number 1) added to list.
+
+Packet number 98 (Sequence Number 2) added to list.
+
+Packet number 99 (Sequence Number 3) added to list.
+
+Packet number 100 (Sequence Number 4) added to list.
+
+Packet number 101 (Sequence Number 5) added to list.
+
+Packet number 102 (Sequence Number 6) added to list.
+
+Packet number 103 (Sequence Number 7) added to list.
+
+Packet number 104 (Sequence Number 8) added to list.
+
+Packet number 105 (Sequence Number 9) added to list.
+
+Packet number 106 (Sequence Number 10) added to list.
+
+Packet number 107 (Sequence Number 11) added to list.
+
+Packet number 108 (Sequence Number 12) added to list.
+
+Packet number 109 (Sequence Number 13) added to list.
+
+Packet number 110 (Sequence Number 14) added to list.
+
+Packet number 111 (Sequence Number 15) added to list.
+
+Packet number 112 (Sequence Number 16) added to list.
+
+Packet number 113 (Sequence Number 17) added to list.
+
+Packet number 114 (Sequence Number 18) added to list.
+
+Packet number 115 (Sequence Number 19) added to list.
+
+Packet number 116 (Sequence Number 20) added to list.
+
+Packet number 117 (Sequence Number 21) added to list.
+
+Packet number 118 (Sequence Number 22) added to list.
+
+Packet number 119 (Sequence Number 23) added to list.
+
+Packet number 120 (Sequence Number 0) added to list.
+
+Packet number 121 (Sequence Number 1) added to list.
+
+Packet number 122 (Sequence Number 2) added to list.
+
+Packet number 123 (Sequence Number 3) added to list.
+
+Packet number 124 (Sequence Number 4) added to list.
+
+Packet number 125 (Sequence Number 5) added to list.
+
+Packet number 126 (Sequence Number 6) added to list.
+
+Packet number 127 (Sequence Number 7) added to list.
+
+Packet number 128 (Sequence Number 8) added to list.
+
+Packet number 129 (Sequence Number 9) added to list.
+
+Packet number 130 (Sequence Number 10) added to list.
+
+Packet number 131 (Sequence Number 11) added to list.
+
+Packet number 132 (Sequence Number 12) added to list.
+
+Packet number 133 (Sequence Number 13) added to list.
+
+Packet number 134 (Sequence Number 14) added to list.
+
+Packet number 135 (Sequence Number 15) added to list.
+
+Packet number 136 (Sequence Number 16) added to list.
+
+Packet number 137 (Sequence Number 17) added to list.
+
+Packet number 138 (Sequence Number 18) added to list.
+
+Packet number 139 (Sequence Number 19) added to list.
+
+Packet number 140 (Sequence Number 20) added to list.
+
+Packet number 141 (Sequence Number 21) added to list.
+
+Packet number 142 (Sequence Number 22) added to list.
+
+Packet number 143 (Sequence Number 23) added to list.
+
+Packet number 144 (Sequence Number 0) added to list.
+
+Packet number 145 (Sequence Number 1) added to list.
+
+Packet number 146 (Sequence Number 2) added to list.
+
+Packet number 147 (Sequence Number 3) added to list.
+
+Packet number 148 (Sequence Number 4) added to list.
+
+Packet number 149 (Sequence Number 5) added to list.
+
+Packet number 150 (Sequence Number 6) added to list.
+
+Packet number 151 (Sequence Number 7) added to list.
+
+Packet number 152 (Sequence Number 8) added to list.
+
+Packet number 153 (Sequence Number 9) added to list.
+
+Packet number 154 (Sequence Number 10) added to list.
+
+Packet number 155 (Sequence Number 11) added to list.
+
+Packet number 156 (Sequence Number 12) added to list.
+
+Packet number 157 (Sequence Number 13) added to list.
+
+Packet number 158 (Sequence Number 14) added to list.
+
+Packet number 159 (Sequence Number 15) added to list.
+
+Packet number 160 (Sequence Number 16) added to list.
+
+Packet number 161 (Sequence Number 17) added to list.
+
+Packet number 162 (Sequence Number 18) added to list.
+
+Packet number 163 (Sequence Number 19) added to list.
+
+Packet number 164 (Sequence Number 20) added to list.
+
+Packet number 165 (Sequence Number 21) added to list.
+
+Packet number 166 (Sequence Number 22) added to list.
+
+Packet number 167 (Sequence Number 23) added to list.
+
+Packet number 168 (Sequence Number 0) added to list.
+
+Packet number 169 (Sequence Number 1) added to list.
+
+Packet number 170 (Sequence Number 2) added to list.
+
+Packet number 171 (Sequence Number 3) added to list.
+
+Packet number 172 (Sequence Number 4) added to list.
+
+Packet number 173 (Sequence Number 5) added to list.
+
+Packet number 174 (Sequence Number 6) added to list.
+
+Server sent packet 0
+
+Server sent packet 1
+
+Server sent packet 2
+
+Server sent packet 3
+
+Server sent packet 4
+
+Server sent packet 5
+
+Server sent packet 6
+
+Server sent packet 7
+
+Server received ACK for packet 0 with sequence number 0
+
+Window moved 1 to 8
+
+Server sent packet 8 with sequence number 8
+
+Server received ACK for packet 1 with sequence number 1
+
+Window moved 2 to 9
+
+Server sent packet 9 with sequence number 9
+
+Server received NAK--CORRUPTION for packet 2 Sequence# 2
+Resending packet.
+
+Server received ACK for packet 3 with sequence number 3
+
+Server received ACK for packet 4 with sequence number 4
+
+Server received ACK for packet 5 with sequence number 5
+
+Server received ACK for packet 6 with sequence number 6
+
+Server received ACK for packet 7 with sequence number 7
+
+Server received NAK--CORRUPTION for packet 8 Sequence# 8
+Resending packet.
+
+Server received ACK for packet 9 with sequence number 9
+
+Server received ACK for packet 2 with sequence number 2
+
+Window moved 3 to 10
+
+Window moved 4 to 11
+
+Window moved 5 to 12
+
+Window moved 6 to 13
+
+Window moved 7 to 14
+
+Window moved 8 to 15
+
+Server sent packet 10 with sequence number 10
+
+Server sent packet 11 with sequence number 11
+
+Server sent packet 12 with sequence number 12
+
+Server sent packet 13 with sequence number 13
+
+Server sent packet 14 with sequence number 14
+
+Server sent packet 15 with sequence number 15
+
+Server received ACK for packet 8 with sequence number 8
+
+Window moved 9 to 16
+
+Window moved 10 to 17
+
+Server sent packet 16 with sequence number 16
+
+Server sent packet 17 with sequence number 17
+
+Timeout 10 Sequence #: 10
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 11 Sequence# 11
+Resending packet.
+
+Server received ACK for packet 12 with sequence number 12
+
+Server received ACK for packet 13 with sequence number 13
+
+Server received ACK for packet 14 with sequence number 14
+
+Server received NAK--CORRUPTION for packet 15 Sequence# 15
+Resending packet.
+
+Server received ACK for packet 16 with sequence number 16
+
+Server received ACK for packet 17 with sequence number 17
+
+Server received NAK--CORRUPTION for packet 10 Sequence# 10
+Resending packet.
+
+Server received ACK for packet 11 with sequence number 11
+
+Timeout 15 Sequence #: 15
+Resending packet.
+
+Server received ACK for packet 10 with sequence number 10
+
+Window moved 11 to 18
+
+Window moved 12 to 19
+
+Window moved 13 to 20
+
+Window moved 14 to 21
+
+Window moved 15 to 22
+
+Server sent packet 18 with sequence number 18
+
+Server sent packet 19 with sequence number 19
+
+Server sent packet 20 with sequence number 20
+
+Server sent packet 21 with sequence number 21
+
+Server sent packet 22 with sequence number 22
+
+Server received ACK for packet 15 with sequence number 15
+
+Window moved 16 to 23
+
+Window moved 17 to 24
+
+Window moved 18 to 25
+
+Server sent packet 23 with sequence number 23
+
+Server sent packet 24 with sequence number 0
+
+Server sent packet 25 with sequence number 1
+
+Server received ACK for packet 18 with sequence number 18
+
+Window moved 19 to 26
+
+Server sent packet 26 with sequence number 2
+
+Server received NAK--CORRUPTION for packet 19 Sequence# 19
+Resending packet.
+
+Server received ACK for packet 20 with sequence number 20
+
+Server received ACK for packet 21 with sequence number 21
+
+Server received ACK for packet 22 with sequence number 22
+
+Timeout 23 Sequence #: 23
+Resending packet.
+
+Server received ACK for packet 24 with sequence number 0
+
+Server received ACK for packet 25 with sequence number 1
+
+Server received ACK for packet 26 with sequence number 2
+
+Server received ACK for packet 19 with sequence number 19
+
+Window moved 20 to 27
+
+Window moved 21 to 28
+
+Window moved 22 to 29
+
+Window moved 23 to 30
+
+Server sent packet 27 with sequence number 3
+
+Server sent packet 28 with sequence number 4
+
+Server sent packet 29 with sequence number 5
+
+Server sent packet 30 with sequence number 6
+
+Server received ACK for packet 23 with sequence number 23
+
+Window moved 24 to 31
+
+Window moved 25 to 32
+
+Window moved 26 to 33
+
+Window moved 27 to 34
+
+Server sent packet 31 with sequence number 7
+
+Server sent packet 32 with sequence number 8
+
+Server sent packet 33 with sequence number 9
+
+Server sent packet 34 with sequence number 10
+
+Server received ACK for packet 27 with sequence number 3
+
+Window moved 28 to 35
+
+Server sent packet 35 with sequence number 11
+
+Server received ACK for packet 28 with sequence number 4
+
+Window moved 29 to 36
+
+Server sent packet 36 with sequence number 12
+
+Server received ACK for packet 29 with sequence number 5
+
+Window moved 30 to 37
+
+Server sent packet 37 with sequence number 13
+
+Timeout 30 Sequence #: 6
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 31 Sequence# 7
+Resending packet.
+
+Server received ACK for packet 32 with sequence number 8
+
+Server received ACK for packet 33 with sequence number 9
+
+Timeout 34 Sequence #: 10
+Resending packet.
+
+Server received ACK for packet 35 with sequence number 11
+
+Timeout 36 Sequence #: 12
+Resending packet.
+
+Server received ACK for packet 37 with sequence number 13
+
+Server received ACK for packet 30 with sequence number 6
+
+Window moved 31 to 38
+
+Server sent packet 38 with sequence number 14
+
+Server received ACK for packet 31 with sequence number 7
+
+Window moved 32 to 39
+
+Window moved 33 to 40
+
+Window moved 34 to 41
+
+Server sent packet 39 with sequence number 15
+
+Server sent packet 40 with sequence number 16
+
+Server sent packet 41 with sequence number 17
+
+Server received ACK for packet 34 with sequence number 10
+
+Window moved 35 to 42
+
+Window moved 36 to 43
+
+Server sent packet 42 with sequence number 18
+
+Server sent packet 43 with sequence number 19
+
+Server received ACK for packet 36 with sequence number 12
+
+Window moved 37 to 44
+
+Window moved 38 to 45
+
+Server sent packet 44 with sequence number 20
+
+Server sent packet 45 with sequence number 21
+
+Server received ACK for packet 38 with sequence number 14
+
+Window moved 39 to 46
+
+Server sent packet 46 with sequence number 22
+
+Server received NAK--CORRUPTION for packet 39 Sequence# 15
+Resending packet.
+
+Timeout 40 Sequence #: 16
+Resending packet.
+
+Timeout 41 Sequence #: 17
+Resending packet.
+
+Server received ACK for packet 42 with sequence number 18
+
+Server received NAK--CORRUPTION for packet 43 Sequence# 19
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 44 Sequence# 20
+Resending packet.
+
+Server received ACK for packet 45 with sequence number 21
+
+Server received ACK for packet 46 with sequence number 22
+
+Server received ACK for packet 39 with sequence number 15
+
+Window moved 40 to 47
+
+Server sent packet 47 with sequence number 23
+
+Server received ACK for packet 40 with sequence number 16
+
+Window moved 41 to 48
+
+Server sent packet 48 with sequence number 0
+
+Server received ACK for packet 41 with sequence number 17
+
+Window moved 42 to 49
+
+Window moved 43 to 50
+
+Server sent packet 49 with sequence number 1
+
+Server sent packet 50 with sequence number 2
+
+Server received ACK for packet 43 with sequence number 19
+
+Window moved 44 to 51
+
+Server sent packet 51 with sequence number 3
+
+Server received ACK for packet 44 with sequence number 20
+
+Window moved 45 to 52
+
+Window moved 46 to 53
+
+Window moved 47 to 54
+
+Server sent packet 52 with sequence number 4
+
+Server sent packet 53 with sequence number 5
+
+Server sent packet 54 with sequence number 6
+
+Server received ACK for packet 47 with sequence number 23
+
+Window moved 48 to 55
+
+Server sent packet 55 with sequence number 7
+
+Server received NAK--CORRUPTION for packet 48 Sequence# 0
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 49 Sequence# 1
+Resending packet.
+
+Server received ACK for packet 50 with sequence number 2
+
+Server received ACK for packet 51 with sequence number 3
+
+Server received ACK for packet 52 with sequence number 4
+
+Server received ACK for packet 53 with sequence number 5
+
+Server received ACK for packet 54 with sequence number 6
+
+Server received ACK for packet 55 with sequence number 7
+
+Server received ACK for packet 48 with sequence number 0
+
+Window moved 49 to 56
+
+Server sent packet 56 with sequence number 8
+
+Server received ACK for packet 49 with sequence number 1
+
+Window moved 50 to 57
+
+Window moved 51 to 58
+
+Window moved 52 to 59
+
+Window moved 53 to 60
+
+Window moved 54 to 61
+
+Window moved 55 to 62
+
+Window moved 56 to 63
+
+Server sent packet 57 with sequence number 9
+
+Server sent packet 58 with sequence number 10
+
+Server sent packet 59 with sequence number 11
+
+Server sent packet 60 with sequence number 12
+
+Server sent packet 61 with sequence number 13
+
+Server sent packet 62 with sequence number 14
+
+Server sent packet 63 with sequence number 15
+
+Server received NAK--CORRUPTION for packet 56 Sequence# 8
+Resending packet.
+
+Server received ACK for packet 57 with sequence number 9
+
+Server received ACK for packet 58 with sequence number 10
+
+Server received ACK for packet 59 with sequence number 11
+
+Server received ACK for packet 60 with sequence number 12
+
+Server received ACK for packet 61 with sequence number 13
+
+Server received NAK--CORRUPTION for packet 62 Sequence# 14
+Resending packet.
+
+Server received ACK for packet 63 with sequence number 15
+
+Timeout 56 Sequence #: 8
+Resending packet.
+
+Server received ACK for packet 62 with sequence number 14
+
+Server received ACK for packet 56 with sequence number 8
+
+Window moved 57 to 64
+
+Window moved 58 to 65
+
+Window moved 59 to 66
+
+Window moved 60 to 67
+
+Window moved 61 to 68
+
+Window moved 62 to 69
+
+Window moved 63 to 70
+
+Window moved 64 to 71
+
+Server sent packet 64 with sequence number 16
+
+Server sent packet 65 with sequence number 17
+
+Server sent packet 66 with sequence number 18
+
+Server sent packet 67 with sequence number 19
+
+Server sent packet 68 with sequence number 20
+
+Server sent packet 69 with sequence number 21
+
+Server sent packet 70 with sequence number 22
+
+Server sent packet 71 with sequence number 23
+
+Server received ACK for packet 64 with sequence number 16
+
+Window moved 65 to 72
+
+Server sent packet 72 with sequence number 0
+
+Server received ACK for packet 65 with sequence number 17
+
+Window moved 66 to 73
+
+Server sent packet 73 with sequence number 1
+
+Server received ACK for packet 66 with sequence number 18
+
+Window moved 67 to 74
+
+Server sent packet 74 with sequence number 2
+
+Server received NAK--CORRUPTION for packet 67 Sequence# 19
+Resending packet.
+
+Server received ACK for packet 68 with sequence number 20
+
+Server received ACK for packet 69 with sequence number 21
+
+Server received ACK for packet 70 with sequence number 22
+
+Timeout 71 Sequence #: 23
+Resending packet.
+
+Server received ACK for packet 72 with sequence number 0
+
+Server received ACK for packet 73 with sequence number 1
+
+Server received ACK for packet 74 with sequence number 2
+
+Server received ACK for packet 67 with sequence number 19
+
+Window moved 68 to 75
+
+Window moved 69 to 76
+
+Window moved 70 to 77
+
+Window moved 71 to 78
+
+Server sent packet 75 with sequence number 3
+
+Server sent packet 76 with sequence number 4
+
+Server sent packet 77 with sequence number 5
+
+Server sent packet 78 with sequence number 6
+
+Server received ACK for packet 71 with sequence number 23
+
+Window moved 72 to 79
+
+Window moved 73 to 80
+
+Window moved 74 to 81
+
+Window moved 75 to 82
+
+Server sent packet 79 with sequence number 7
+
+Server sent packet 80 with sequence number 8
+
+Server sent packet 81 with sequence number 9
+
+Server sent packet 82 with sequence number 10
+
+Server received ACK for packet 75 with sequence number 3
+
+Window moved 76 to 83
+
+Server sent packet 83 with sequence number 11
+
+Server received ACK for packet 76 with sequence number 4
+
+Window moved 77 to 84
+
+Server sent packet 84 with sequence number 12
+
+Timeout 77 Sequence #: 5
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 78 Sequence# 6
+Resending packet.
+
+Server received ACK for packet 79 with sequence number 7
+
+Server received ACK for packet 80 with sequence number 8
+
+Server received ACK for packet 81 with sequence number 9
+
+Server received ACK for packet 82 with sequence number 10
+
+Server received NAK--CORRUPTION for packet 83 Sequence# 11
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 84 Sequence# 12
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 77 Sequence# 5
+Resending packet.
+
+Server received ACK for packet 78 with sequence number 6
+
+Server received NAK--CORRUPTION for packet 83 Sequence# 11
+Resending packet.
+
+Server received ACK for packet 84 with sequence number 12
+
+Timeout 77 Sequence #: 5
+Resending packet.
+
+Server received ACK for packet 83 with sequence number 11
+
+Server received ACK for packet 77 with sequence number 5
+
+Window moved 78 to 85
+
+Window moved 79 to 86
+
+Window moved 80 to 87
+
+Window moved 81 to 88
+
+Window moved 82 to 89
+
+Window moved 83 to 90
+
+Window moved 84 to 91
+
+Window moved 85 to 92
+
+Server sent packet 85 with sequence number 13
+
+Server sent packet 86 with sequence number 14
+
+Server sent packet 87 with sequence number 15
+
+Server sent packet 88 with sequence number 16
+
+Server sent packet 89 with sequence number 17
+
+Server sent packet 90 with sequence number 18
+
+Server sent packet 91 with sequence number 19
+
+Server sent packet 92 with sequence number 20
+
+Timeout 85 Sequence #: 13
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 86 Sequence# 14
+Resending packet.
+
+Server received ACK for packet 87 with sequence number 15
+
+Server received NAK--CORRUPTION for packet 88 Sequence# 16
+Resending packet.
+
+Server received ACK for packet 89 with sequence number 17
+
+Server received ACK for packet 90 with sequence number 18
+
+Timeout 91 Sequence #: 19
+Resending packet.
+
+Server received ACK for packet 92 with sequence number 20
+
+Server received ACK for packet 85 with sequence number 13
+
+Window moved 86 to 93
+
+Server sent packet 93 with sequence number 21
+
+Server received NAK--CORRUPTION for packet 86 Sequence# 14
+Resending packet.
+
+Server received ACK for packet 88 with sequence number 16
+
+Server received ACK for packet 91 with sequence number 19
+
+Server received ACK for packet 93 with sequence number 21
+
+Server received ACK for packet 86 with sequence number 14
+
+Window moved 87 to 94
+
+Window moved 88 to 95
+
+Window moved 89 to 96
+
+Window moved 90 to 97
+
+Window moved 91 to 98
+
+Window moved 92 to 99
+
+Window moved 93 to 100
+
+Window moved 94 to 101
+
+Server sent packet 94 with sequence number 22
+
+Server sent packet 95 with sequence number 23
+
+Server sent packet 96 with sequence number 0
+
+Server sent packet 97 with sequence number 1
+
+Server sent packet 98 with sequence number 2
+
+Server sent packet 99 with sequence number 3
+
+Server sent packet 100 with sequence number 4
+
+Server sent packet 101 with sequence number 5
+
+Server received ACK for packet 94 with sequence number 22
+
+Window moved 95 to 102
+
+Server sent packet 102 with sequence number 6
+
+Server received ACK for packet 95 with sequence number 23
+
+Window moved 96 to 103
+
+Server sent packet 103 with sequence number 7
+
+Server received ACK for packet 96 with sequence number 0
+
+Window moved 97 to 104
+
+Server sent packet 104 with sequence number 8
+
+Server received ACK for packet 97 with sequence number 1
+
+Window moved 98 to 105
+
+Server sent packet 105 with sequence number 9
+
+Server received NAK--CORRUPTION for packet 98 Sequence# 2
+Resending packet.
+
+Server received ACK for packet 99 with sequence number 3
+
+Server received NAK--CORRUPTION for packet 100 Sequence# 4
+Resending packet.
+
+Server received ACK for packet 101 with sequence number 5
+
+Timeout 102 Sequence #: 6
+Resending packet.
+
+Server received ACK for packet 103 with sequence number 7
+
+Server received ACK for packet 104 with sequence number 8
+
+Server received ACK for packet 105 with sequence number 9
+
+Timeout 98 Sequence #: 2
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 100 Sequence# 4
+Resending packet.
+
+Server received ACK for packet 102 with sequence number 6
+
+Server received ACK for packet 98 with sequence number 2
+
+Window moved 99 to 106
+
+Window moved 100 to 107
+
+Server sent packet 106 with sequence number 10
+
+Server sent packet 107 with sequence number 11
+
+Server received ACK for packet 100 with sequence number 4
+
+Window moved 101 to 108
+
+Window moved 102 to 109
+
+Window moved 103 to 110
+
+Window moved 104 to 111
+
+Window moved 105 to 112
+
+Window moved 106 to 113
+
+Server sent packet 108 with sequence number 12
+
+Server sent packet 109 with sequence number 13
+
+Server sent packet 110 with sequence number 14
+
+Server sent packet 111 with sequence number 15
+
+Server sent packet 112 with sequence number 16
+
+Server sent packet 113 with sequence number 17
+
+Server received ACK for packet 106 with sequence number 10
+
+Window moved 107 to 114
+
+Server sent packet 114 with sequence number 18
+
+Server received ACK for packet 107 with sequence number 11
+
+Window moved 108 to 115
+
+Server sent packet 115 with sequence number 19
+
+Server received NAK--CORRUPTION for packet 108 Sequence# 12
+Resending packet.
+
+Timeout 109 Sequence #: 13
+Resending packet.
+
+Server received ACK for packet 110 with sequence number 14
+
+Server received ACK for packet 111 with sequence number 15
+
+Server received ACK for packet 112 with sequence number 16
+
+Server received NAK--CORRUPTION for packet 113 Sequence# 17
+Resending packet.
+
+Server received ACK for packet 114 with sequence number 18
+
+Server received ACK for packet 115 with sequence number 19
+
+Server received ACK for packet 108 with sequence number 12
+
+Window moved 109 to 116
+
+Server sent packet 116 with sequence number 20
+
+Server received ACK for packet 109 with sequence number 13
+
+Window moved 110 to 117
+
+Window moved 111 to 118
+
+Window moved 112 to 119
+
+Window moved 113 to 120
+
+Server sent packet 117 with sequence number 21
+
+Server sent packet 118 with sequence number 22
+
+Server sent packet 119 with sequence number 23
+
+Server sent packet 120 with sequence number 0
+
+Server received NAK--CORRUPTION for packet 113 Sequence# 17
+Resending packet.
+
+Server received ACK for packet 116 with sequence number 20
+
+Server received ACK for packet 117 with sequence number 21
+
+Server received NAK--CORRUPTION for packet 118 Sequence# 22
+Resending packet.
+
+Server received ACK for packet 119 with sequence number 23
+
+Server received ACK for packet 120 with sequence number 0
+
+Server received ACK for packet 113 with sequence number 17
+
+Window moved 114 to 121
+
+Window moved 115 to 122
+
+Window moved 116 to 123
+
+Window moved 117 to 124
+
+Window moved 118 to 125
+
+Server sent packet 121 with sequence number 1
+
+Server sent packet 122 with sequence number 2
+
+Server sent packet 123 with sequence number 3
+
+Server sent packet 124 with sequence number 4
+
+Server sent packet 125 with sequence number 5
+
+Server received ACK for packet 118 with sequence number 22
+
+Window moved 119 to 126
+
+Window moved 120 to 127
+
+Window moved 121 to 128
+
+Server sent packet 126 with sequence number 6
+
+Server sent packet 127 with sequence number 7
+
+Server sent packet 128 with sequence number 8
+
+Server received ACK for packet 121 with sequence number 1
+
+Window moved 122 to 129
+
+Server sent packet 129 with sequence number 9
+
+Server received NAK--CORRUPTION for packet 122 Sequence# 2
+Resending packet.
+
+Server received ACK for packet 123 with sequence number 3
+
+Server received ACK for packet 124 with sequence number 4
+
+Server received ACK for packet 125 with sequence number 5
+
+Server received ACK for packet 126 with sequence number 6
+
+Server received ACK for packet 127 with sequence number 7
+
+Server received NAK--CORRUPTION for packet 128 Sequence# 8
+Resending packet.
+
+Server received ACK for packet 129 with sequence number 9
+
+Timeout 122 Sequence #: 2
+Resending packet.
+
+Server received ACK for packet 128 with sequence number 8
+
+Server received ACK for packet 122 with sequence number 2
+
+Window moved 123 to 130
+
+Window moved 124 to 131
+
+Window moved 125 to 132
+
+Window moved 126 to 133
+
+Window moved 127 to 134
+
+Window moved 128 to 135
+
+Window moved 129 to 136
+
+Window moved 130 to 137
+
+Server sent packet 130 with sequence number 10
+
+Server sent packet 131 with sequence number 11
+
+Server sent packet 132 with sequence number 12
+
+Server sent packet 133 with sequence number 13
+
+Server sent packet 134 with sequence number 14
+
+Server sent packet 135 with sequence number 15
+
+Server sent packet 136 with sequence number 16
+
+Server sent packet 137 with sequence number 17
+
+Server received ACK for packet 130 with sequence number 10
+
+Window moved 131 to 138
+
+Server sent packet 138 with sequence number 18
+
+Server received ACK for packet 131 with sequence number 11
+
+Window moved 132 to 139
+
+Server sent packet 139 with sequence number 19
+
+Server received ACK for packet 132 with sequence number 12
+
+Window moved 133 to 140
+
+Server sent packet 140 with sequence number 20
+
+Timeout 133 Sequence #: 13
+Resending packet.
+
+Server received ACK for packet 134 with sequence number 14
+
+Server received NAK--CORRUPTION for packet 135 Sequence# 15
+Resending packet.
+
+Server received ACK for packet 136 with sequence number 16
+
+Timeout 137 Sequence #: 17
+Resending packet.
+
+Server received ACK for packet 138 with sequence number 18
+
+Server received ACK for packet 139 with sequence number 19
+
+Server received ACK for packet 140 with sequence number 20
+
+Server received ACK for packet 133 with sequence number 13
+
+Window moved 134 to 141
+
+Window moved 135 to 142
+
+Server sent packet 141 with sequence number 21
+
+Server sent packet 142 with sequence number 22
+
+Server received NAK--CORRUPTION for packet 135 Sequence# 15
+Resending packet.
+
+Server received ACK for packet 137 with sequence number 17
+
+Server received ACK for packet 141 with sequence number 21
+
+Server received ACK for packet 142 with sequence number 22
+
+Server received ACK for packet 135 with sequence number 15
+
+Window moved 136 to 143
+
+Window moved 137 to 144
+
+Window moved 138 to 145
+
+Window moved 139 to 146
+
+Window moved 140 to 147
+
+Window moved 141 to 148
+
+Window moved 142 to 149
+
+Window moved 143 to 150
+
+Server sent packet 143 with sequence number 23
+
+Server sent packet 144 with sequence number 0
+
+Server sent packet 145 with sequence number 1
+
+Server sent packet 146 with sequence number 2
+
+Server sent packet 147 with sequence number 3
+
+Server sent packet 148 with sequence number 4
+
+Server sent packet 149 with sequence number 5
+
+Server sent packet 150 with sequence number 6
+
+Server received NAK--CORRUPTION for packet 143 Sequence# 23
+Resending packet.
+
+Timeout 144 Sequence #: 0
+Resending packet.
+
+Server received ACK for packet 145 with sequence number 1
+
+Server received NAK--CORRUPTION for packet 146 Sequence# 2
+Resending packet.
+
+Server received ACK for packet 147 with sequence number 3
+
+Server received NAK--CORRUPTION for packet 148 Sequence# 4
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 149 Sequence# 5
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 150 Sequence# 6
+Resending packet.
+
+Server received ACK for packet 143 with sequence number 23
+
+Window moved 144 to 151
+
+Server sent packet 151 with sequence number 7
+
+Server received NAK--CORRUPTION for packet 144 Sequence# 0
+Resending packet.
+
+Server received ACK for packet 146 with sequence number 2
+
+Timeout 148 Sequence #: 4
+Resending packet.
+
+Server received ACK for packet 149 with sequence number 5
+
+Server received NAK--CORRUPTION for packet 150 Sequence# 6
+Resending packet.
+
+Server received ACK for packet 151 with sequence number 7
+
+Server received ACK for packet 144 with sequence number 0
+
+Window moved 145 to 152
+
+Window moved 146 to 153
+
+Window moved 147 to 154
+
+Window moved 148 to 155
+
+Server sent packet 152 with sequence number 8
+
+Server sent packet 153 with sequence number 9
+
+Server sent packet 154 with sequence number 10
+
+Server sent packet 155 with sequence number 11
+
+Timeout 148 Sequence #: 4
+Resending packet.
+
+Server received ACK for packet 150 with sequence number 6
+
+Server received ACK for packet 152 with sequence number 8
+
+Server received ACK for packet 153 with sequence number 9
+
+Server received ACK for packet 154 with sequence number 10
+
+Server received ACK for packet 155 with sequence number 11
+
+Server received NAK--CORRUPTION for packet 148 Sequence# 4
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 148 Sequence# 4
+Resending packet.
+
+Server received ACK for packet 148 with sequence number 4
+
+Window moved 149 to 156
+
+Window moved 150 to 157
+
+Window moved 151 to 158
+
+Window moved 152 to 159
+
+Window moved 153 to 160
+
+Window moved 154 to 161
+
+Window moved 155 to 162
+
+Window moved 156 to 163
+
+Server sent packet 156 with sequence number 12
+
+Server sent packet 157 with sequence number 13
+
+Server sent packet 158 with sequence number 14
+
+Server sent packet 159 with sequence number 15
+
+Server sent packet 160 with sequence number 16
+
+Server sent packet 161 with sequence number 17
+
+Server sent packet 162 with sequence number 18
+
+Server sent packet 163 with sequence number 19
+
+Server received NAK--CORRUPTION for packet 156 Sequence# 12
+Resending packet.
+
+Server received NAK--CORRUPTION for packet 157 Sequence# 13
+Resending packet.
+
+Server received ACK for packet 158 with sequence number 14
+
+Server received ACK for packet 159 with sequence number 15
+
+Server received ACK for packet 160 with sequence number 16
+
+Server received ACK for packet 161 with sequence number 17
+
+Server received ACK for packet 162 with sequence number 18
+
+Server received ACK for packet 163 with sequence number 19
+
+Server received ACK for packet 156 with sequence number 12
+
+Window moved 157 to 164
+
+Server sent packet 164 with sequence number 20
+
+Server received NAK--CORRUPTION for packet 157 Sequence# 13
+Resending packet.
+
+Server received ACK for packet 164 with sequence number 20
+
+Server received ACK for packet 157 with sequence number 13
+
+Window moved 158 to 165
+
+Window moved 159 to 166
+
+Window moved 160 to 167
+
+Window moved 161 to 168
+
+Window moved 162 to 169
+
+Window moved 163 to 170
+
+Window moved 164 to 171
+
+Window moved 165 to 172
+
+Server sent packet 165 with sequence number 21
+
+Server sent packet 166 with sequence number 22
+
+Server sent packet 167 with sequence number 23
+
+Server sent packet 168 with sequence number 0
+
+Server sent packet 169 with sequence number 1
+
+Server sent packet 170 with sequence number 2
+
+Server sent packet 171 with sequence number 3
+
+Server sent packet 172 with sequence number 4
+
+Server received NAK--CORRUPTION for packet 165 Sequence# 21
+Resending packet.
+
+Server received ACK for packet 166 with sequence number 22
+
+Server received NAK--CORRUPTION for packet 167 Sequence# 23
+Resending packet.
+
+Server received ACK for packet 168 with sequence number 0
+
+Server received ACK for packet 169 with sequence number 1
+
+Server received NAK--CORRUPTION for packet 170 Sequence# 2
+Resending packet.
+
+Server received ACK for packet 171 with sequence number 3
+
+Server received NAK--CORRUPTION for packet 172 Sequence# 4
+Resending packet.
+
+Server received ACK for packet 165 with sequence number 21
+
+Window moved 166 to 173
+
+Window moved 167 to 174
+
+Server sent packet 173 with sequence number 5
+
+Server sent packet 174 with sequence number 6
+
+Server received ACK for packet 167 with sequence number 23
+
+Window moved 168 to 175
+
+Window moved 169 to 176
+
+Window moved 170 to 177
+
+Server received ACK for packet 170 with sequence number 2
+
+Window moved 171 to 178
+
+Window moved 172 to 179
+
+Server received ACK for packet 172 with sequence number 4
+
+Window moved 173 to 180
+
+Server received ACK for packet 173 with sequence number 5
+
+Window moved 174 to 181
+
+Server received ACK for packet 174 with sequence number 6
+
+Window moved 175 to 182
+
+
+
+***SERVER FILE TRANSMISSION COMPLETE***
+
+
+bash-4.2$ exit
+
+Script done on Thu 26 Jul 2018 04:18:21 PM CDT

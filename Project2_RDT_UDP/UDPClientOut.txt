@@ -1,0 +1,2374 @@
+Script started on Thu 26 Jul 2018 04:17:14 PM CDT
+[?1034hbash-4.2$ java UDPServer Latin-Lipsum.txt 10003[C[C[C[C[C[C[C[C[C[Cls[Kcd COMP4320vim UDPClient.java[C[C[C[C[C[C[C[C[C[Cjava UDPClient 10003 0.5[K[K[K[K[K1 0.2 0.2
+
+Initial request packet sent to server.
+
+Client sent packet # 0  to client gremlin.
+--Checksum values OK--
+Packet # 0 of 174: NOT CORRUPTED
+
+ACK for packet number 0
+
+Window moved 1 to 8
+
+MESSAGE(Packet# 0): [Lorem ipsum dolor sit amet, ei qui erant persius. Ludus meliore epicurei et nam, eu vitae sensibus mei. Noster theophrastus eu eum. Mucius impedit comprehensam sit et, an ius integre veritus, quo in errem deseruisse incorrupte. Propriae evertitur no cum, has modus aperiam mediocritatem id, nisl prima deseruisse an ius., , Ceteros percipitur consequuntur et nec. Ludus causae no quo. Postulant consequuntur mel ex. Aeterno recusabo intellegebat ut per. Cu ferri feugiat denique vix, signiferumque concl
+Client received packet number 0of174
+
+Client sent packet # 1  to client gremlin.
+--Checksum values OK--
+Packet # 1 of 174: NOT CORRUPTED
+
+ACK for packet number 1
+
+Window moved 2 to 9
+
+MESSAGE(Packet# 1): usionemque te usu., , Malorum maluisset persequeris ea sea, vim no inani impedit argumentum. His ignota complectitur ut, recusabo dignissim definitiones ea nam. Impetus facilisi comprehensam vix an. Vim utinam laoreet habemus id, cu homero facilisis imperdiet per. Dignissim voluptatum no mea, ea ponderum temporibus ius. Vel eu audiam nominati evertitur, probo tantas quidam vis id, recteque persequeris id mel. Ex ignota libris integre has., , Delectus recusabo euripidis ne ius, vix ne movet simul ali
+Client received packet number 1of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 2
+
+Client sent packet # 3  to client gremlin.
+--Checksum values OK--
+Packet # 3 of 174: NOT CORRUPTED
+
+ACK for packet number 3
+
+MESSAGE(Packet# 3):  nostrum eos ex, per laoreet verterem oportere ut. Nisl utroque has ut, commune posidonium cotidieque ex vim. In sea habemus consequuntur, semper discere senserit at nec., , Ea denique postulant vix, at nonumy accusamus sed, nam viderer persius no. Sit te graecis adipiscing, et quidam eirmod nominati quo. Sonet solet deterruisset et cum. Id eos simul dolor possit, purto solum accusam mel ut., , Cu duo omnes libris. Omnis cetero per an. Corpora scribentur adversarium pri eu. Vis ullum tritani indoctu
+Client received packet number 3of174
+
+Client sent packet # 4  to client gremlin.
+--Checksum values OK--
+Packet # 4 of 174: NOT CORRUPTED
+
+ACK for packet number 4
+
+MESSAGE(Packet# 4): m id, nullam voluptatum ex eam, no malis accommodare per. Ne vis quod copiosae, te libris everti comprehensam pri. Assentior contentiones no mei, duo eu wisi liberavisse instructior., , Mei in exerci recusabo quaestio, mei in abhorreant sententiae, his in legere insolens complectitur. Vim quas ocurreret ut, at erat reque labores has. Ius mediocrem incorrupte conclusionemque ne. An vis eruditi impedit fierent, nec ut rebum homero. Nam et oportere imperdiet, omnesque convenire tractatos id eos., , Idq
+Client received packet number 4of174
+
+Client sent packet # 5  to client gremlin.
+--Checksum values OK--
+Packet # 5 of 174: NOT CORRUPTED
+
+ACK for packet number 5
+
+MESSAGE(Packet# 5): ue harum dolorum cu pro, ad sit nobis essent. Te tale bonorum eruditi pri. Ex vis probo tibique repudiare. Quo iisque ponderum democritum ea, in mei veniam tamquam accumsan., , Vix no quem argumentum omittantur, reque putent ad pro. Eam in wisi aeque, illud inermis salutandi cum ea. Ius mollis commodo omittam te, est sumo officiis ex. Erat volutpat mea at, ad eos alia dicant sapientem, nemore fabulas cum ad. Sed et dicam iudicabit expetendis, mea summo elitr et., , Sit modo vivendo eligendi no. Ius 
+Client received packet number 5of174
+
+Client sent packet # 6  to client gremlin.
+--Checksum values OK--
+Packet # 6 of 174: NOT CORRUPTED
+
+ACK for packet number 6
+
+MESSAGE(Packet# 6): in antiopam deterruisset, ei altera convenire vix, ex tale deleniti vulputate qui. Admodum alienum efficiendi mea ei, nam admodum dissentias quaerendum cu. Persequeris vituperatoribus cu duo, at vitae recteque quo. Usu decore nominavi at, pri cu debet accommodare., , Ea eum electram constituam. Qui ut rebum equidem prodesset. Vim sapientem consulatu no, nam soleat feugiat placerat ut. Has eu nullam fastidii, id his sumo assentior disputationi. Altera epicurei ut eos, ex mea alia splendide, cum ei pe
+Client received packet number 6of174
+
+Client sent packet # 7  to client gremlin.
+--Checksum values OK--
+Packet # 7 of 174: NOT CORRUPTED
+
+ACK for packet number 7
+
+MESSAGE(Packet# 7): riculis laboramus theophrastus., , Qui reque latine ex, dolore feugait disputando nec eu. Quo no quando consul mediocrem, et reque fuisset noluisse vel, ut mei liber choro. Pri no velit definiebas, cu stet delectus pri, id modus fierent sadipscing sed. Per eu error mnesarchum, ex mea iisque sapientem gloriatur. Error alterum nonumes at sea., , Graeci integre principes eam ex, summo eirmod consulatu ad duo, eum cu minimum lucilius argumentum. Expetenda posidonium at vix. Ei mei ferri paulo, ne mei ob
+Client received packet number 7of174
+
+Client sent packet # 8  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46798, EXPECTED checksum: 46963
+Packet # 8 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 8
+
+Client sent packet # 9  to client gremlin.
+--Checksum values OK--
+Packet # 9 of 174: NOT CORRUPTED
+
+ACK for packet number 9
+
+MESSAGE(Packet# 9):  Id vidisse officiis pri, his iudico deseruisse no, has ne petentium scriptorem. Discere delicatissimi te est. Sed no omnes persecuti, his no cibo ubique nemore. Id case modus vim, mei velit denique in. Quo id doming cotidieque, his ne ullum mediocrem complectitur, ea est volumus molestie electram. Harum copiosae qualisque nam at, sit deleniti quaestio neglegentur te., , Facilis delectus maiestatis vis in, at pri augue labores. Pro homero scribentur no. Wisi voluptatibus vim ea, mediocrem persequeri
+Client received packet number 9of174
+
+Client sent packet # 2  to client gremlin.
+--Checksum values OK--
+Packet # 2 of 174: NOT CORRUPTED
+
+ACK for packet number 2
+
+Window moved 3 to 10
+
+Window moved 4 to 11
+
+Window moved 5 to 12
+
+Window moved 6 to 13
+
+Window moved 7 to 14
+
+Window moved 8 to 15
+
+MESSAGE(Packet# 2): enum. Eu illud honestatis consectetuer usu. Quodsi theophrastus id sit, iuvaret appellantur duo an. Ei quo novum laoreet, mel et tantas appetere, an quo detraxit disputationi. Mei libris labitur quaerendum ne, mea omittam hendrerit dissentiunt te, vocent voluptatibus ex usu. Pri ad quem inermis salutatus, idque utinam no duo, meis nostrud fabellas mei ne. Ne nulla feugiat scriptorem nec, at pri assum detraxit, cu case porro concludaturque mei., , Stet postea no usu, inermis hendrerit eu pri. Oblique
+Client received packet number 2of174
+
+Client sent packet # 8  to client gremlin.
+--Checksum values OK--
+Packet # 8 of 174: NOT CORRUPTED
+
+ACK for packet number 8
+
+Window moved 9 to 16
+
+Window moved 10 to 17
+
+MESSAGE(Packet# 8): lique evertitur. No odio diam theophrastus his, mel habemus efficiantur ea., , Nam ad tritani aliquid, quo unum nullam ancillae ne, est impetus antiopam te. Vix consul evertitur sententiae an, ad est nonumy pertinacia disputationi, mea id facer postea maluisset. No mei quod omnium theophrastus, mei assum mnesarchum te, et his populo perfecto. Lorem delicata ut sit, soleat persius ullamcorper ius id, rebum doming intellegebat ei pri. Est graeco melius vocent at. Et nec eirmod iudicabit sadipscing., ,
+Client received packet number 8of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 10
+
+Client sent packet # 11  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46535, EXPECTED checksum: 47074
+Packet # 11 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 11
+
+Client sent packet # 12  to client gremlin.
+--Checksum values OK--
+Packet # 12 of 174: NOT CORRUPTED
+
+ACK for packet number 12
+
+MESSAGE(Packet# 12): cripta fabulas ad nam, vim harum habemus in. Id quaeque iracundia percipitur est, ad liber scribentur per, autem accommodare pro ad. No summo nostrum eloquentiam usu, mel at falli consul everti. Facilisis elaboraret eos ex, ferri dissentiunt signiferumque eos id., , Ea sanctus percipitur cotidieque cum, nec maluisset persequeris id. Cum ex omnes affert. Nullam efficiendi eos cu, pro ne ludus repudiare. Porro fastidii deterruisset ne usu, ei vero verterem euripidis quo. Has erant impetus et. Et eam d
+Client received packet number 12of174
+
+Client sent packet # 13  to client gremlin.
+--Checksum values OK--
+Packet # 13 of 174: NOT CORRUPTED
+
+ACK for packet number 13
+
+MESSAGE(Packet# 13): icam mucius assentior, ei integre fabellas quo., , Rebum eloquentiam eam no. Pro cu nonumy electram democritum, mei in ferri dolorum appellantur. Eos id graeci assueverit. Graeco everti discere pro id, no qui laboramus similique instructior, an vim mentitum urbanitas disputando. Ex mei admodum tibique conclusionemque, vis docendi deleniti concludaturque in., , Ea vituperata adversarium delicatissimi sea, tollit suavitate ne sit. Cu sumo quas has, nec persius platonem signiferumque ei. Nisl verterem 
+Client received packet number 13of174
+
+Client sent packet # 14  to client gremlin.
+--Checksum values OK--
+Packet # 14 of 174: NOT CORRUPTED
+
+ACK for packet number 14
+
+MESSAGE(Packet# 14): scribentur eum an. Commodo principes nec te, nam prima singulis ad, id vidisse recusabo adversarium his. Ne eam prima exerci graecis. Luptatum senserit dissentias duo at, eum id consul officiis, ridens utroque ut cum., , Pri ponderum vituperata scribentur ut, probo augue essent cu eam. Ad paulo doming adipisci mei, nam quas minim ea. Sea te euismod fuisset tacimates, eu eruditi corrumpit nec, et malorum veritus sit. Vix percipit petentium voluptaria at, exerci persius theophrastus ius eu. No reque a
+Client received packet number 14of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 15
+
+Client sent packet # 16  to client gremlin.
+--Checksum values OK--
+Packet # 16 of 174: NOT CORRUPTED
+
+ACK for packet number 16
+
+MESSAGE(Packet# 16): uta temporibus nec, nemore fabulas accusata ei ius, tractatos definiebas no mei. Ex per stet dicat, dicta vidisse ad per. Per in sale iudico, eu pri scripta appetere., , Nam et melius salutandi comprehensam. Impetus aliquam sit eu, mea aeque persequeris ut, alii sint senserit te qui. No pro fabellas moderatius, quot salutandi cu per. Ne ignota ridens commune has, harum denique no has, his stet adhuc justo id., , Tota facilisi comprehensam sed eu, vim cu erant dictas electram. Atqui vivendo nam ex, t
+Client received packet number 16of174
+
+Client sent packet # 17  to client gremlin.
+--Checksum values OK--
+Packet # 17 of 174: NOT CORRUPTED
+
+ACK for packet number 17
+
+MESSAGE(Packet# 17): ota nusquam lucilius ne sea, ne veniam periculis vulputate cum. Ut iracundia scriptorem mel. Nam mucius fabulas ex. Ei veri timeam assentior quo. Eum in tota suscipit constituam, an impetus phaedrum quo, ne his putent labore graeco., , Has liber causae splendide ei. Eu dico mediocritatem nam, ut mundi aperiam has, ea quo possim accumsan voluptatibus. Ut amet meliore disputando mea, mea ad mundi choro consequat, ea agam inani euismod vim. Ei mea quem tempor prompta, nam at possit nostrum. Omnium equi
+Client received packet number 17of174
+
+Client sent packet # 10  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46724, EXPECTED checksum: 46786
+Packet # 10 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 10
+
+Client sent packet # 11  to client gremlin.
+--Checksum values OK--
+Packet # 11 of 174: NOT CORRUPTED
+
+ACK for packet number 11
+
+MESSAGE(Packet# 11): m interpretaris eos cu, et mel utinam consequat incorrupte. Id vis laoreet civibus hendrerit, id movet graeci denique duo., , Pri nostrum postulant reformidans an. Iriure denique ne mel, ei munere indoctum duo, fuisset fabellas sententiae ea pri. Apeirian contentiones sed eu, idque errem facilisis et mea. Alienum aliquando honestatis vim ea, vim putent nostrum laboramus ei., , Accumsan explicari quaerendum vix ut, eam id periculis euripidis consequat, duo dicant possim et. Has vero quas te, dolore s
+Client received packet number 11of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 15
+
+Client sent packet # 10  to client gremlin.
+--Checksum values OK--
+Packet # 10 of 174: NOT CORRUPTED
+
+ACK for packet number 10
+
+Window moved 11 to 18
+
+Window moved 12 to 19
+
+Window moved 13 to 20
+
+Window moved 14 to 21
+
+Window moved 15 to 22
+
+MESSAGE(Packet# 10): s neglegentur cu sed, nonumy timeam ad ius. No corpora apeirian quo, an vix impedit epicuri dissentias. Cu nec utinam periculis., , Sit porro debet legimus ne. Laboramus pertinacia intellegam no est, phaedrum elaboraret signiferumque ius id. Eam ne fabulas accusam, pri no abhorreant accommodare. Ut nec wisi cetero iuvaret, vix nullam epicuri senserit te., , Usu magna modus eu. Ipsum partem noluisse ex eos. Eius eirmod no nam, id homero primis fabulas eos, ex pri putant imperdiet. Patrioque voluptatu
+Client received packet number 10of174
+
+Client sent packet # 15  to client gremlin.
+--Checksum values OK--
+Packet # 15 of 174: NOT CORRUPTED
+
+ACK for packet number 15
+
+Window moved 16 to 23
+
+Window moved 17 to 24
+
+Window moved 18 to 25
+
+MESSAGE(Packet# 15): periam accumsan sit, eum tation nusquam insolens id, ea diam labore docendi mei., , Ad per harum volutpat. Eum verear graecis antiopam et, at mei ullum suscipit. Duo ne possim insolens reformidans, quis amet audiam qui te. At eum verear recusabo, ea libris ancillae assentior eos, cum accusata consectetuer no. Vix probo oratio molestie ut, sea id liber congue quando, ex mei clita molestie disputando. Ut eam nulla intellegebat delicatissimi., , Ea alii appetere vel, mei eu mediocrem scribentur. Cu sol
+Client received packet number 15of174
+
+Client sent packet # 18  to client gremlin.
+--Checksum values OK--
+Packet # 18 of 174: NOT CORRUPTED
+
+ACK for packet number 18
+
+Window moved 19 to 26
+
+MESSAGE(Packet# 18): dem ceteros qui et, cum et alii sanctus, case causae voluptaria ea est., , Ne posse feugait consetetur vim, dicat eripuit eam ad, ius omnis suscipiantur comprehensam ne. Eu elitr consul necessitatibus cum, diam tincidunt ex usu, te nam adhuc scripserit. Ius ei brute principes, eu quo debet dicant vituperata. Eruditi persequeris sit id, quodsi sententiae instructior vis ex, eos at clita molestiae. Posse iracundia cu nam, inermis pericula ad vel. His quot intellegebat ut, albucius indoctum assueverit 
+Client received packet number 18of174
+
+Client sent packet # 19  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46799, EXPECTED checksum: 46886
+Packet # 19 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 19
+
+Client sent packet # 20  to client gremlin.
+--Checksum values OK--
+Packet # 20 of 174: NOT CORRUPTED
+
+ACK for packet number 20
+
+MESSAGE(Packet# 20): pudiandae vis, eam augue altera nonumes id, dicam scaevola per at., , Qui mazim dicam gubergren et, vim habeo dolores contentiones ei. Pro te minim vocibus oportere, quidam aperiam sit ut, ei aeque noluisse accusata eos. Te iudico eleifend maluisset sit. Eam alterum mandamus eu. Melius argumentum ad sea, ius in omnium mediocrem honestatis. Qui quaeque voluptatum an., , Te aliquid epicuri officiis mei. Has id meis paulo, mea docendi prodesset ex, eu facilisi signiferumque sed. Cum ornatus atomorum cu
+Client received packet number 20of174
+
+Client sent packet # 21  to client gremlin.
+--Checksum values OK--
+Packet # 21 of 174: NOT CORRUPTED
+
+ACK for packet number 21
+
+MESSAGE(Packet# 21): , scaevola signiferumque sed eu. Eam ad paulo gubergren, ad sonet putant dolorum mel, cu viris evertitur dissentiunt qui. Id vim mundi mollis integre., , Ei his audire expetenda, populo audiam moderatius vis no. Duo assum semper partiendo te, at modo errem dissentiunt mea. Vim quis nusquam definitionem in, commune verterem pro in, odio philosophia pri an. Idque inimicus an duo, ea errem copiosae percipit sit, pro et munere adolescens., , Dolorum theophrastus ius eu. Gloriatur reprimique disputando a
+Client received packet number 21of174
+
+Client sent packet # 22  to client gremlin.
+--Checksum values OK--
+Packet # 22 of 174: NOT CORRUPTED
+
+ACK for packet number 22
+
+MESSAGE(Packet# 22): t qui, eu est magna volumus. Nec aeterno urbanitas at. No atqui etiam accusata mei, vim te case equidem urbanitas., , Pri probo alterum habemus an. Duo te tritani labitur scriptorem, et usu ferri doctus referrentur, eum urbanitas intellegam delicatissimi ea. Malis dicunt at sed. Bonorum salutatus temporibus in mea. Vis reque melius te, ne pri quot quaeque, ad dicant cetero utamur pro. Quo aeque virtute petentium eu, fuisset volutpat ei duo., , Ex nec tantas postulant, et his veniam timeam. Pri no to
+Client received packet number 22of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 23
+
+Client sent packet # 24  to client gremlin.
+--Checksum values OK--
+Packet # 24 of 174: NOT CORRUPTED
+
+ACK for packet number 24
+
+MESSAGE(Packet# 24):  mel veniam oporteat et. Has eu populo nemore suscipiantur. Veniam commodo ocurreret usu ei. Laoreet commune voluptatibus no sea. Nulla perfecto nam te., , Habeo moderatius ne his, elit feugiat vix ne. Per hinc dicat dignissim an, eu eos lorem commodo disputationi. Quod alterum pericula vix cu. Ad cum legere interpretaris. Cu vide minimum placerat quo, vel id quas docendi complectitur, et meis quas commodo eum. Nusquam elaboraret vel at., , Cum aeterno sanctus appellantur ex, in nam indoctum adipisc
+Client received packet number 24of174
+
+Client sent packet # 25  to client gremlin.
+--Checksum values OK--
+Packet # 25 of 174: NOT CORRUPTED
+
+ACK for packet number 25
+
+MESSAGE(Packet# 25): ing, propriae sententiae ex est. Vidit dicat audiam ei nam. Malorum persecuti definiebas vis cu. Cotidieque definitionem ad sed, eos ne option lucilius quaerendum., , No sed sumo nemore utamur. Pro eripuit epicurei volutpat te, qui meliore facilisis deseruisse ea, sed ut nostrum voluptaria interesset. Ea paulo audiam nec. Saepe percipitur scripserit ad sed, an dignissim neglegentur est. Vix eu quaeque sapientem. Graeco albucius delicatissimi te his., , Veri delectus duo ea, eum minim tritani te. Dic
+Client received packet number 25of174
+
+Client sent packet # 26  to client gremlin.
+--Checksum values OK--
+Packet # 26 of 174: NOT CORRUPTED
+
+ACK for packet number 26
+
+MESSAGE(Packet# 26): at ancillae apeirian et vix, est elit ponderum cu. Vitae theophrastus disputationi eu his. Principes argumentum ex quo. Sonet definitiones id sit, in his singulis pertinacia. Per ex laudem persius, essent expetenda duo ea. Eu eos minim insolens incorrupte., , Has graece eripuit ad, ius quod prompta eu, ei sit habemus consulatu hendrerit. Per indoctum adipiscing ad. Te mea tamquam postulant, duo audire aliquip constituam eu, mel et atqui exerci. Eu eum democritum scribentur, quas novum tamquam ad sea
+Client received packet number 26of174
+
+Client sent packet # 19  to client gremlin.
+--Checksum values OK--
+Packet # 19 of 174: NOT CORRUPTED
+
+ACK for packet number 19
+
+Window moved 20 to 27
+
+Window moved 21 to 28
+
+Window moved 22 to 29
+
+Window moved 23 to 30
+
+MESSAGE(Packet# 19): ne pri., , Vix interesset suscipiantur ea, illum aperiam moderatius est ne, sea maiorum eleifend at. Appareat definitiones eum ea, ei labitur legimus detracto usu. Nisl putent at est. Pro summo viris persius ad. Iudico iriure ponderum et vix, ne possim mandamus est, detraxit deterruisset ea quo., , Et dolorem iracundia per, tale nominavi reformidans cu qui. Ea mel nulla utinam. At ius sonet definitionem concludaturque. Vel affert civibus ut. In mei alterum laoreet interesset. An postea mnesarchum re
+Client received packet number 19of174
+
+Client sent packet # 23  to client gremlin.
+--Checksum values OK--
+Packet # 23 of 174: NOT CORRUPTED
+
+ACK for packet number 23
+
+Window moved 24 to 31
+
+Window moved 25 to 32
+
+Window moved 26 to 33
+
+Window moved 27 to 34
+
+MESSAGE(Packet# 23): llit reformidans contentiones, sit audiam oportere ex, eum case erat delicatissimi ne. Mea corpora percipitur ad, vel alia summo deseruisse ut. Appareat percipit has ne., , Has eu vivendum honestatis. Vis in putent vocent. Mei ne graeci intellegebat. Ius dolor repudiare te, vis diam cetero scripta te. Ei modus posse similique his, eu liber dolore assueverit est., , Graeci cetero mea no, per quodsi veritus copiosae ad, facer equidem comprehensam per no. Iusto nihil vocibus eos cu, ne has paulo dolor,
+Client received packet number 23of174
+
+Client sent packet # 27  to client gremlin.
+--Checksum values OK--
+Packet # 27 of 174: NOT CORRUPTED
+
+ACK for packet number 27
+
+Window moved 28 to 35
+
+MESSAGE(Packet# 27): , ius no suas debitis. Est cu similique rationibus, quem iuvaret eu pro, saepe conceptam cu eum. Sit ea dicant legimus, quo offendit hendrerit ex, mel alienum persequeris consectetuer ne. Ei noster malorum fuisset pro, ad autem ubique facilis eos., , Ne sed consul civibus phaedrum. Dolorum senserit signiferumque pri ne, has alii impedit cu, ius eu malis dolore nostrum. Te sed sumo recusabo, cu eos eligendi facilisis. Vel an omnium explicari democritum, etiam nullam est at., , Eum in discere fabulas 
+Client received packet number 27of174
+
+Client sent packet # 28  to client gremlin.
+--Checksum values OK--
+Packet # 28 of 174: NOT CORRUPTED
+
+ACK for packet number 28
+
+Window moved 29 to 36
+
+MESSAGE(Packet# 28): constituam. Vim no minimum signiferumque. Pri ut vidit graeco, eam no detracto instructior. Sit at viderer disputando philosophia, vis illud porro ex, vix nibh adversarium eu. Suas tacimates vim ut, ea cum modo hinc, eros simul sanctus cum an., , Te cum omnium reprehendunt, elitr senserit his eu. Cetero tractatos principes te usu, nam te sonet veniam eruditi, qui vocibus luptatum necessitatibus in. Modus aeque ut quo, sint saepe ius ex. Cu ius dico alia quidam, id admodum insolens nam., , Dictas ali
+Client received packet number 28of174
+
+Client sent packet # 29  to client gremlin.
+--Checksum values OK--
+Packet # 29 of 174: NOT CORRUPTED
+
+ACK for packet number 29
+
+Window moved 30 to 37
+
+MESSAGE(Packet# 29): enum iudicabit no pri. Nam eros tollit electram ei, sed natum iisque fierent ad. Impedit urbanitas at his. No bonorum scribentur conclusionemque eam, corpora conceptam efficiantur cum id., , Est id similique concludaturque, prima intellegat dissentiet ius ei. Vis salutatus interesset ex, has cu malis epicuri. His fuisset inciderint te. Commodo ponderum sed no, volutpat facilisis vis ut., , Eos te postulant eloquentiam. Audire labitur oportere sea no, vel commune conceptam assueverit an, cu duo labor
+Client received packet number 29of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 30
+
+Client sent packet # 31  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 47215, EXPECTED checksum: 47195
+Packet # 31 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 31
+
+Client sent packet # 32  to client gremlin.
+--Checksum values OK--
+Packet # 32 of 174: NOT CORRUPTED
+
+ACK for packet number 32
+
+MESSAGE(Packet# 32): serit quo., , Nonumes euripidis id duo, et dicat novum eam. Id etiam liber interesset pri, vidisse docendi verterem an nam. Sumo putent delectus ius ad, nam ea laboramus temporibus, suscipit consetetur honestatis per ex. Regione feugiat fabulas ne vix, per adhuc dicit no. Alii quando tation quo at. Ius ex erat phaedrum, eos ad erat affert consetetur. Ea duo stet ocurreret., , Alii doming civibus ut usu, autem commodo nominavi ut vix. Sea aperiam fierent ex. Mea justo legere rationibus ea, fuisset pe
+Client received packet number 32of174
+
+Client sent packet # 33  to client gremlin.
+--Checksum values OK--
+Packet # 33 of 174: NOT CORRUPTED
+
+ACK for packet number 33
+
+MESSAGE(Packet# 33): rtinax eam in, molestie patrioque ei duo. Mel et semper eirmod adipiscing, ad sed maiestatis repudiandae, his oratio viderer eu. An eam aperiam accusata maluisset, ea duo sonet habemus. Magna quando commune sit ne., , Magna zril et mea. Ridens debitis platonem ad mel, movet adipisci consetetur ea sed, erat melius dignissim eu his. Novum iracundia repudiandae no vel, mea legere labore accommodare id, eam phaedrum mediocrem ne. In ius soluta volumus dissentiunt., , Et congue prompta senserit vix. Tati
+Client received packet number 33of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 34
+
+Client sent packet # 35  to client gremlin.
+--Checksum values OK--
+Packet # 35 of 174: NOT CORRUPTED
+
+ACK for packet number 35
+
+MESSAGE(Packet# 35): plicari ea. Te sit fugit congue, duo dicant invenire ad. Phaedrum delicatissimi vix no, copiosae tacimates per an. Audiam principes cu sea, at euripidis definitionem sea, his facete numquam ut. Ea legere eligendi maluisset quo, ea eos iusto detraxit. Electram instructior no usu, tacimates pericula est eu, ne mel propriae postulant definitiones. Sint facete usu cu, mei audire singulis at., , Eu erat numquam omnesque sit, ex has singulis deseruisse. Fugit adolescens nam an. Et mel semper inermis expli
+Client received packet number 35of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 36
+
+Client sent packet # 37  to client gremlin.
+--Checksum values OK--
+Packet # 37 of 174: NOT CORRUPTED
+
+ACK for packet number 37
+
+MESSAGE(Packet# 37): lum principes constituam ad. Ea tritani efficiantur definitiones nec. Ea vim voluptatum persequeris, ut amet ridens quo, ut graeco tamquam mea. Pri tritani intellegam appellantur ne, has oratio ocurreret at., , Eum ad doctus aliquip oblique, an zril interesset has. In quo novum utroque, no nam fabulas periculis. Iudico tritani ea vim. Eam case lorem mazim ei, per feugiat erroribus an. Ne qui verterem expetendis., , Nec et agam nonumes invenire. Vel ne scripta persius officiis, sea et verterem assent
+Client received packet number 37of174
+
+Client sent packet # 30  to client gremlin.
+--Checksum values OK--
+Packet # 30 of 174: NOT CORRUPTED
+
+ACK for packet number 30
+
+Window moved 31 to 38
+
+MESSAGE(Packet# 30): es meliore tibique. Ut vis ancillae interpretaris, urbanitas sententiae ullamcorper usu no. Quo fuisset vulputate eu., , Per magna nullam docendi ad, albucius neglegentur ad duo. Suas numquam menandri qui no, ex idque labores sed. Eum nonumy feugait deterruisset at, nec ea case dolorum. At solet corpora similique sed. Eam perfecto legendos mediocritatem ne, id eam omnes prodesset, ei eos putent ornatus. Audiam iriure noluisse id vix, sed falli dissentias in, eu justo scribentur his., , Pro ceteros p
+Client received packet number 30of174
+
+Client sent packet # 31  to client gremlin.
+--Checksum values OK--
+Packet # 31 of 174: NOT CORRUPTED
+
+ACK for packet number 31
+
+Window moved 32 to 39
+
+Window moved 33 to 40
+
+Window moved 34 to 41
+
+MESSAGE(Packet# 31): artiendo at, pro cu vide appellantur. Id mandamus eloquentiam ius. Dicit graecis atomorum vis ad, at mei veri ullum, ius epicurei periculis eu. Nihil postea duo at. Mutat atqui euripidis ad sit. Est expetenda complectitur ea, ea justo idque menandri mei, pro prima error percipitur no., , Quaestio expetenda salutatus ei nec, id qui aliquip pertinax. Eos ut consul alterum sententiae, utroque inimicus expetendis quo ut. Vix unum conclusionemque ad, aeque pertinacia forensibus sea ei. Ne euripidis scrip
+Client received packet number 31of174
+
+Client sent packet # 34  to client gremlin.
+--Checksum values OK--
+Packet # 34 of 174: NOT CORRUPTED
+
+ACK for packet number 34
+
+Window moved 35 to 42
+
+Window moved 36 to 43
+
+MESSAGE(Packet# 34): on ponderum per id. Tibique forensibus moderatius vix in. Eum graeco quaestio omittantur ne, eos nonumes suscipit ocurreret eu. Ex nam omnium meliore mnesarchum., , Corrumpit pertinacia mei at, an option aliquip offendit cum, nam legendos consectetuer eu. Soluta civibus liberavisse mel ea, an quo utamur legimus repudiandae. In has nostrud fuisset suscipit, nonumes mandamus erroribus vix ad. Tation facilis complectitur ad per., , Mazim scribentur quo te, vix te scaevola adversarium, vis sint errem ex
+Client received packet number 34of174
+
+Client sent packet # 36  to client gremlin.
+--Checksum values OK--
+Packet # 36 of 174: NOT CORRUPTED
+
+ACK for packet number 36
+
+Window moved 37 to 44
+
+Window moved 38 to 45
+
+MESSAGE(Packet# 36): cari, his ne nibh fastidii postulant. Viderer impedit conclusionemque ei has., , Vel nominavi reprimique consectetuer ea, est mazim recusabo ex. Vocent virtute antiopam mei no, pro copiosae appellantur at. Eu nec prima eruditi, ex solum tollit luptatum duo. Nam te porro dolor vocibus, ad facilisis vituperata duo., , Vis purto nostrum ne, id eum commodo feugait. In corpora splendide nec. Summo gloriatur ad sit. Sed ignota aperiam sanctus no, an sed mutat illud dolor., , Eam lorem explicari ei, cum il
+Client received packet number 36of174
+
+Client sent packet # 38  to client gremlin.
+--Checksum values OK--
+Packet # 38 of 174: NOT CORRUPTED
+
+ACK for packet number 38
+
+Window moved 39 to 46
+
+MESSAGE(Packet# 38): ior. Falli indoctum eam id, ex virtute euismod civibus nam. Ea aliquid eloquentiam cum, volutpat accusamus deterruisset eu vix, has modus nominati oportere ei. Sed an perfecto nominati quaerendum., , Ex vel vituperata instructior, iisque appellantur ad per, ex summo electram periculis eum. Pro in mucius putant sapientem, ei vel dicat doming. Ne duo sonet salutatus aliquando. At vel disputando instructior, idque soleat postulant ei usu. Te vix dolor aeterno. Dolores hendrerit cu est, ea sea aperiri b
+Client received packet number 38of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 39
+
+Client sent packet # 40  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46288, EXPECTED checksum: 46342
+Packet # 40 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 40
+
+Client sent packet # 41  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46276, EXPECTED checksum: 46660
+Packet # 41 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 41
+
+Client sent packet # 42  to client gremlin.
+--Checksum values OK--
+Packet # 42 of 174: NOT CORRUPTED
+
+ACK for packet number 42
+
+MESSAGE(Packet# 42): ear phaedrum id. Duo eu cibo erant eloquentiam. Pro ex alienum delicata inciderint, etiam adolescens eos at. Ius nulla invenire ut, probo nulla eu vim. Dicta utinam fabellas cum at., , Delicata concludaturque his at, ea ius nonumy aliquip aperiri, sit quod ludus propriae in. Cibo vidit scripta cum ut, ei ignota deleniti sit. At vim adolescens complectitur, te electram contentiones per. Usu ex semper aperiri quaestio. Essent numquam dissentiunt sit ei, ei duo altera delicata senserit., , Mei liber ce
+Client received packet number 42of174
+
+Client sent packet # 43  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46416, EXPECTED checksum: 46581
+Packet # 43 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 43
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 44
+
+Client sent packet # 45  to client gremlin.
+--Checksum values OK--
+Packet # 45 of 174: NOT CORRUPTED
+
+ACK for packet number 45
+
+MESSAGE(Packet# 45): um scripta accusam dissentiunt, et pri alia paulo, nec vero nemore ne. Mea probo pertinacia voluptatum te. Justo animal ei cum, te melius fuisset nam. Duis tamquam quo ad, eu mea adipisci corrumpit interesset., , Eos vero congue discere ei. Vix liber similique deseruisse cu, delicata elaboraret dissentias vix at, suas repudiare pro ex. Oblique apeirian referrentur mei ne, erant adipisci ius ad. Tota aeterno pro ne. Vel ad nominavi scribentur, nulla abhorreant et quo. In fuisset mentitum suscipiantur
+Client received packet number 45of174
+
+Client sent packet # 46  to client gremlin.
+--Checksum values OK--
+Packet # 46 of 174: NOT CORRUPTED
+
+ACK for packet number 46
+
+MESSAGE(Packet# 46):  eam, in evertitur voluptaria disputando ius., , Periculis voluptatum eloquentiam his te. An alia legimus pertinacia sit, veniam impedit argumentum cu nec. Fugit delectus his ut, cum ea oratio inermis quaerendum. Denique assueverit scribentur has at, vim harum electram ad. Timeam recteque in sea, nonumes indoctum accusamus eum ex. Ius etiam fastidii id, labore tamquam minimum id ius. Ad utamur legimus scriptorem sit., , Iusto consequat quaerendum id sit. At est inani deterruisset. Elit reprimique es
+Client received packet number 46of174
+
+Client sent packet # 39  to client gremlin.
+--Checksum values OK--
+Packet # 39 of 174: NOT CORRUPTED
+
+ACK for packet number 39
+
+Window moved 40 to 47
+
+MESSAGE(Packet# 39): onorum accommodare., , Sit ea posse adipiscing consequuntur, no has pertinax mediocritatem, has tempor tritani nusquam ea. Ei eam tibique ullamcorper reprehendunt, ne omnes delenit maluisset cum. Falli mazim te per, case falli alienum ea eum. Te putent inimicus ius. Eu soluta audire has. Ei alia ignota nostrud vix., , Cu ius causae vocent vocibus. Tota habeo dicit id ius. Dicant reformidans te cum. Ex antiopam sapientem adolescens pro. Fabulas utroque repudiare sed at, vel ad solum perpetua, sea por
+Client received packet number 39of174
+
+Client sent packet # 40  to client gremlin.
+--Checksum values OK--
+Packet # 40 of 174: NOT CORRUPTED
+
+ACK for packet number 40
+
+Window moved 41 to 48
+
+MESSAGE(Packet# 40): ro eruditi urbanitas id. No nec mucius dolores, ea nemore laoreet partiendo eum. Noster forensibus ea nam., , Duo augue prodesset cu, ne solum dicat sed. Pri enim audiam at, at sed offendit gubergren. Te per possit malorum euismod, oratio aliquip ne pri. Eam ex reque elaboraret, eos ut possit tamquam. Id graeci vocibus vis, case veri meis ea usu. Vis ea amet ipsum aliquip, mel regione nominavi sententiae ei., , Dicat inermis voluptatibus per ut. Singulis conceptam ne quo, stet ludus neglegentur qui 
+Client received packet number 40of174
+
+Client sent packet # 41  to client gremlin.
+--Checksum values OK--
+Packet # 41 of 174: NOT CORRUPTED
+
+ACK for packet number 41
+
+Window moved 42 to 49
+
+Window moved 43 to 50
+
+MESSAGE(Packet# 41): ei. Sit ea enim quodsi, idque everti has id. Munere soleat ut duo, consul tincidunt percipitur eu ius, alienum qualisque ut mea. Oratio altera interesset te ius., , Errem forensibus id per. Vim exerci antiopam oportere in, quo laudem abhorreant suscipiantur ne. Affert nonumes quaerendum eum et, id mel nobis efficiendi, ne essent accumsan mnesarchum vix. Tempor noster habemus id pro, suas altera et sea, id novum melius sit., , Semper expetendis moderatius vel ad. Vix solet aperiam tibique ea, sit ver
+Client received packet number 41of174
+
+Client sent packet # 43  to client gremlin.
+--Checksum values OK--
+Packet # 43 of 174: NOT CORRUPTED
+
+ACK for packet number 43
+
+Window moved 44 to 51
+
+MESSAGE(Packet# 43): tero patrioque et, laoreet perfecto tincidunt an duo, semper scripta mel ne. Te ubique singulis sea, mei simul habemus ad. Mel at saperet eligendi accusamus. Eu atomorum necessitatibus mea, mutat tractatos sed ex. Est case facilisi at, alii inciderint signiferumque has ad, ne ferri definitiones mel. Clita graeci evertitur cu duo, sumo minimum insolens eum in. Pri veri gubergren pertinacia an., , Autem docendi at nec. Liber simul dolores cu duo. Graeci doming ut per, omnesque pertinacia vix eu, mel i
+Client received packet number 43of174
+
+Client sent packet # 44  to client gremlin.
+--Checksum values OK--
+Packet # 44 of 174: NOT CORRUPTED
+
+ACK for packet number 44
+
+Window moved 45 to 52
+
+Window moved 46 to 53
+
+Window moved 47 to 54
+
+MESSAGE(Packet# 44): d nemore iracundia. In deleniti argumentum sit, qui purto etiam scripserit ea. In mei magna bonorum hendrerit, usu ea veniam graeci deserunt., , Odio assum cu vis, ut mei bonorum epicuri, sed no erat decore ornatus. Ex eam nisl eros albucius, reque inermis argumentum te quo. Cu pri mazim nostrud. Equidem definitionem mea cu., , Usu ludus labores ad, nulla mundi in quo, ut phaedrum incorrupte quaerendum qui. No solum accusamus maiestatis pri, usu possim alterum copiosae in, in falli docendi vix. Et e
+Client received packet number 44of174
+
+Client sent packet # 47  to client gremlin.
+--Checksum values OK--
+Packet # 47 of 174: NOT CORRUPTED
+
+ACK for packet number 47
+
+Window moved 48 to 55
+
+MESSAGE(Packet# 47): t in, ut pri fastidii quaestio instructior. In affert accumsan ius. Ea nec mentitum splendide vulputate, veniam antiopam ut mea, mel at illud adipiscing., , Fierent constituam duo et. No mei tation disputando. Mucius appetere lucilius et pri. Et est malorum explicari. Cibo inermis ocurreret no duo, in vis sint salutandi necessitatibus. Nam graeci sapientem ad, in est causae atomorum philosophia, aliquip feugait reformidans nec in., , Ad commune salutandi assueverit sea, qui tamquam deserunt et, et v
+Client received packet number 47of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 48
+
+Client sent packet # 49  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 47053, EXPECTED checksum: 47244
+Packet # 49 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 49
+
+Client sent packet # 50  to client gremlin.
+--Checksum values OK--
+Packet # 50 of 174: NOT CORRUPTED
+
+ACK for packet number 50
+
+MESSAGE(Packet# 50):  nec ad, errem senserit vel an. Per vidit sonet cu., , Vel solum novum cetero cu. Tota semper copiosae quo id, duo et wisi primis epicuri. Nam nostrum reprehendunt no, pri id alii eius, modo movet consul ut sit. Ad sea iusto tibique, et eum ferri legere contentiones., , Odio expetendis et pro, est no congue liberavisse delicatissimi. Ea his alii vidit repudiare, quo brute partem feugiat ut, nam habeo posidonium instructior ei. Te eam ocurreret splendide. Has elitr possit reprehendunt id, pri fugit t
+Client received packet number 50of174
+
+Client sent packet # 51  to client gremlin.
+--Checksum values OK--
+Packet # 51 of 174: NOT CORRUPTED
+
+ACK for packet number 51
+
+MESSAGE(Packet# 51): imeam id., , Deserunt salutandi id has. Eos ei quodsi efficiantur, oratio intellegam eu sit. Vix alia meis mandamus in. Vocent veritus copiosae te vis, ea pro sonet percipit eloquentiam. Inermis salutatus qui an., , No cibo perfecto deseruisse est. Malorum prodesset te usu. Et eum iusto simul, est eu esse dissentiunt. Ius et corpora definitiones, mandamus neglegentur definitionem no cum. Cu his dicat viris feugiat, duo placerat ullamcorper ei., , Sea falli eripuit invenire cu. Odio menandri nominati
+Client received packet number 51of174
+
+Client sent packet # 52  to client gremlin.
+--Checksum values OK--
+Packet # 52 of 174: NOT CORRUPTED
+
+ACK for packet number 52
+
+MESSAGE(Packet# 52):  eam ea, agam nibh vis ne. Iudico utinam volumus est id, usu ad probo timeam delicatissimi. Graecis reprimique cu sea, vel copiosae prodesset ne. Ut assum fierent urbanitas duo, pri eu munere iisque, ad stet probo eos. Latine rationibus eu pro., , Oporteat vivendum reprimique et pro, mei et singulis lobortis adversarium. Justo dicunt ius ne, ut eum lorem nonumy, utinam deserunt pro ei. Ullum invenire te cum. Mel ex everti fuisset vulputate. Semper definitiones vituperatoribus et vel, antiopam partie
+Client received packet number 52of174
+
+Client sent packet # 53  to client gremlin.
+--Checksum values OK--
+Packet # 53 of 174: NOT CORRUPTED
+
+ACK for packet number 53
+
+MESSAGE(Packet# 53): ndo et sit. Pri inermis aliquando et., , Sit labore referrentur complectitur ei, sed ei adversarium definitionem. His id sumo integre, soleat rationibus his cu, vel erant inermis blandit eu. Lorem laboramus ea qui, eu delenit instructior mei. Porro virtute nam ea., , Dicam patrioque in vix, porro vivendo cu usu. Vix ad quodsi facilisis disputando, ne graece mucius perfecto usu. Vix ferri accusam mandamus eu. Odio nisl ea has, has no iracundia urbanitas constituam. Tincidunt scripserit mea ex, sit at
+Client received packet number 53of174
+
+Client sent packet # 54  to client gremlin.
+--Checksum values OK--
+Packet # 54 of 174: NOT CORRUPTED
+
+ACK for packet number 54
+
+MESSAGE(Packet# 54):  summo omnesque. Te mel tale libris, commune fastidii postulant an ius., , Ea dicit facilis deleniti mea, te per facilisi electram maiestatis. In esse harum periculis vim, ad his veniam dolore. Ad oratio percipit deseruisse eam, et vis debet omnes. Dicta omnium adolescens mei ea., , Vis id meis graeci. Cu modus eirmod iisque sit. Ut sea elit aperiam indoctum, an instructior voluptatibus qui. Ut pri aliquid percipitur., , Sit ea dicant volutpat, per cu noster constituam. Ne sea purto doming veritus, 
+Client received packet number 54of174
+
+Client sent packet # 55  to client gremlin.
+--Checksum values OK--
+Packet # 55 of 174: NOT CORRUPTED
+
+ACK for packet number 55
+
+MESSAGE(Packet# 55): suas adipisci ad sit. Ex cum saepe decore, et ipsum maluisset definiebas vis. No eos nonumy quidam mediocritatem. Elitr dicam cu eum, ex his vide putent eripuit. Per solum invidunt id, vel eu omnes mollis adipisci., , Et ipsum vitae equidem sea, pri tota iudicabit in. Usu homero dicunt at. Mea ea consul feugiat invidunt, vel brute primis forensibus in, no per nobis dicant constituto. No probo saperet cum, ut cum dolor graeco., , Ea quem principes pro. Mei ad atqui error dignissim, posse nulla vel te
+Client received packet number 55of174
+
+Client sent packet # 48  to client gremlin.
+--Checksum values OK--
+Packet # 48 of 174: NOT CORRUPTED
+
+ACK for packet number 48
+
+Window moved 49 to 56
+
+MESSAGE(Packet# 48): ivendum deterruisset vis. Te harum gloriatur sea. Inermis copiosae ullamcorper mei an, cum ea simul primis viderer, odio torquatos interesset vis te. Modus epicuri praesent pro ex, ex aperiri virtute his. Ut illum interesset per, eu sed augue democritum., , Elit cetero id nec. Et mei vitae quaeque, odio convenire mei ei. Ad corpora dissentiunt contentiones vis. Quo principes argumentum in, et petentium incorrupte honestatis eum. Ne nam regione eligendi. Cu nibh dolorem nec., , Amet verear fuisset at
+Client received packet number 48of174
+
+Client sent packet # 49  to client gremlin.
+--Checksum values OK--
+Packet # 49 of 174: NOT CORRUPTED
+
+ACK for packet number 49
+
+Window moved 50 to 57
+
+Window moved 51 to 58
+
+Window moved 52 to 59
+
+Window moved 53 to 60
+
+Window moved 54 to 61
+
+Window moved 55 to 62
+
+Window moved 56 to 63
+
+MESSAGE(Packet# 49):  has. Et munere utamur signiferumque nec, corpora euripidis adolescens te qui. Ne tincidunt appellantur sit, ex solum nobis ponderum sed. Lorem expetenda constituam has ut, cu nec duis inermis pertinax, stet virtute expetendis ne mea. Cum ipsum fuisset neglegentur eu, suas sint tibique in usu., , Id mazim eruditi theophrastus vix, enim iisque debitis et mel. Id est reque integre, laoreet accusam sapientem mei ne. Homero ancillae facilisis vel in, tale expetenda duo ad. Copiosae senserit disputationi
+Client received packet number 49of174
+
+Client sent packet # 56  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46087, EXPECTED checksum: 46306
+Packet # 56 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 56
+
+Client sent packet # 57  to client gremlin.
+--Checksum values OK--
+Packet # 57 of 174: NOT CORRUPTED
+
+ACK for packet number 57
+
+MESSAGE(Packet# 57): iscing reprehendunt eos an. Agam epicuri eloquentiam ad sea. Vim elit corpora detracto ad, per et mutat evertitur appellantur, in discere definitionem eos. Eos timeam scripta deseruisse no, mucius noster eu mea. Ut mel inani fabulas suscipit. Tota idque veritus has ex., , Meis homero quaestio has in, usu ex erant philosophia. Pri an laudem laboramus, vix probo eruditi consequat an. Id errem legere nec, sonet impedit id sit, ut docendi dignissim adolescens eam. Splendide elaboraret at ius. Duis congu
+Client received packet number 57of174
+
+Client sent packet # 58  to client gremlin.
+--Checksum values OK--
+Packet # 58 of 174: NOT CORRUPTED
+
+ACK for packet number 58
+
+MESSAGE(Packet# 58): e periculis ne his, ignota mentitum eu vim. Iracundia adversarium usu., , Lorem ipsum dolor sit amet, ei qui erant persius. Ludus meliore epicurei et nam, eu vitae sensibus mei. Noster theophrastus eu eum. Mucius impedit comprehensam sit et, an ius integre veritus, quo in errem deseruisse incorrupte. Propriae evertitur no cum, has modus aperiam mediocritatem id, nisl prima deseruisse an ius., , Ceteros percipitur consequuntur et nec. Ludus causae no quo. Postulant consequuntur mel ex. Aeterno recusa
+Client received packet number 58of174
+
+Client sent packet # 59  to client gremlin.
+--Checksum values OK--
+Packet # 59 of 174: NOT CORRUPTED
+
+ACK for packet number 59
+
+MESSAGE(Packet# 59): bo intellegebat ut per. Cu ferri feugiat denique vix, signiferumque conclusionemque te usu., , Malorum maluisset persequeris ea sea, vim no inani impedit argumentum. His ignota complectitur ut, recusabo dignissim definitiones ea nam. Impetus facilisi comprehensam vix an. Vim utinam laoreet habemus id, cu homero facilisis imperdiet per. Dignissim voluptatum no mea, ea ponderum temporibus ius. Vel eu audiam nominati evertitur, probo tantas quidam vis id, recteque persequeris id mel. Ex ignota libris i
+Client received packet number 59of174
+
+Client sent packet # 60  to client gremlin.
+--Checksum values OK--
+Packet # 60 of 174: NOT CORRUPTED
+
+ACK for packet number 60
+
+MESSAGE(Packet# 60): ntegre has., , Delectus recusabo euripidis ne ius, vix ne movet simul alienum. Eu illud honestatis consectetuer usu. Quodsi theophrastus id sit, iuvaret appellantur duo an. Ei quo novum laoreet, mel et tantas appetere, an quo detraxit disputationi. Mei libris labitur quaerendum ne, mea omittam hendrerit dissentiunt te, vocent voluptatibus ex usu. Pri ad quem inermis salutatus, idque utinam no duo, meis nostrud fabellas mei ne. Ne nulla feugiat scriptorem nec, at pri assum detraxit, cu case porro con
+Client received packet number 60of174
+
+Client sent packet # 61  to client gremlin.
+--Checksum values OK--
+Packet # 61 of 174: NOT CORRUPTED
+
+ACK for packet number 61
+
+MESSAGE(Packet# 61): cludaturque mei., , Stet postea no usu, inermis hendrerit eu pri. Oblique nostrum eos ex, per laoreet verterem oportere ut. Nisl utroque has ut, commune posidonium cotidieque ex vim. In sea habemus consequuntur, semper discere senserit at nec., , Ea denique postulant vix, at nonumy accusamus sed, nam viderer persius no. Sit te graecis adipiscing, et quidam eirmod nominati quo. Sonet solet deterruisset et cum. Id eos simul dolor possit, purto solum accusam mel ut., , Cu duo omnes libris. Omnis cetero
+Client received packet number 61of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 62
+
+Client sent packet # 63  to client gremlin.
+--Checksum values OK--
+Packet # 63 of 174: NOT CORRUPTED
+
+ACK for packet number 63
+
+MESSAGE(Packet# 63): o. Nam et oportere imperdiet, omnesque convenire tractatos id eos., , Idque harum dolorum cu pro, ad sit nobis essent. Te tale bonorum eruditi pri. Ex vis probo tibique repudiare. Quo iisque ponderum democritum ea, in mei veniam tamquam accumsan., , Vix no quem argumentum omittantur, reque putent ad pro. Eam in wisi aeque, illud inermis salutandi cum ea. Ius mollis commodo omittam te, est sumo officiis ex. Erat volutpat mea at, ad eos alia dicant sapientem, nemore fabulas cum ad. Sed et dicam iudica
+Client received packet number 63of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 56
+
+Client sent packet # 62  to client gremlin.
+--Checksum values OK--
+Packet # 62 of 174: NOT CORRUPTED
+
+ACK for packet number 62
+
+MESSAGE(Packet# 62):  per an. Corpora scribentur adversarium pri eu. Vis ullum tritani indoctum id, nullam voluptatum ex eam, no malis accommodare per. Ne vis quod copiosae, te libris everti comprehensam pri. Assentior contentiones no mei, duo eu wisi liberavisse instructior., , Mei in exerci recusabo quaestio, mei in abhorreant sententiae, his in legere insolens complectitur. Vim quas ocurreret ut, at erat reque labores has. Ius mediocrem incorrupte conclusionemque ne. An vis eruditi impedit fierent, nec ut rebum homer
+Client received packet number 62of174
+
+Client sent packet # 56  to client gremlin.
+--Checksum values OK--
+Packet # 56 of 174: NOT CORRUPTED
+
+ACK for packet number 56
+
+Window moved 57 to 64
+
+Window moved 58 to 65
+
+Window moved 59 to 66
+
+Window moved 60 to 67
+
+Window moved 61 to 68
+
+Window moved 62 to 69
+
+Window moved 63 to 70
+
+Window moved 64 to 71
+
+MESSAGE(Packet# 56): . Vel vidisse splendide id. Quidam deseruisse vel ut, te usu munere debitis torquatos, errem deserunt ad eos. Ei fabellas intellegat qui, sea copiosae intellegat te., , No his vitae vocent repudiare. Cu per laudem contentiones disputationi, falli graeci eu pro. Reque mandamus ex ius, illum legendos et eum. Te legendos assentior nam, eam tation docendi omittam ut, nam aliquip aperiri no. Deserunt principes in sit. Ne vix oratio officiis. Falli eruditi accusam nam id, alii solet qui ne., , Ignota adip
+Client received packet number 56of174
+
+Client sent packet # 64  to client gremlin.
+--Checksum values OK--
+Packet # 64 of 174: NOT CORRUPTED
+
+ACK for packet number 64
+
+Window moved 65 to 72
+
+MESSAGE(Packet# 64): bit expetendis, mea summo elitr et., , Sit modo vivendo eligendi no. Ius in antiopam deterruisset, ei altera convenire vix, ex tale deleniti vulputate qui. Admodum alienum efficiendi mea ei, nam admodum dissentias quaerendum cu. Persequeris vituperatoribus cu duo, at vitae recteque quo. Usu decore nominavi at, pri cu debet accommodare., , Ea eum electram constituam. Qui ut rebum equidem prodesset. Vim sapientem consulatu no, nam soleat feugiat placerat ut. Has eu nullam fastidii, id his sumo assenti
+Client received packet number 64of174
+
+Client sent packet # 65  to client gremlin.
+--Checksum values OK--
+Packet # 65 of 174: NOT CORRUPTED
+
+ACK for packet number 65
+
+Window moved 66 to 73
+
+MESSAGE(Packet# 65): or disputationi. Altera epicurei ut eos, ex mea alia splendide, cum ei periculis laboramus theophrastus., , Qui reque latine ex, dolore feugait disputando nec eu. Quo no quando consul mediocrem, et reque fuisset noluisse vel, ut mei liber choro. Pri no velit definiebas, cu stet delectus pri, id modus fierent sadipscing sed. Per eu error mnesarchum, ex mea iisque sapientem gloriatur. Error alterum nonumes at sea., , Graeci integre principes eam ex, summo eirmod consulatu ad duo, eum cu minimum lucili
+Client received packet number 65of174
+
+Client sent packet # 66  to client gremlin.
+--Checksum values OK--
+Packet # 66 of 174: NOT CORRUPTED
+
+ACK for packet number 66
+
+Window moved 67 to 74
+
+MESSAGE(Packet# 66): us argumentum. Expetenda posidonium at vix. Ei mei ferri paulo, ne mei oblique evertitur. No odio diam theophrastus his, mel habemus efficiantur ea., , Nam ad tritani aliquid, quo unum nullam ancillae ne, est impetus antiopam te. Vix consul evertitur sententiae an, ad est nonumy pertinacia disputationi, mea id facer postea maluisset. No mei quod omnium theophrastus, mei assum mnesarchum te, et his populo perfecto. Lorem delicata ut sit, soleat persius ullamcorper ius id, rebum doming intellegebat ei
+Client received packet number 66of174
+
+Client sent packet # 67  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46477, EXPECTED checksum: 46575
+Packet # 67 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 67
+
+Client sent packet # 68  to client gremlin.
+--Checksum values OK--
+Packet # 68 of 174: NOT CORRUPTED
+
+ACK for packet number 68
+
+MESSAGE(Packet# 68):  Pro homero scribentur no. Wisi voluptatibus vim ea, mediocrem persequeris neglegentur cu sed, nonumy timeam ad ius. No corpora apeirian quo, an vix impedit epicuri dissentias. Cu nec utinam periculis., , Sit porro debet legimus ne. Laboramus pertinacia intellegam no est, phaedrum elaboraret signiferumque ius id. Eam ne fabulas accusam, pri no abhorreant accommodare. Ut nec wisi cetero iuvaret, vix nullam epicuri senserit te., , Usu magna modus eu. Ipsum partem noluisse ex eos. Eius eirmod no nam, i
+Client received packet number 68of174
+
+Client sent packet # 69  to client gremlin.
+--Checksum values OK--
+Packet # 69 of 174: NOT CORRUPTED
+
+ACK for packet number 69
+
+MESSAGE(Packet# 69): d homero primis fabulas eos, ex pri putant imperdiet. Patrioque voluptatum interpretaris eos cu, et mel utinam consequat incorrupte. Id vis laoreet civibus hendrerit, id movet graeci denique duo., , Pri nostrum postulant reformidans an. Iriure denique ne mel, ei munere indoctum duo, fuisset fabellas sententiae ea pri. Apeirian contentiones sed eu, idque errem facilisis et mea. Alienum aliquando honestatis vim ea, vim putent nostrum laboramus ei., , Accumsan explicari quaerendum vix ut, eam id pericu
+Client received packet number 69of174
+
+Client sent packet # 70  to client gremlin.
+--Checksum values OK--
+Packet # 70 of 174: NOT CORRUPTED
+
+ACK for packet number 70
+
+MESSAGE(Packet# 70): lis euripidis consequat, duo dicant possim et. Has vero quas te, dolore scripta fabulas ad nam, vim harum habemus in. Id quaeque iracundia percipitur est, ad liber scribentur per, autem accommodare pro ad. No summo nostrum eloquentiam usu, mel at falli consul everti. Facilisis elaboraret eos ex, ferri dissentiunt signiferumque eos id., , Ea sanctus percipitur cotidieque cum, nec maluisset persequeris id. Cum ex omnes affert. Nullam efficiendi eos cu, pro ne ludus repudiare. Porro fastidii deterruiss
+Client received packet number 70of174
+
+Client sent packet # 71  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 47129, EXPECTED checksum: 47340
+Packet # 71 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 71
+
+Client sent packet # 72  to client gremlin.
+--Checksum values OK--
+Packet # 72 of 174: NOT CORRUPTED
+
+ACK for packet number 72
+
+MESSAGE(Packet# 72): . Cu sumo quas has, nec persius platonem signiferumque ei. Nisl verterem scribentur eum an. Commodo principes nec te, nam prima singulis ad, id vidisse recusabo adversarium his. Ne eam prima exerci graecis. Luptatum senserit dissentias duo at, eum id consul officiis, ridens utroque ut cum., , Pri ponderum vituperata scribentur ut, probo augue essent cu eam. Ad paulo doming adipisci mei, nam quas minim ea. Sea te euismod fuisset tacimates, eu eruditi corrumpit nec, et malorum veritus sit. Vix percipi
+Client received packet number 72of174
+
+Client sent packet # 73  to client gremlin.
+--Checksum values OK--
+Packet # 73 of 174: NOT CORRUPTED
+
+ACK for packet number 73
+
+MESSAGE(Packet# 73): t petentium voluptaria at, exerci persius theophrastus ius eu. No reque aperiam accumsan sit, eum tation nusquam insolens id, ea diam labore docendi mei., , Ad per harum volutpat. Eum verear graecis antiopam et, at mei ullum suscipit. Duo ne possim insolens reformidans, quis amet audiam qui te. At eum verear recusabo, ea libris ancillae assentior eos, cum accusata consectetuer no. Vix probo oratio molestie ut, sea id liber congue quando, ex mei clita molestie disputando. Ut eam nulla intellegebat de
+Client received packet number 73of174
+
+Client sent packet # 74  to client gremlin.
+--Checksum values OK--
+Packet # 74 of 174: NOT CORRUPTED
+
+ACK for packet number 74
+
+MESSAGE(Packet# 74): licatissimi., , Ea alii appetere vel, mei eu mediocrem scribentur. Cu soluta temporibus nec, nemore fabulas accusata ei ius, tractatos definiebas no mei. Ex per stet dicat, dicta vidisse ad per. Per in sale iudico, eu pri scripta appetere., , Nam et melius salutandi comprehensam. Impetus aliquam sit eu, mea aeque persequeris ut, alii sint senserit te qui. No pro fabellas moderatius, quot salutandi cu per. Ne ignota ridens commune has, harum denique no has, his stet adhuc justo id., , Tota facilisi c
+Client received packet number 74of174
+
+Client sent packet # 67  to client gremlin.
+--Checksum values OK--
+Packet # 67 of 174: NOT CORRUPTED
+
+ACK for packet number 67
+
+Window moved 68 to 75
+
+Window moved 69 to 76
+
+Window moved 70 to 77
+
+Window moved 71 to 78
+
+MESSAGE(Packet# 67):  pri. Est graeco melius vocent at. Et nec eirmod iudicabit sadipscing., , Id vidisse officiis pri, his iudico deseruisse no, has ne petentium scriptorem. Discere delicatissimi te est. Sed no omnes persecuti, his no cibo ubique nemore. Id case modus vim, mei velit denique in. Quo id doming cotidieque, his ne ullum mediocrem complectitur, ea est volumus molestie electram. Harum copiosae qualisque nam at, sit deleniti quaestio neglegentur te., , Facilis delectus maiestatis vis in, at pri augue labores.
+Client received packet number 67of174
+
+Client sent packet # 71  to client gremlin.
+--Checksum values OK--
+Packet # 71 of 174: NOT CORRUPTED
+
+ACK for packet number 71
+
+Window moved 72 to 79
+
+Window moved 73 to 80
+
+Window moved 74 to 81
+
+Window moved 75 to 82
+
+MESSAGE(Packet# 71): et ne usu, ei vero verterem euripidis quo. Has erant impetus et. Et eam dicam mucius assentior, ei integre fabellas quo., , Rebum eloquentiam eam no. Pro cu nonumy electram democritum, mei in ferri dolorum appellantur. Eos id graeci assueverit. Graeco everti discere pro id, no qui laboramus similique instructior, an vim mentitum urbanitas disputando. Ex mei admodum tibique conclusionemque, vis docendi deleniti concludaturque in., , Ea vituperata adversarium delicatissimi sea, tollit suavitate ne sit
+Client received packet number 71of174
+
+Client sent packet # 75  to client gremlin.
+--Checksum values OK--
+Packet # 75 of 174: NOT CORRUPTED
+
+ACK for packet number 75
+
+Window moved 76 to 83
+
+MESSAGE(Packet# 75): omprehensam sed eu, vim cu erant dictas electram. Atqui vivendo nam ex, tota nusquam lucilius ne sea, ne veniam periculis vulputate cum. Ut iracundia scriptorem mel. Nam mucius fabulas ex. Ei veri timeam assentior quo. Eum in tota suscipit constituam, an impetus phaedrum quo, ne his putent labore graeco., , Has liber causae splendide ei. Eu dico mediocritatem nam, ut mundi aperiam has, ea quo possim accumsan voluptatibus. Ut amet meliore disputando mea, mea ad mundi choro consequat, ea agam inani eu
+Client received packet number 75of174
+
+Client sent packet # 76  to client gremlin.
+--Checksum values OK--
+Packet # 76 of 174: NOT CORRUPTED
+
+ACK for packet number 76
+
+Window moved 77 to 84
+
+MESSAGE(Packet# 76): ismod vim. Ei mea quem tempor prompta, nam at possit nostrum. Omnium equidem ceteros qui et, cum et alii sanctus, case causae voluptaria ea est., , Ne posse feugait consetetur vim, dicat eripuit eam ad, ius omnis suscipiantur comprehensam ne. Eu elitr consul necessitatibus cum, diam tincidunt ex usu, te nam adhuc scripserit. Ius ei brute principes, eu quo debet dicant vituperata. Eruditi persequeris sit id, quodsi sententiae instructior vis ex, eos at clita molestiae. Posse iracundia cu nam, inermis
+Client received packet number 76of174
+
+Client sent packet # 77  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46806, EXPECTED checksum: 46890
+Packet # 77 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 77
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 78
+
+Client sent packet # 79  to client gremlin.
+--Checksum values OK--
+Packet # 79 of 174: NOT CORRUPTED
+
+ACK for packet number 79
+
+MESSAGE(Packet# 79): endi prodesset ex, eu facilisi signiferumque sed. Cum ornatus atomorum cu, scaevola signiferumque sed eu. Eam ad paulo gubergren, ad sonet putant dolorum mel, cu viris evertitur dissentiunt qui. Id vim mundi mollis integre., , Ei his audire expetenda, populo audiam moderatius vis no. Duo assum semper partiendo te, at modo errem dissentiunt mea. Vim quis nusquam definitionem in, commune verterem pro in, odio philosophia pri an. Idque inimicus an duo, ea errem copiosae percipit sit, pro et munere adol
+Client received packet number 79of174
+
+Client sent packet # 80  to client gremlin.
+--Checksum values OK--
+Packet # 80 of 174: NOT CORRUPTED
+
+ACK for packet number 80
+
+MESSAGE(Packet# 80): escens., , Dolorum theophrastus ius eu. Gloriatur reprimique disputando at qui, eu est magna volumus. Nec aeterno urbanitas at. No atqui etiam accusata mei, vim te case equidem urbanitas., , Pri probo alterum habemus an. Duo te tritani labitur scriptorem, et usu ferri doctus referrentur, eum urbanitas intellegam delicatissimi ea. Malis dicunt at sed. Bonorum salutatus temporibus in mea. Vis reque melius te, ne pri quot quaeque, ad dicant cetero utamur pro. Quo aeque virtute petentium eu, fuisset vol
+Client received packet number 80of174
+
+Client sent packet # 81  to client gremlin.
+--Checksum values OK--
+Packet # 81 of 174: NOT CORRUPTED
+
+ACK for packet number 81
+
+MESSAGE(Packet# 81): utpat ei duo., , Ex nec tantas postulant, et his veniam timeam. Pri no tollit reformidans contentiones, sit audiam oportere ex, eum case erat delicatissimi ne. Mea corpora percipitur ad, vel alia summo deseruisse ut. Appareat percipit has ne., , Has eu vivendum honestatis. Vis in putent vocent. Mei ne graeci intellegebat. Ius dolor repudiare te, vis diam cetero scripta te. Ei modus posse similique his, eu liber dolore assueverit est., , Graeci cetero mea no, per quodsi veritus copiosae ad, facer equ
+Client received packet number 81of174
+
+Client sent packet # 82  to client gremlin.
+--Checksum values OK--
+Packet # 82 of 174: NOT CORRUPTED
+
+ACK for packet number 82
+
+MESSAGE(Packet# 82): idem comprehensam per no. Iusto nihil vocibus eos cu, ne has paulo dolor, mel veniam oporteat et. Has eu populo nemore suscipiantur. Veniam commodo ocurreret usu ei. Laoreet commune voluptatibus no sea. Nulla perfecto nam te., , Habeo moderatius ne his, elit feugiat vix ne. Per hinc dicat dignissim an, eu eos lorem commodo disputationi. Quod alterum pericula vix cu. Ad cum legere interpretaris. Cu vide minimum placerat quo, vel id quas docendi complectitur, et meis quas commodo eum. Nusquam elaborar
+Client received packet number 82of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 83
+
+Client sent packet # 84  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46356, EXPECTED checksum: 46701
+Packet # 84 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 84
+
+Client sent packet # 77  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46472, EXPECTED checksum: 46890
+Packet # 77 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 77
+
+Client sent packet # 78  to client gremlin.
+--Checksum values OK--
+Packet # 78 of 174: NOT CORRUPTED
+
+ACK for packet number 78
+
+MESSAGE(Packet# 78): rt civibus ut. In mei alterum laoreet interesset. An postea mnesarchum repudiandae vis, eam augue altera nonumes id, dicam scaevola per at., , Qui mazim dicam gubergren et, vim habeo dolores contentiones ei. Pro te minim vocibus oportere, quidam aperiam sit ut, ei aeque noluisse accusata eos. Te iudico eleifend maluisset sit. Eam alterum mandamus eu. Melius argumentum ad sea, ius in omnium mediocrem honestatis. Qui quaeque voluptatum an., , Te aliquid epicuri officiis mei. Has id meis paulo, mea doc
+Client received packet number 78of174
+
+Client sent packet # 83  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46910, EXPECTED checksum: 47077
+Packet # 83 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 83
+
+Client sent packet # 84  to client gremlin.
+--Checksum values OK--
+Packet # 84 of 174: NOT CORRUPTED
+
+ACK for packet number 84
+
+MESSAGE(Packet# 84):  delicatissimi te his., , Veri delectus duo ea, eum minim tritani te. Dicat ancillae apeirian et vix, est elit ponderum cu. Vitae theophrastus disputationi eu his. Principes argumentum ex quo. Sonet definitiones id sit, in his singulis pertinacia. Per ex laudem persius, essent expetenda duo ea. Eu eos minim insolens incorrupte., , Has graece eripuit ad, ius quod prompta eu, ei sit habemus consulatu hendrerit. Per indoctum adipiscing ad. Te mea tamquam postulant, duo audire aliquip constituam eu, mel
+Client received packet number 84of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 77
+
+Client sent packet # 83  to client gremlin.
+--Checksum values OK--
+Packet # 83 of 174: NOT CORRUPTED
+
+ACK for packet number 83
+
+MESSAGE(Packet# 83): et vel at., , Cum aeterno sanctus appellantur ex, in nam indoctum adipiscing, propriae sententiae ex est. Vidit dicat audiam ei nam. Malorum persecuti definiebas vis cu. Cotidieque definitionem ad sed, eos ne option lucilius quaerendum., , No sed sumo nemore utamur. Pro eripuit epicurei volutpat te, qui meliore facilisis deseruisse ea, sed ut nostrum voluptaria interesset. Ea paulo audiam nec. Saepe percipitur scripserit ad sed, an dignissim neglegentur est. Vix eu quaeque sapientem. Graeco albucius
+Client received packet number 83of174
+
+Client sent packet # 77  to client gremlin.
+--Checksum values OK--
+Packet # 77 of 174: NOT CORRUPTED
+
+ACK for packet number 77
+
+Window moved 78 to 85
+
+Window moved 79 to 86
+
+Window moved 80 to 87
+
+Window moved 81 to 88
+
+Window moved 82 to 89
+
+Window moved 83 to 90
+
+Window moved 84 to 91
+
+Window moved 85 to 92
+
+MESSAGE(Packet# 77):  pericula ad vel. His quot intellegebat ut, albucius indoctum assueverit ne pri., , Vix interesset suscipiantur ea, illum aperiam moderatius est ne, sea maiorum eleifend at. Appareat definitiones eum ea, ei labitur legimus detracto usu. Nisl putent at est. Pro summo viris persius ad. Iudico iriure ponderum et vix, ne possim mandamus est, detraxit deterruisset ea quo., , Et dolorem iracundia per, tale nominavi reformidans cu qui. Ea mel nulla utinam. At ius sonet definitionem concludaturque. Vel affe
+Client received packet number 77of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 85
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 86
+
+Client sent packet # 87  to client gremlin.
+--Checksum values OK--
+Packet # 87 of 174: NOT CORRUPTED
+
+ACK for packet number 87
+
+MESSAGE(Packet# 87): e ius ex. Cu ius dico alia quidam, id admodum insolens nam., , Dictas alienum iudicabit no pri. Nam eros tollit electram ei, sed natum iisque fierent ad. Impedit urbanitas at his. No bonorum scribentur conclusionemque eam, corpora conceptam efficiantur cum id., , Est id similique concludaturque, prima intellegat dissentiet ius ei. Vis salutatus interesset ex, has cu malis epicuri. His fuisset inciderint te. Commodo ponderum sed no, volutpat facilisis vis ut., , Eos te postulant eloquentiam. Audire l
+Client received packet number 87of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 88
+
+Client sent packet # 89  to client gremlin.
+--Checksum values OK--
+Packet # 89 of 174: NOT CORRUPTED
+
+ACK for packet number 89
+
+MESSAGE(Packet# 89): d vix, sed falli dissentias in, eu justo scribentur his., , Pro ceteros partiendo at, pro cu vide appellantur. Id mandamus eloquentiam ius. Dicit graecis atomorum vis ad, at mei veri ullum, ius epicurei periculis eu. Nihil postea duo at. Mutat atqui euripidis ad sit. Est expetenda complectitur ea, ea justo idque menandri mei, pro prima error percipitur no., , Quaestio expetenda salutatus ei nec, id qui aliquip pertinax. Eos ut consul alterum sententiae, utroque inimicus expetendis quo ut. Vix unum c
+Client received packet number 89of174
+
+Client sent packet # 90  to client gremlin.
+--Checksum values OK--
+Packet # 90 of 174: NOT CORRUPTED
+
+ACK for packet number 90
+
+MESSAGE(Packet# 90): onclusionemque ad, aeque pertinacia forensibus sea ei. Ne euripidis scripserit quo., , Nonumes euripidis id duo, et dicat novum eam. Id etiam liber interesset pri, vidisse docendi verterem an nam. Sumo putent delectus ius ad, nam ea laboramus temporibus, suscipit consetetur honestatis per ex. Regione feugiat fabulas ne vix, per adhuc dicit no. Alii quando tation quo at. Ius ex erat phaedrum, eos ad erat affert consetetur. Ea duo stet ocurreret., , Alii doming civibus ut usu, autem commodo nominavi u
+Client received packet number 90of174
+
+Client sent packet # 91  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46197, EXPECTED checksum: 46318
+Packet # 91 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 91
+
+Client sent packet # 92  to client gremlin.
+--Checksum values OK--
+Packet # 92 of 174: NOT CORRUPTED
+
+ACK for packet number 92
+
+MESSAGE(Packet# 92): n ius soluta volumus dissentiunt., , Et congue prompta senserit vix. Tation ponderum per id. Tibique forensibus moderatius vix in. Eum graeco quaestio omittantur ne, eos nonumes suscipit ocurreret eu. Ex nam omnium meliore mnesarchum., , Corrumpit pertinacia mei at, an option aliquip offendit cum, nam legendos consectetuer eu. Soluta civibus liberavisse mel ea, an quo utamur legimus repudiandae. In has nostrud fuisset suscipit, nonumes mandamus erroribus vix ad. Tation facilis complectitur ad per., 
+Client received packet number 92of174
+
+Client sent packet # 85  to client gremlin.
+--Checksum values OK--
+Packet # 85 of 174: NOT CORRUPTED
+
+ACK for packet number 85
+
+Window moved 86 to 93
+
+MESSAGE(Packet# 85):  et atqui exerci. Eu eum democritum scribentur, quas novum tamquam ad sea, ius no suas debitis. Est cu similique rationibus, quem iuvaret eu pro, saepe conceptam cu eum. Sit ea dicant legimus, quo offendit hendrerit ex, mel alienum persequeris consectetuer ne. Ei noster malorum fuisset pro, ad autem ubique facilis eos., , Ne sed consul civibus phaedrum. Dolorum senserit signiferumque pri ne, has alii impedit cu, ius eu malis dolore nostrum. Te sed sumo recusabo, cu eos eligendi facilisis. Vel an omn
+Client received packet number 85of174
+
+Client sent packet # 86  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46905, EXPECTED checksum: 46933
+Packet # 86 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 86
+
+Client sent packet # 88  to client gremlin.
+--Checksum values OK--
+Packet # 88 of 174: NOT CORRUPTED
+
+ACK for packet number 88
+
+MESSAGE(Packet# 88): abitur oportere sea no, vel commune conceptam assueverit an, cu duo labores meliore tibique. Ut vis ancillae interpretaris, urbanitas sententiae ullamcorper usu no. Quo fuisset vulputate eu., , Per magna nullam docendi ad, albucius neglegentur ad duo. Suas numquam menandri qui no, ex idque labores sed. Eum nonumy feugait deterruisset at, nec ea case dolorum. At solet corpora similique sed. Eam perfecto legendos mediocritatem ne, id eam omnes prodesset, ei eos putent ornatus. Audiam iriure noluisse i
+Client received packet number 88of174
+
+Client sent packet # 91  to client gremlin.
+--Checksum values OK--
+Packet # 91 of 174: NOT CORRUPTED
+
+ACK for packet number 91
+
+MESSAGE(Packet# 91): t vix. Sea aperiam fierent ex. Mea justo legere rationibus ea, fuisset pertinax eam in, molestie patrioque ei duo. Mel et semper eirmod adipiscing, ad sed maiestatis repudiandae, his oratio viderer eu. An eam aperiam accusata maluisset, ea duo sonet habemus. Magna quando commune sit ne., , Magna zril et mea. Ridens debitis platonem ad mel, movet adipisci consetetur ea sed, erat melius dignissim eu his. Novum iracundia repudiandae no vel, mea legere labore accommodare id, eam phaedrum mediocrem ne. I
+Client received packet number 91of174
+
+Client sent packet # 93  to client gremlin.
+--Checksum values OK--
+Packet # 93 of 174: NOT CORRUPTED
+
+ACK for packet number 93
+
+MESSAGE(Packet# 93): , Mazim scribentur quo te, vix te scaevola adversarium, vis sint errem explicari ea. Te sit fugit congue, duo dicant invenire ad. Phaedrum delicatissimi vix no, copiosae tacimates per an. Audiam principes cu sea, at euripidis definitionem sea, his facete numquam ut. Ea legere eligendi maluisset quo, ea eos iusto detraxit. Electram instructior no usu, tacimates pericula est eu, ne mel propriae postulant definitiones. Sint facete usu cu, mei audire singulis at., , Eu erat numquam omnesque sit, ex has 
+Client received packet number 93of174
+
+Client sent packet # 86  to client gremlin.
+--Checksum values OK--
+Packet # 86 of 174: NOT CORRUPTED
+
+ACK for packet number 86
+
+Window moved 87 to 94
+
+Window moved 88 to 95
+
+Window moved 89 to 96
+
+Window moved 90 to 97
+
+Window moved 91 to 98
+
+Window moved 92 to 99
+
+Window moved 93 to 100
+
+Window moved 94 to 101
+
+MESSAGE(Packet# 86): ium explicari democritum, etiam nullam est at., , Eum in discere fabulas constituam. Vim no minimum signiferumque. Pri ut vidit graeco, eam no detracto instructior. Sit at viderer disputando philosophia, vis illud porro ex, vix nibh adversarium eu. Suas tacimates vim ut, ea cum modo hinc, eros simul sanctus cum an., , Te cum omnium reprehendunt, elitr senserit his eu. Cetero tractatos principes te usu, nam te sonet veniam eruditi, qui vocibus luptatum necessitatibus in. Modus aeque ut quo, sint saep
+Client received packet number 86of174
+
+Client sent packet # 94  to client gremlin.
+--Checksum values OK--
+Packet # 94 of 174: NOT CORRUPTED
+
+ACK for packet number 94
+
+Window moved 95 to 102
+
+MESSAGE(Packet# 94): singulis deseruisse. Fugit adolescens nam an. Et mel semper inermis explicari, his ne nibh fastidii postulant. Viderer impedit conclusionemque ei has., , Vel nominavi reprimique consectetuer ea, est mazim recusabo ex. Vocent virtute antiopam mei no, pro copiosae appellantur at. Eu nec prima eruditi, ex solum tollit luptatum duo. Nam te porro dolor vocibus, ad facilisis vituperata duo., , Vis purto nostrum ne, id eum commodo feugait. In corpora splendide nec. Summo gloriatur ad sit. Sed ignota aperia
+Client received packet number 94of174
+
+Client sent packet # 95  to client gremlin.
+--Checksum values OK--
+Packet # 95 of 174: NOT CORRUPTED
+
+ACK for packet number 95
+
+Window moved 96 to 103
+
+MESSAGE(Packet# 95): m sanctus no, an sed mutat illud dolor., , Eam lorem explicari ei, cum illum principes constituam ad. Ea tritani efficiantur definitiones nec. Ea vim voluptatum persequeris, ut amet ridens quo, ut graeco tamquam mea. Pri tritani intellegam appellantur ne, has oratio ocurreret at., , Eum ad doctus aliquip oblique, an zril interesset has. In quo novum utroque, no nam fabulas periculis. Iudico tritani ea vim. Eam case lorem mazim ei, per feugiat erroribus an. Ne qui verterem expetendis., , Nec et agam 
+Client received packet number 95of174
+
+Client sent packet # 96  to client gremlin.
+--Checksum values OK--
+Packet # 96 of 174: NOT CORRUPTED
+
+ACK for packet number 96
+
+Window moved 97 to 104
+
+MESSAGE(Packet# 96): nonumes invenire. Vel ne scripta persius officiis, sea et verterem assentior. Falli indoctum eam id, ex virtute euismod civibus nam. Ea aliquid eloquentiam cum, volutpat accusamus deterruisset eu vix, has modus nominati oportere ei. Sed an perfecto nominati quaerendum., , Ex vel vituperata instructior, iisque appellantur ad per, ex summo electram periculis eum. Pro in mucius putant sapientem, ei vel dicat doming. Ne duo sonet salutatus aliquando. At vel disputando instructior, idque soleat postulant
+Client received packet number 96of174
+
+Client sent packet # 97  to client gremlin.
+--Checksum values OK--
+Packet # 97 of 174: NOT CORRUPTED
+
+ACK for packet number 97
+
+Window moved 98 to 105
+
+MESSAGE(Packet# 97):  ei usu. Te vix dolor aeterno. Dolores hendrerit cu est, ea sea aperiri bonorum accommodare., , Sit ea posse adipiscing consequuntur, no has pertinax mediocritatem, has tempor tritani nusquam ea. Ei eam tibique ullamcorper reprehendunt, ne omnes delenit maluisset cum. Falli mazim te per, case falli alienum ea eum. Te putent inimicus ius. Eu soluta audire has. Ei alia ignota nostrud vix., , Cu ius causae vocent vocibus. Tota habeo dicit id ius. Dicant reformidans te cum. Ex antiopam sapientem adolesc
+Client received packet number 97of174
+
+Client sent packet # 98  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46031, EXPECTED checksum: 46129
+Packet # 98 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 98
+
+Client sent packet # 99  to client gremlin.
+--Checksum values OK--
+Packet # 99 of 174: NOT CORRUPTED
+
+ACK for packet number 99
+
+MESSAGE(Packet# 99): luptatibus per ut. Singulis conceptam ne quo, stet ludus neglegentur qui ei. Sit ea enim quodsi, idque everti has id. Munere soleat ut duo, consul tincidunt percipitur eu ius, alienum qualisque ut mea. Oratio altera interesset te ius., , Errem forensibus id per. Vim exerci antiopam oportere in, quo laudem abhorreant suscipiantur ne. Affert nonumes quaerendum eum et, id mel nobis efficiendi, ne essent accumsan mnesarchum vix. Tempor noster habemus id pro, suas altera et sea, id novum melius sit., , S
+Client received packet number 99of174
+
+Client sent packet # 100  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46607, EXPECTED checksum: 46818
+Packet # 100 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 100
+
+Client sent packet # 101  to client gremlin.
+--Checksum values OK--
+Packet # 101 of 174: NOT CORRUPTED
+
+ACK for packet number 101
+
+MESSAGE(Packet# 101): quam dissentiunt sit ei, ei duo altera delicata senserit., , Mei liber cetero patrioque et, laoreet perfecto tincidunt an duo, semper scripta mel ne. Te ubique singulis sea, mei simul habemus ad. Mel at saperet eligendi accusamus. Eu atomorum necessitatibus mea, mutat tractatos sed ex. Est case facilisi at, alii inciderint signiferumque has ad, ne ferri definitiones mel. Clita graeci evertitur cu duo, sumo minimum insolens eum in. Pri veri gubergren pertinacia an., , Autem docendi at nec. Liber simu
+Client received packet number 101of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 102
+
+Client sent packet # 103  to client gremlin.
+--Checksum values OK--
+Packet # 103 of 174: NOT CORRUPTED
+
+ACK for packet number 103
+
+MESSAGE(Packet# 103): aiestatis pri, usu possim alterum copiosae in, in falli docendi vix. Et eum scripta accusam dissentiunt, et pri alia paulo, nec vero nemore ne. Mea probo pertinacia voluptatum te. Justo animal ei cum, te melius fuisset nam. Duis tamquam quo ad, eu mea adipisci corrumpit interesset., , Eos vero congue discere ei. Vix liber similique deseruisse cu, delicata elaboraret dissentias vix at, suas repudiare pro ex. Oblique apeirian referrentur mei ne, erant adipisci ius ad. Tota aeterno pro ne. Vel ad nomin
+Client received packet number 103of174
+
+Client sent packet # 104  to client gremlin.
+--Checksum values OK--
+Packet # 104 of 174: NOT CORRUPTED
+
+ACK for packet number 104
+
+MESSAGE(Packet# 104): avi scribentur, nulla abhorreant et quo. In fuisset mentitum suscipiantur eam, in evertitur voluptaria disputando ius., , Periculis voluptatum eloquentiam his te. An alia legimus pertinacia sit, veniam impedit argumentum cu nec. Fugit delectus his ut, cum ea oratio inermis quaerendum. Denique assueverit scribentur has at, vim harum electram ad. Timeam recteque in sea, nonumes indoctum accusamus eum ex. Ius etiam fastidii id, labore tamquam minimum id ius. Ad utamur legimus scriptorem sit., , Iusto c
+Client received packet number 104of174
+
+Client sent packet # 105  to client gremlin.
+--Checksum values OK--
+Packet # 105 of 174: NOT CORRUPTED
+
+ACK for packet number 105
+
+MESSAGE(Packet# 105): onsequat quaerendum id sit. At est inani deterruisset. Elit reprimique est in, ut pri fastidii quaestio instructior. In affert accumsan ius. Ea nec mentitum splendide vulputate, veniam antiopam ut mea, mel at illud adipiscing., , Fierent constituam duo et. No mei tation disputando. Mucius appetere lucilius et pri. Et est malorum explicari. Cibo inermis ocurreret no duo, in vis sint salutandi necessitatibus. Nam graeci sapientem ad, in est causae atomorum philosophia, aliquip feugait reformidans nec 
+Client received packet number 105of174
+
+Client sent packet # 98  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46101, EXPECTED checksum: 46129
+Packet # 98 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 98
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 100
+
+Client sent packet # 102  to client gremlin.
+--Checksum values OK--
+Packet # 102 of 174: NOT CORRUPTED
+
+ACK for packet number 102
+
+MESSAGE(Packet# 102): l dolores cu duo. Graeci doming ut per, omnesque pertinacia vix eu, mel id nemore iracundia. In deleniti argumentum sit, qui purto etiam scripserit ea. In mei magna bonorum hendrerit, usu ea veniam graeci deserunt., , Odio assum cu vis, ut mei bonorum epicuri, sed no erat decore ornatus. Ex eam nisl eros albucius, reque inermis argumentum te quo. Cu pri mazim nostrud. Equidem definitionem mea cu., , Usu ludus labores ad, nulla mundi in quo, ut phaedrum incorrupte quaerendum qui. No solum accusamus m
+Client received packet number 102of174
+
+Client sent packet # 98  to client gremlin.
+--Checksum values OK--
+Packet # 98 of 174: NOT CORRUPTED
+
+ACK for packet number 98
+
+Window moved 99 to 106
+
+Window moved 100 to 107
+
+MESSAGE(Packet# 98): ens pro. Fabulas utroque repudiare sed at, vel ad solum perpetua, sea porro eruditi urbanitas id. No nec mucius dolores, ea nemore laoreet partiendo eum. Noster forensibus ea nam., , Duo augue prodesset cu, ne solum dicat sed. Pri enim audiam at, at sed offendit gubergren. Te per possit malorum euismod, oratio aliquip ne pri. Eam ex reque elaboraret, eos ut possit tamquam. Id graeci vocibus vis, case veri meis ea usu. Vis ea amet ipsum aliquip, mel regione nominavi sententiae ei., , Dicat inermis vo
+Client received packet number 98of174
+
+Client sent packet # 100  to client gremlin.
+--Checksum values OK--
+Packet # 100 of 174: NOT CORRUPTED
+
+ACK for packet number 100
+
+Window moved 101 to 108
+
+Window moved 102 to 109
+
+Window moved 103 to 110
+
+Window moved 104 to 111
+
+Window moved 105 to 112
+
+Window moved 106 to 113
+
+MESSAGE(Packet# 100): emper expetendis moderatius vel ad. Vix solet aperiam tibique ea, sit verear phaedrum id. Duo eu cibo erant eloquentiam. Pro ex alienum delicata inciderint, etiam adolescens eos at. Ius nulla invenire ut, probo nulla eu vim. Dicta utinam fabellas cum at., , Delicata concludaturque his at, ea ius nonumy aliquip aperiri, sit quod ludus propriae in. Cibo vidit scripta cum ut, ei ignota deleniti sit. At vim adolescens complectitur, te electram contentiones per. Usu ex semper aperiri quaestio. Essent num
+Client received packet number 100of174
+
+Client sent packet # 106  to client gremlin.
+--Checksum values OK--
+Packet # 106 of 174: NOT CORRUPTED
+
+ACK for packet number 106
+
+Window moved 107 to 114
+
+MESSAGE(Packet# 106): in., , Ad commune salutandi assueverit sea, qui tamquam deserunt et, et vivendum deterruisset vis. Te harum gloriatur sea. Inermis copiosae ullamcorper mei an, cum ea simul primis viderer, odio torquatos interesset vis te. Modus epicuri praesent pro ex, ex aperiri virtute his. Ut illum interesset per, eu sed augue democritum., , Elit cetero id nec. Et mei vitae quaeque, odio convenire mei ei. Ad corpora dissentiunt contentiones vis. Quo principes argumentum in, et petentium incorrupte honestatis eum
+Client received packet number 106of174
+
+Client sent packet # 107  to client gremlin.
+--Checksum values OK--
+Packet # 107 of 174: NOT CORRUPTED
+
+ACK for packet number 107
+
+Window moved 108 to 115
+
+MESSAGE(Packet# 107): . Ne nam regione eligendi. Cu nibh dolorem nec., , Amet verear fuisset at has. Et munere utamur signiferumque nec, corpora euripidis adolescens te qui. Ne tincidunt appellantur sit, ex solum nobis ponderum sed. Lorem expetenda constituam has ut, cu nec duis inermis pertinax, stet virtute expetendis ne mea. Cum ipsum fuisset neglegentur eu, suas sint tibique in usu., , Id mazim eruditi theophrastus vix, enim iisque debitis et mel. Id est reque integre, laoreet accusam sapientem mei ne. Homero ancilla
+Client received packet number 107of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 108
+
+Client sent packet # 109  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46818, EXPECTED checksum: 46854
+Packet # 109 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 109
+
+Client sent packet # 110  to client gremlin.
+--Checksum values OK--
+Packet # 110 of 174: NOT CORRUPTED
+
+ACK for packet number 110
+
+MESSAGE(Packet# 110):  ullamcorper ei., , Sea falli eripuit invenire cu. Odio menandri nominati eam ea, agam nibh vis ne. Iudico utinam volumus est id, usu ad probo timeam delicatissimi. Graecis reprimique cu sea, vel copiosae prodesset ne. Ut assum fierent urbanitas duo, pri eu munere iisque, ad stet probo eos. Latine rationibus eu pro., , Oporteat vivendum reprimique et pro, mei et singulis lobortis adversarium. Justo dicunt ius ne, ut eum lorem nonumy, utinam deserunt pro ei. Ullum invenire te cum. Mel ex everti fuiss
+Client received packet number 110of174
+
+Client sent packet # 111  to client gremlin.
+--Checksum values OK--
+Packet # 111 of 174: NOT CORRUPTED
+
+ACK for packet number 111
+
+MESSAGE(Packet# 111): et vulputate. Semper definitiones vituperatoribus et vel, antiopam partiendo et sit. Pri inermis aliquando et., , Sit labore referrentur complectitur ei, sed ei adversarium definitionem. His id sumo integre, soleat rationibus his cu, vel erant inermis blandit eu. Lorem laboramus ea qui, eu delenit instructior mei. Porro virtute nam ea., , Dicam patrioque in vix, porro vivendo cu usu. Vix ad quodsi facilisis disputando, ne graece mucius perfecto usu. Vix ferri accusam mandamus eu. Odio nisl ea has, h
+Client received packet number 111of174
+
+Client sent packet # 112  to client gremlin.
+--Checksum values OK--
+Packet # 112 of 174: NOT CORRUPTED
+
+ACK for packet number 112
+
+MESSAGE(Packet# 112): as no iracundia urbanitas constituam. Tincidunt scripserit mea ex, sit at summo omnesque. Te mel tale libris, commune fastidii postulant an ius., , Ea dicit facilis deleniti mea, te per facilisi electram maiestatis. In esse harum periculis vim, ad his veniam dolore. Ad oratio percipit deseruisse eam, et vis debet omnes. Dicta omnium adolescens mei ea., , Vis id meis graeci. Cu modus eirmod iisque sit. Ut sea elit aperiam indoctum, an instructior voluptatibus qui. Ut pri aliquid percipitur., , Sit ea
+Client received packet number 112of174
+
+Client sent packet # 113  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46042, EXPECTED checksum: 46410
+Packet # 113 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 113
+
+Client sent packet # 114  to client gremlin.
+--Checksum values OK--
+Packet # 114 of 174: NOT CORRUPTED
+
+ACK for packet number 114
+
+MESSAGE(Packet# 114): , Ea quem principes pro. Mei ad atqui error dignissim, posse nulla vel te. Vel vidisse splendide id. Quidam deseruisse vel ut, te usu munere debitis torquatos, errem deserunt ad eos. Ei fabellas intellegat qui, sea copiosae intellegat te., , No his vitae vocent repudiare. Cu per laudem contentiones disputationi, falli graeci eu pro. Reque mandamus ex ius, illum legendos et eum. Te legendos assentior nam, eam tation docendi omittam ut, nam aliquip aperiri no. Deserunt principes in sit. Ne vix oratio 
+Client received packet number 114of174
+
+Client sent packet # 115  to client gremlin.
+--Checksum values OK--
+Packet # 115 of 174: NOT CORRUPTED
+
+ACK for packet number 115
+
+MESSAGE(Packet# 115): officiis. Falli eruditi accusam nam id, alii solet qui ne., , Ignota adipiscing reprehendunt eos an. Agam epicuri eloquentiam ad sea. Vim elit corpora detracto ad, per et mutat evertitur appellantur, in discere definitionem eos. Eos timeam scripta deseruisse no, mucius noster eu mea. Ut mel inani fabulas suscipit. Tota idque veritus has ex., , Meis homero quaestio has in, usu ex erant philosophia. Pri an laudem laboramus, vix probo eruditi consequat an. Id errem legere nec, sonet impedit id sit, ut 
+Client received packet number 115of174
+
+Client sent packet # 108  to client gremlin.
+--Checksum values OK--
+Packet # 108 of 174: NOT CORRUPTED
+
+ACK for packet number 108
+
+Window moved 109 to 116
+
+MESSAGE(Packet# 108): e facilisis vel in, tale expetenda duo ad. Copiosae senserit disputationi nec ad, errem senserit vel an. Per vidit sonet cu., , Vel solum novum cetero cu. Tota semper copiosae quo id, duo et wisi primis epicuri. Nam nostrum reprehendunt no, pri id alii eius, modo movet consul ut sit. Ad sea iusto tibique, et eum ferri legere contentiones., , Odio expetendis et pro, est no congue liberavisse delicatissimi. Ea his alii vidit repudiare, quo brute partem feugiat ut, nam habeo posidonium instructior ei. 
+Client received packet number 108of174
+
+Client sent packet # 109  to client gremlin.
+--Checksum values OK--
+Packet # 109 of 174: NOT CORRUPTED
+
+ACK for packet number 109
+
+Window moved 110 to 117
+
+Window moved 111 to 118
+
+Window moved 112 to 119
+
+Window moved 113 to 120
+
+MESSAGE(Packet# 109): Te eam ocurreret splendide. Has elitr possit reprehendunt id, pri fugit timeam id., , Deserunt salutandi id has. Eos ei quodsi efficiantur, oratio intellegam eu sit. Vix alia meis mandamus in. Vocent veritus copiosae te vis, ea pro sonet percipit eloquentiam. Inermis salutatus qui an., , No cibo perfecto deseruisse est. Malorum prodesset te usu. Et eum iusto simul, est eu esse dissentiunt. Ius et corpora definitiones, mandamus neglegentur definitionem no cum. Cu his dicat viris feugiat, duo placerat
+Client received packet number 109of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 113
+
+Client sent packet # 116  to client gremlin.
+--Checksum values OK--
+Packet # 116 of 174: NOT CORRUPTED
+
+ACK for packet number 116
+
+MESSAGE(Packet# 116): docendi dignissim adolescens eam. Splendide elaboraret at ius. Duis congue periculis ne his, ignota mentitum eu vim. Iracundia adversarium usu., , Lorem ipsum dolor sit amet, ei qui erant persius. Ludus meliore epicurei et nam, eu vitae sensibus mei. Noster theophrastus eu eum. Mucius impedit comprehensam sit et, an ius integre veritus, quo in errem deseruisse incorrupte. Propriae evertitur no cum, has modus aperiam mediocritatem id, nisl prima deseruisse an ius., , Ceteros percipitur consequuntur e
+Client received packet number 116of174
+
+Client sent packet # 117  to client gremlin.
+--Checksum values OK--
+Packet # 117 of 174: NOT CORRUPTED
+
+ACK for packet number 117
+
+MESSAGE(Packet# 117): t nec. Ludus causae no quo. Postulant consequuntur mel ex. Aeterno recusabo intellegebat ut per. Cu ferri feugiat denique vix, signiferumque conclusionemque te usu., , Malorum maluisset persequeris ea sea, vim no inani impedit argumentum. His ignota complectitur ut, recusabo dignissim definitiones ea nam. Impetus facilisi comprehensam vix an. Vim utinam laoreet habemus id, cu homero facilisis imperdiet per. Dignissim voluptatum no mea, ea ponderum temporibus ius. Vel eu audiam nominati evertitur, pr
+Client received packet number 117of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 118
+
+Client sent packet # 119  to client gremlin.
+--Checksum values OK--
+Packet # 119 of 174: NOT CORRUPTED
+
+ACK for packet number 119
+
+MESSAGE(Packet# 119): Ne nulla feugiat scriptorem nec, at pri assum detraxit, cu case porro concludaturque mei., , Stet postea no usu, inermis hendrerit eu pri. Oblique nostrum eos ex, per laoreet verterem oportere ut. Nisl utroque has ut, commune posidonium cotidieque ex vim. In sea habemus consequuntur, semper discere senserit at nec., , Ea denique postulant vix, at nonumy accusamus sed, nam viderer persius no. Sit te graecis adipiscing, et quidam eirmod nominati quo. Sonet solet deterruisset et cum. Id eos simul dolor
+Client received packet number 119of174
+
+Client sent packet # 120  to client gremlin.
+--Checksum values OK--
+Packet # 120 of 174: NOT CORRUPTED
+
+ACK for packet number 120
+
+MESSAGE(Packet# 120):  possit, purto solum accusam mel ut., , Cu duo omnes libris. Omnis cetero per an. Corpora scribentur adversarium pri eu. Vis ullum tritani indoctum id, nullam voluptatum ex eam, no malis accommodare per. Ne vis quod copiosae, te libris everti comprehensam pri. Assentior contentiones no mei, duo eu wisi liberavisse instructior., , Mei in exerci recusabo quaestio, mei in abhorreant sententiae, his in legere insolens complectitur. Vim quas ocurreret ut, at erat reque labores has. Ius mediocrem incorrup
+Client received packet number 120of174
+
+Client sent packet # 113  to client gremlin.
+--Checksum values OK--
+Packet # 113 of 174: NOT CORRUPTED
+
+ACK for packet number 113
+
+Window moved 114 to 121
+
+Window moved 115 to 122
+
+Window moved 116 to 123
+
+Window moved 117 to 124
+
+Window moved 118 to 125
+
+MESSAGE(Packet# 113):  dicant volutpat, per cu noster constituam. Ne sea purto doming veritus, suas adipisci ad sit. Ex cum saepe decore, et ipsum maluisset definiebas vis. No eos nonumy quidam mediocritatem. Elitr dicam cu eum, ex his vide putent eripuit. Per solum invidunt id, vel eu omnes mollis adipisci., , Et ipsum vitae equidem sea, pri tota iudicabit in. Usu homero dicunt at. Mea ea consul feugiat invidunt, vel brute primis forensibus in, no per nobis dicant constituto. No probo saperet cum, ut cum dolor graeco., 
+Client received packet number 113of174
+
+Client sent packet # 118  to client gremlin.
+--Checksum values OK--
+Packet # 118 of 174: NOT CORRUPTED
+
+ACK for packet number 118
+
+Window moved 119 to 126
+
+Window moved 120 to 127
+
+Window moved 121 to 128
+
+MESSAGE(Packet# 118): obo tantas quidam vis id, recteque persequeris id mel. Ex ignota libris integre has., , Delectus recusabo euripidis ne ius, vix ne movet simul alienum. Eu illud honestatis consectetuer usu. Quodsi theophrastus id sit, iuvaret appellantur duo an. Ei quo novum laoreet, mel et tantas appetere, an quo detraxit disputationi. Mei libris labitur quaerendum ne, mea omittam hendrerit dissentiunt te, vocent voluptatibus ex usu. Pri ad quem inermis salutatus, idque utinam no duo, meis nostrud fabellas mei ne. 
+Client received packet number 118of174
+
+Client sent packet # 121  to client gremlin.
+--Checksum values OK--
+Packet # 121 of 174: NOT CORRUPTED
+
+ACK for packet number 121
+
+Window moved 122 to 129
+
+MESSAGE(Packet# 121): te conclusionemque ne. An vis eruditi impedit fierent, nec ut rebum homero. Nam et oportere imperdiet, omnesque convenire tractatos id eos., , Idque harum dolorum cu pro, ad sit nobis essent. Te tale bonorum eruditi pri. Ex vis probo tibique repudiare. Quo iisque ponderum democritum ea, in mei veniam tamquam accumsan., , Vix no quem argumentum omittantur, reque putent ad pro. Eam in wisi aeque, illud inermis salutandi cum ea. Ius mollis commodo omittam te, est sumo officiis ex. Erat volutpat mea at,
+Client received packet number 121of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 122
+
+Client sent packet # 123  to client gremlin.
+--Checksum values OK--
+Packet # 123 of 174: NOT CORRUPTED
+
+ACK for packet number 123
+
+MESSAGE(Packet# 123): m soleat feugiat placerat ut. Has eu nullam fastidii, id his sumo assentior disputationi. Altera epicurei ut eos, ex mea alia splendide, cum ei periculis laboramus theophrastus., , Qui reque latine ex, dolore feugait disputando nec eu. Quo no quando consul mediocrem, et reque fuisset noluisse vel, ut mei liber choro. Pri no velit definiebas, cu stet delectus pri, id modus fierent sadipscing sed. Per eu error mnesarchum, ex mea iisque sapientem gloriatur. Error alterum nonumes at sea., , Graeci integ
+Client received packet number 123of174
+
+Client sent packet # 124  to client gremlin.
+--Checksum values OK--
+Packet # 124 of 174: NOT CORRUPTED
+
+ACK for packet number 124
+
+MESSAGE(Packet# 124): re principes eam ex, summo eirmod consulatu ad duo, eum cu minimum lucilius argumentum. Expetenda posidonium at vix. Ei mei ferri paulo, ne mei oblique evertitur. No odio diam theophrastus his, mel habemus efficiantur ea., , Nam ad tritani aliquid, quo unum nullam ancillae ne, est impetus antiopam te. Vix consul evertitur sententiae an, ad est nonumy pertinacia disputationi, mea id facer postea maluisset. No mei quod omnium theophrastus, mei assum mnesarchum te, et his populo perfecto. Lorem delicat
+Client received packet number 124of174
+
+Client sent packet # 125  to client gremlin.
+--Checksum values OK--
+Packet # 125 of 174: NOT CORRUPTED
+
+ACK for packet number 125
+
+MESSAGE(Packet# 125): a ut sit, soleat persius ullamcorper ius id, rebum doming intellegebat ei pri. Est graeco melius vocent at. Et nec eirmod iudicabit sadipscing., , Id vidisse officiis pri, his iudico deseruisse no, has ne petentium scriptorem. Discere delicatissimi te est. Sed no omnes persecuti, his no cibo ubique nemore. Id case modus vim, mei velit denique in. Quo id doming cotidieque, his ne ullum mediocrem complectitur, ea est volumus molestie electram. Harum copiosae qualisque nam at, sit deleniti quaestio neg
+Client received packet number 125of174
+
+Client sent packet # 126  to client gremlin.
+--Checksum values OK--
+Packet # 126 of 174: NOT CORRUPTED
+
+ACK for packet number 126
+
+MESSAGE(Packet# 126): legentur te., , Facilis delectus maiestatis vis in, at pri augue labores. Pro homero scribentur no. Wisi voluptatibus vim ea, mediocrem persequeris neglegentur cu sed, nonumy timeam ad ius. No corpora apeirian quo, an vix impedit epicuri dissentias. Cu nec utinam periculis., , Sit porro debet legimus ne. Laboramus pertinacia intellegam no est, phaedrum elaboraret signiferumque ius id. Eam ne fabulas accusam, pri no abhorreant accommodare. Ut nec wisi cetero iuvaret, vix nullam epicuri senserit te., 
+Client received packet number 126of174
+
+Client sent packet # 127  to client gremlin.
+--Checksum values OK--
+Packet # 127 of 174: NOT CORRUPTED
+
+ACK for packet number 127
+
+MESSAGE(Packet# 127): , Usu magna modus eu. Ipsum partem noluisse ex eos. Eius eirmod no nam, id homero primis fabulas eos, ex pri putant imperdiet. Patrioque voluptatum interpretaris eos cu, et mel utinam consequat incorrupte. Id vis laoreet civibus hendrerit, id movet graeci denique duo., , Pri nostrum postulant reformidans an. Iriure denique ne mel, ei munere indoctum duo, fuisset fabellas sententiae ea pri. Apeirian contentiones sed eu, idque errem facilisis et mea. Alienum aliquando honestatis vim ea, vim putent nos
+Client received packet number 127of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 128
+
+Client sent packet # 129  to client gremlin.
+--Checksum values OK--
+Packet # 129 of 174: NOT CORRUPTED
+
+ACK for packet number 129
+
+MESSAGE(Packet# 129): llam efficiendi eos cu, pro ne ludus repudiare. Porro fastidii deterruisset ne usu, ei vero verterem euripidis quo. Has erant impetus et. Et eam dicam mucius assentior, ei integre fabellas quo., , Rebum eloquentiam eam no. Pro cu nonumy electram democritum, mei in ferri dolorum appellantur. Eos id graeci assueverit. Graeco everti discere pro id, no qui laboramus similique instructior, an vim mentitum urbanitas disputando. Ex mei admodum tibique conclusionemque, vis docendi deleniti concludaturque in
+Client received packet number 129of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 122
+
+Client sent packet # 128  to client gremlin.
+--Checksum values OK--
+Packet # 128 of 174: NOT CORRUPTED
+
+ACK for packet number 128
+
+MESSAGE(Packet# 128): trum laboramus ei., , Accumsan explicari quaerendum vix ut, eam id periculis euripidis consequat, duo dicant possim et. Has vero quas te, dolore scripta fabulas ad nam, vim harum habemus in. Id quaeque iracundia percipitur est, ad liber scribentur per, autem accommodare pro ad. No summo nostrum eloquentiam usu, mel at falli consul everti. Facilisis elaboraret eos ex, ferri dissentiunt signiferumque eos id., , Ea sanctus percipitur cotidieque cum, nec maluisset persequeris id. Cum ex omnes affert. Nu
+Client received packet number 128of174
+
+Client sent packet # 122  to client gremlin.
+--Checksum values OK--
+Packet # 122 of 174: NOT CORRUPTED
+
+ACK for packet number 122
+
+Window moved 123 to 130
+
+Window moved 124 to 131
+
+Window moved 125 to 132
+
+Window moved 126 to 133
+
+Window moved 127 to 134
+
+Window moved 128 to 135
+
+Window moved 129 to 136
+
+Window moved 130 to 137
+
+MESSAGE(Packet# 122):  ad eos alia dicant sapientem, nemore fabulas cum ad. Sed et dicam iudicabit expetendis, mea summo elitr et., , Sit modo vivendo eligendi no. Ius in antiopam deterruisset, ei altera convenire vix, ex tale deleniti vulputate qui. Admodum alienum efficiendi mea ei, nam admodum dissentias quaerendum cu. Persequeris vituperatoribus cu duo, at vitae recteque quo. Usu decore nominavi at, pri cu debet accommodare., , Ea eum electram constituam. Qui ut rebum equidem prodesset. Vim sapientem consulatu no, na
+Client received packet number 122of174
+
+Client sent packet # 130  to client gremlin.
+--Checksum values OK--
+Packet # 130 of 174: NOT CORRUPTED
+
+ACK for packet number 130
+
+Window moved 131 to 138
+
+MESSAGE(Packet# 130): ., , Ea vituperata adversarium delicatissimi sea, tollit suavitate ne sit. Cu sumo quas has, nec persius platonem signiferumque ei. Nisl verterem scribentur eum an. Commodo principes nec te, nam prima singulis ad, id vidisse recusabo adversarium his. Ne eam prima exerci graecis. Luptatum senserit dissentias duo at, eum id consul officiis, ridens utroque ut cum., , Pri ponderum vituperata scribentur ut, probo augue essent cu eam. Ad paulo doming adipisci mei, nam quas minim ea. Sea te euismod fuisset
+Client received packet number 130of174
+
+Client sent packet # 131  to client gremlin.
+--Checksum values OK--
+Packet # 131 of 174: NOT CORRUPTED
+
+ACK for packet number 131
+
+Window moved 132 to 139
+
+MESSAGE(Packet# 131):  tacimates, eu eruditi corrumpit nec, et malorum veritus sit. Vix percipit petentium voluptaria at, exerci persius theophrastus ius eu. No reque aperiam accumsan sit, eum tation nusquam insolens id, ea diam labore docendi mei., , Ad per harum volutpat. Eum verear graecis antiopam et, at mei ullum suscipit. Duo ne possim insolens reformidans, quis amet audiam qui te. At eum verear recusabo, ea libris ancillae assentior eos, cum accusata consectetuer no. Vix probo oratio molestie ut, sea id liber cong
+Client received packet number 131of174
+
+Client sent packet # 132  to client gremlin.
+--Checksum values OK--
+Packet # 132 of 174: NOT CORRUPTED
+
+ACK for packet number 132
+
+Window moved 133 to 140
+
+MESSAGE(Packet# 132): ue quando, ex mei clita molestie disputando. Ut eam nulla intellegebat delicatissimi., , Ea alii appetere vel, mei eu mediocrem scribentur. Cu soluta temporibus nec, nemore fabulas accusata ei ius, tractatos definiebas no mei. Ex per stet dicat, dicta vidisse ad per. Per in sale iudico, eu pri scripta appetere., , Nam et melius salutandi comprehensam. Impetus aliquam sit eu, mea aeque persequeris ut, alii sint senserit te qui. No pro fabellas moderatius, quot salutandi cu per. Ne ignota ridens commu
+Client received packet number 132of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 133
+
+Client sent packet # 134  to client gremlin.
+--Checksum values OK--
+Packet # 134 of 174: NOT CORRUPTED
+
+ACK for packet number 134
+
+MESSAGE(Packet# 134): et meliore disputando mea, mea ad mundi choro consequat, ea agam inani euismod vim. Ei mea quem tempor prompta, nam at possit nostrum. Omnium equidem ceteros qui et, cum et alii sanctus, case causae voluptaria ea est., , Ne posse feugait consetetur vim, dicat eripuit eam ad, ius omnis suscipiantur comprehensam ne. Eu elitr consul necessitatibus cum, diam tincidunt ex usu, te nam adhuc scripserit. Ius ei brute principes, eu quo debet dicant vituperata. Eruditi persequeris sit id, quodsi sententiae in
+Client received packet number 134of174
+
+Client sent packet # 135  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46675, EXPECTED checksum: 46997
+Packet # 135 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 135
+
+Client sent packet # 136  to client gremlin.
+--Checksum values OK--
+Packet # 136 of 174: NOT CORRUPTED
+
+ACK for packet number 136
+
+MESSAGE(Packet# 136): . Ea mel nulla utinam. At ius sonet definitionem concludaturque. Vel affert civibus ut. In mei alterum laoreet interesset. An postea mnesarchum repudiandae vis, eam augue altera nonumes id, dicam scaevola per at., , Qui mazim dicam gubergren et, vim habeo dolores contentiones ei. Pro te minim vocibus oportere, quidam aperiam sit ut, ei aeque noluisse accusata eos. Te iudico eleifend maluisset sit. Eam alterum mandamus eu. Melius argumentum ad sea, ius in omnium mediocrem honestatis. Qui quaeque volu
+Client received packet number 136of174
+
+Client sent packet # 137  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46574, EXPECTED checksum: 46731
+Packet # 137 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 137
+
+Client sent packet # 138  to client gremlin.
+--Checksum values OK--
+Packet # 138 of 174: NOT CORRUPTED
+
+ACK for packet number 138
+
+MESSAGE(Packet# 138): Idque inimicus an duo, ea errem copiosae percipit sit, pro et munere adolescens., , Dolorum theophrastus ius eu. Gloriatur reprimique disputando at qui, eu est magna volumus. Nec aeterno urbanitas at. No atqui etiam accusata mei, vim te case equidem urbanitas., , Pri probo alterum habemus an. Duo te tritani labitur scriptorem, et usu ferri doctus referrentur, eum urbanitas intellegam delicatissimi ea. Malis dicunt at sed. Bonorum salutatus temporibus in mea. Vis reque melius te, ne pri quot quaeque,
+Client received packet number 138of174
+
+Client sent packet # 139  to client gremlin.
+--Checksum values OK--
+Packet # 139 of 174: NOT CORRUPTED
+
+ACK for packet number 139
+
+MESSAGE(Packet# 139):  ad dicant cetero utamur pro. Quo aeque virtute petentium eu, fuisset volutpat ei duo., , Ex nec tantas postulant, et his veniam timeam. Pri no tollit reformidans contentiones, sit audiam oportere ex, eum case erat delicatissimi ne. Mea corpora percipitur ad, vel alia summo deseruisse ut. Appareat percipit has ne., , Has eu vivendum honestatis. Vis in putent vocent. Mei ne graeci intellegebat. Ius dolor repudiare te, vis diam cetero scripta te. Ei modus posse similique his, eu liber dolore assueveri
+Client received packet number 139of174
+
+Client sent packet # 140  to client gremlin.
+--Checksum values OK--
+Packet # 140 of 174: NOT CORRUPTED
+
+ACK for packet number 140
+
+MESSAGE(Packet# 140): t est., , Graeci cetero mea no, per quodsi veritus copiosae ad, facer equidem comprehensam per no. Iusto nihil vocibus eos cu, ne has paulo dolor, mel veniam oporteat et. Has eu populo nemore suscipiantur. Veniam commodo ocurreret usu ei. Laoreet commune voluptatibus no sea. Nulla perfecto nam te., , Habeo moderatius ne his, elit feugiat vix ne. Per hinc dicat dignissim an, eu eos lorem commodo disputationi. Quod alterum pericula vix cu. Ad cum legere interpretaris. Cu vide minimum placerat quo, vel
+Client received packet number 140of174
+
+Client sent packet # 133  to client gremlin.
+--Checksum values OK--
+Packet # 133 of 174: NOT CORRUPTED
+
+ACK for packet number 133
+
+Window moved 134 to 141
+
+Window moved 135 to 142
+
+MESSAGE(Packet# 133): ne has, harum denique no has, his stet adhuc justo id., , Tota facilisi comprehensam sed eu, vim cu erant dictas electram. Atqui vivendo nam ex, tota nusquam lucilius ne sea, ne veniam periculis vulputate cum. Ut iracundia scriptorem mel. Nam mucius fabulas ex. Ei veri timeam assentior quo. Eum in tota suscipit constituam, an impetus phaedrum quo, ne his putent labore graeco., , Has liber causae splendide ei. Eu dico mediocritatem nam, ut mundi aperiam has, ea quo possim accumsan voluptatibus. Ut am
+Client received packet number 133of174
+
+Client sent packet # 135  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46806, EXPECTED checksum: 46997
+Packet # 135 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 135
+
+Client sent packet # 137  to client gremlin.
+--Checksum values OK--
+Packet # 137 of 174: NOT CORRUPTED
+
+ACK for packet number 137
+
+MESSAGE(Packet# 137): ptatum an., , Te aliquid epicuri officiis mei. Has id meis paulo, mea docendi prodesset ex, eu facilisi signiferumque sed. Cum ornatus atomorum cu, scaevola signiferumque sed eu. Eam ad paulo gubergren, ad sonet putant dolorum mel, cu viris evertitur dissentiunt qui. Id vim mundi mollis integre., , Ei his audire expetenda, populo audiam moderatius vis no. Duo assum semper partiendo te, at modo errem dissentiunt mea. Vim quis nusquam definitionem in, commune verterem pro in, odio philosophia pri an. 
+Client received packet number 137of174
+
+Client sent packet # 141  to client gremlin.
+--Checksum values OK--
+Packet # 141 of 174: NOT CORRUPTED
+
+ACK for packet number 141
+
+MESSAGE(Packet# 141):  id quas docendi complectitur, et meis quas commodo eum. Nusquam elaboraret vel at., , Cum aeterno sanctus appellantur ex, in nam indoctum adipiscing, propriae sententiae ex est. Vidit dicat audiam ei nam. Malorum persecuti definiebas vis cu. Cotidieque definitionem ad sed, eos ne option lucilius quaerendum., , No sed sumo nemore utamur. Pro eripuit epicurei volutpat te, qui meliore facilisis deseruisse ea, sed ut nostrum voluptaria interesset. Ea paulo audiam nec. Saepe percipitur scripserit ad sed
+Client received packet number 141of174
+
+Client sent packet # 142  to client gremlin.
+--Checksum values OK--
+Packet # 142 of 174: NOT CORRUPTED
+
+ACK for packet number 142
+
+MESSAGE(Packet# 142): , an dignissim neglegentur est. Vix eu quaeque sapientem. Graeco albucius delicatissimi te his., , Veri delectus duo ea, eum minim tritani te. Dicat ancillae apeirian et vix, est elit ponderum cu. Vitae theophrastus disputationi eu his. Principes argumentum ex quo. Sonet definitiones id sit, in his singulis pertinacia. Per ex laudem persius, essent expetenda duo ea. Eu eos minim insolens incorrupte., , Has graece eripuit ad, ius quod prompta eu, ei sit habemus consulatu hendrerit. Per indoctum adipi
+Client received packet number 142of174
+
+Client sent packet # 135  to client gremlin.
+--Checksum values OK--
+Packet # 135 of 174: NOT CORRUPTED
+
+ACK for packet number 135
+
+Window moved 136 to 143
+
+Window moved 137 to 144
+
+Window moved 138 to 145
+
+Window moved 139 to 146
+
+Window moved 140 to 147
+
+Window moved 141 to 148
+
+Window moved 142 to 149
+
+Window moved 143 to 150
+
+MESSAGE(Packet# 135): structior vis ex, eos at clita molestiae. Posse iracundia cu nam, inermis pericula ad vel. His quot intellegebat ut, albucius indoctum assueverit ne pri., , Vix interesset suscipiantur ea, illum aperiam moderatius est ne, sea maiorum eleifend at. Appareat definitiones eum ea, ei labitur legimus detracto usu. Nisl putent at est. Pro summo viris persius ad. Iudico iriure ponderum et vix, ne possim mandamus est, detraxit deterruisset ea quo., , Et dolorem iracundia per, tale nominavi reformidans cu qui
+Client received packet number 135of174
+
+Client sent packet # 143  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46586, EXPECTED checksum: 46825
+Packet # 143 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 143
+
+Client sent packet # 144  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46441, EXPECTED checksum: 46727
+Packet # 144 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 144
+
+Client sent packet # 145  to client gremlin.
+--Checksum values OK--
+Packet # 145 of 174: NOT CORRUPTED
+
+ACK for packet number 145
+
+MESSAGE(Packet# 145): ti, qui vocibus luptatum necessitatibus in. Modus aeque ut quo, sint saepe ius ex. Cu ius dico alia quidam, id admodum insolens nam., , Dictas alienum iudicabit no pri. Nam eros tollit electram ei, sed natum iisque fierent ad. Impedit urbanitas at his. No bonorum scribentur conclusionemque eam, corpora conceptam efficiantur cum id., , Est id similique concludaturque, prima intellegat dissentiet ius ei. Vis salutatus interesset ex, has cu malis epicuri. His fuisset inciderint te. Commodo ponderum sed
+Client received packet number 145of174
+
+Client sent packet # 146  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46891, EXPECTED checksum: 47102
+Packet # 146 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 146
+
+Client sent packet # 147  to client gremlin.
+--Checksum values OK--
+Packet # 147 of 174: NOT CORRUPTED
+
+ACK for packet number 147
+
+MESSAGE(Packet# 147): , id eam omnes prodesset, ei eos putent ornatus. Audiam iriure noluisse id vix, sed falli dissentias in, eu justo scribentur his., , Pro ceteros partiendo at, pro cu vide appellantur. Id mandamus eloquentiam ius. Dicit graecis atomorum vis ad, at mei veri ullum, ius epicurei periculis eu. Nihil postea duo at. Mutat atqui euripidis ad sit. Est expetenda complectitur ea, ea justo idque menandri mei, pro prima error percipitur no., , Quaestio expetenda salutatus ei nec, id qui aliquip pertinax. Eos ut 
+Client received packet number 147of174
+
+Client sent packet # 148  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46754, EXPECTED checksum: 47040
+Packet # 148 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 148
+
+Client sent packet # 149  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46394, EXPECTED checksum: 46484
+Packet # 149 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 149
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 150
+
+Client sent packet # 143  to client gremlin.
+--Checksum values OK--
+Packet # 143 of 174: NOT CORRUPTED
+
+ACK for packet number 143
+
+Window moved 144 to 151
+
+MESSAGE(Packet# 143): scing ad. Te mea tamquam postulant, duo audire aliquip constituam eu, mel et atqui exerci. Eu eum democritum scribentur, quas novum tamquam ad sea, ius no suas debitis. Est cu similique rationibus, quem iuvaret eu pro, saepe conceptam cu eum. Sit ea dicant legimus, quo offendit hendrerit ex, mel alienum persequeris consectetuer ne. Ei noster malorum fuisset pro, ad autem ubique facilis eos., , Ne sed consul civibus phaedrum. Dolorum senserit signiferumque pri ne, has alii impedit cu, ius eu malis do
+Client received packet number 143of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 144
+
+Client sent packet # 146  to client gremlin.
+--Checksum values OK--
+Packet # 146 of 174: NOT CORRUPTED
+
+ACK for packet number 146
+
+MESSAGE(Packet# 146):  no, volutpat facilisis vis ut., , Eos te postulant eloquentiam. Audire labitur oportere sea no, vel commune conceptam assueverit an, cu duo labores meliore tibique. Ut vis ancillae interpretaris, urbanitas sententiae ullamcorper usu no. Quo fuisset vulputate eu., , Per magna nullam docendi ad, albucius neglegentur ad duo. Suas numquam menandri qui no, ex idque labores sed. Eum nonumy feugait deterruisset at, nec ea case dolorum. At solet corpora similique sed. Eam perfecto legendos mediocritatem ne
+Client received packet number 146of174
+
+Client sent packet # 148  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46908, EXPECTED checksum: 47040
+Packet # 148 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 148
+
+Client sent packet # 149  to client gremlin.
+--Checksum values OK--
+Packet # 149 of 174: NOT CORRUPTED
+
+ACK for packet number 149
+
+MESSAGE(Packet# 149): o stet ocurreret., , Alii doming civibus ut usu, autem commodo nominavi ut vix. Sea aperiam fierent ex. Mea justo legere rationibus ea, fuisset pertinax eam in, molestie patrioque ei duo. Mel et semper eirmod adipiscing, ad sed maiestatis repudiandae, his oratio viderer eu. An eam aperiam accusata maluisset, ea duo sonet habemus. Magna quando commune sit ne., , Magna zril et mea. Ridens debitis platonem ad mel, movet adipisci consetetur ea sed, erat melius dignissim eu his. Novum iracundia repudiand
+Client received packet number 149of174
+
+Client sent packet # 150  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 47161, EXPECTED checksum: 47248
+Packet # 150 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 150
+
+Client sent packet # 151  to client gremlin.
+--Checksum values OK--
+Packet # 151 of 174: NOT CORRUPTED
+
+ACK for packet number 151
+
+MESSAGE(Packet# 151):  nonumes mandamus erroribus vix ad. Tation facilis complectitur ad per., , Mazim scribentur quo te, vix te scaevola adversarium, vis sint errem explicari ea. Te sit fugit congue, duo dicant invenire ad. Phaedrum delicatissimi vix no, copiosae tacimates per an. Audiam principes cu sea, at euripidis definitionem sea, his facete numquam ut. Ea legere eligendi maluisset quo, ea eos iusto detraxit. Electram instructior no usu, tacimates pericula est eu, ne mel propriae postulant definitiones. Sint facete
+Client received packet number 151of174
+
+Client sent packet # 144  to client gremlin.
+--Checksum values OK--
+Packet # 144 of 174: NOT CORRUPTED
+
+ACK for packet number 144
+
+Window moved 145 to 152
+
+Window moved 146 to 153
+
+Window moved 147 to 154
+
+Window moved 148 to 155
+
+MESSAGE(Packet# 144): lore nostrum. Te sed sumo recusabo, cu eos eligendi facilisis. Vel an omnium explicari democritum, etiam nullam est at., , Eum in discere fabulas constituam. Vim no minimum signiferumque. Pri ut vidit graeco, eam no detracto instructior. Sit at viderer disputando philosophia, vis illud porro ex, vix nibh adversarium eu. Suas tacimates vim ut, ea cum modo hinc, eros simul sanctus cum an., , Te cum omnium reprehendunt, elitr senserit his eu. Cetero tractatos principes te usu, nam te sonet veniam erudi
+Client received packet number 144of174
+
+Client sent packet # 148  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 47012, EXPECTED checksum: 47040
+Packet # 148 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 148
+
+Client sent packet # 150  to client gremlin.
+--Checksum values OK--
+Packet # 150 of 174: NOT CORRUPTED
+
+ACK for packet number 150
+
+MESSAGE(Packet# 150): ae no vel, mea legere labore accommodare id, eam phaedrum mediocrem ne. In ius soluta volumus dissentiunt., , Et congue prompta senserit vix. Tation ponderum per id. Tibique forensibus moderatius vix in. Eum graeco quaestio omittantur ne, eos nonumes suscipit ocurreret eu. Ex nam omnium meliore mnesarchum., , Corrumpit pertinacia mei at, an option aliquip offendit cum, nam legendos consectetuer eu. Soluta civibus liberavisse mel ea, an quo utamur legimus repudiandae. In has nostrud fuisset suscipit,
+Client received packet number 150of174
+
+Client sent packet # 152  to client gremlin.
+--Checksum values OK--
+Packet # 152 of 174: NOT CORRUPTED
+
+ACK for packet number 152
+
+MESSAGE(Packet# 152):  usu cu, mei audire singulis at., , Eu erat numquam omnesque sit, ex has singulis deseruisse. Fugit adolescens nam an. Et mel semper inermis explicari, his ne nibh fastidii postulant. Viderer impedit conclusionemque ei has., , Vel nominavi reprimique consectetuer ea, est mazim recusabo ex. Vocent virtute antiopam mei no, pro copiosae appellantur at. Eu nec prima eruditi, ex solum tollit luptatum duo. Nam te porro dolor vocibus, ad facilisis vituperata duo., , Vis purto nostrum ne, id eum commodo feu
+Client received packet number 152of174
+
+Client sent packet # 153  to client gremlin.
+--Checksum values OK--
+Packet # 153 of 174: NOT CORRUPTED
+
+ACK for packet number 153
+
+MESSAGE(Packet# 153): gait. In corpora splendide nec. Summo gloriatur ad sit. Sed ignota aperiam sanctus no, an sed mutat illud dolor., , Eam lorem explicari ei, cum illum principes constituam ad. Ea tritani efficiantur definitiones nec. Ea vim voluptatum persequeris, ut amet ridens quo, ut graeco tamquam mea. Pri tritani intellegam appellantur ne, has oratio ocurreret at., , Eum ad doctus aliquip oblique, an zril interesset has. In quo novum utroque, no nam fabulas periculis. Iudico tritani ea vim. Eam case lorem mazim 
+Client received packet number 153of174
+
+Client sent packet # 154  to client gremlin.
+--Checksum values OK--
+Packet # 154 of 174: NOT CORRUPTED
+
+ACK for packet number 154
+
+MESSAGE(Packet# 154): ei, per feugiat erroribus an. Ne qui verterem expetendis., , Nec et agam nonumes invenire. Vel ne scripta persius officiis, sea et verterem assentior. Falli indoctum eam id, ex virtute euismod civibus nam. Ea aliquid eloquentiam cum, volutpat accusamus deterruisset eu vix, has modus nominati oportere ei. Sed an perfecto nominati quaerendum., , Ex vel vituperata instructior, iisque appellantur ad per, ex summo electram periculis eum. Pro in mucius putant sapientem, ei vel dicat doming. Ne duo sonet s
+Client received packet number 154of174
+
+Client sent packet # 155  to client gremlin.
+--Checksum values OK--
+Packet # 155 of 174: NOT CORRUPTED
+
+ACK for packet number 155
+
+MESSAGE(Packet# 155): alutatus aliquando. At vel disputando instructior, idque soleat postulant ei usu. Te vix dolor aeterno. Dolores hendrerit cu est, ea sea aperiri bonorum accommodare., , Sit ea posse adipiscing consequuntur, no has pertinax mediocritatem, has tempor tritani nusquam ea. Ei eam tibique ullamcorper reprehendunt, ne omnes delenit maluisset cum. Falli mazim te per, case falli alienum ea eum. Te putent inimicus ius. Eu soluta audire has. Ei alia ignota nostrud vix., , Cu ius causae vocent vocibus. Tota hab
+Client received packet number 155of174
+
+Client sent packet # 148  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46779, EXPECTED checksum: 47040
+Packet # 148 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 148
+
+Client sent packet # 148  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46916, EXPECTED checksum: 47040
+Packet # 148 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 148
+
+Client sent packet # 148  to client gremlin.
+--Checksum values OK--
+Packet # 148 of 174: NOT CORRUPTED
+
+ACK for packet number 148
+
+Window moved 149 to 156
+
+Window moved 150 to 157
+
+Window moved 151 to 158
+
+Window moved 152 to 159
+
+Window moved 153 to 160
+
+Window moved 154 to 161
+
+Window moved 155 to 162
+
+Window moved 156 to 163
+
+MESSAGE(Packet# 148): consul alterum sententiae, utroque inimicus expetendis quo ut. Vix unum conclusionemque ad, aeque pertinacia forensibus sea ei. Ne euripidis scripserit quo., , Nonumes euripidis id duo, et dicat novum eam. Id etiam liber interesset pri, vidisse docendi verterem an nam. Sumo putent delectus ius ad, nam ea laboramus temporibus, suscipit consetetur honestatis per ex. Regione feugiat fabulas ne vix, per adhuc dicit no. Alii quando tation quo at. Ius ex erat phaedrum, eos ad erat affert consetetur. Ea du
+Client received packet number 148of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 156
+
+Client sent packet # 157  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46854, EXPECTED checksum: 46975
+Packet # 157 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 157
+
+Client sent packet # 158  to client gremlin.
+--Checksum values OK--
+Packet # 158 of 174: NOT CORRUPTED
+
+ACK for packet number 158
+
+MESSAGE(Packet# 158): mpor noster habemus id pro, suas altera et sea, id novum melius sit., , Semper expetendis moderatius vel ad. Vix solet aperiam tibique ea, sit verear phaedrum id. Duo eu cibo erant eloquentiam. Pro ex alienum delicata inciderint, etiam adolescens eos at. Ius nulla invenire ut, probo nulla eu vim. Dicta utinam fabellas cum at., , Delicata concludaturque his at, ea ius nonumy aliquip aperiri, sit quod ludus propriae in. Cibo vidit scripta cum ut, ei ignota deleniti sit. At vim adolescens complectitur,
+Client received packet number 158of174
+
+Client sent packet # 159  to client gremlin.
+--Checksum values OK--
+Packet # 159 of 174: NOT CORRUPTED
+
+ACK for packet number 159
+
+MESSAGE(Packet# 159):  te electram contentiones per. Usu ex semper aperiri quaestio. Essent numquam dissentiunt sit ei, ei duo altera delicata senserit., , Mei liber cetero patrioque et, laoreet perfecto tincidunt an duo, semper scripta mel ne. Te ubique singulis sea, mei simul habemus ad. Mel at saperet eligendi accusamus. Eu atomorum necessitatibus mea, mutat tractatos sed ex. Est case facilisi at, alii inciderint signiferumque has ad, ne ferri definitiones mel. Clita graeci evertitur cu duo, sumo minimum insolens eum 
+Client received packet number 159of174
+
+Client sent packet # 160  to client gremlin.
+--Checksum values OK--
+Packet # 160 of 174: NOT CORRUPTED
+
+ACK for packet number 160
+
+MESSAGE(Packet# 160): in. Pri veri gubergren pertinacia an., , Autem docendi at nec. Liber simul dolores cu duo. Graeci doming ut per, omnesque pertinacia vix eu, mel id nemore iracundia. In deleniti argumentum sit, qui purto etiam scripserit ea. In mei magna bonorum hendrerit, usu ea veniam graeci deserunt., , Odio assum cu vis, ut mei bonorum epicuri, sed no erat decore ornatus. Ex eam nisl eros albucius, reque inermis argumentum te quo. Cu pri mazim nostrud. Equidem definitionem mea cu., , Usu ludus labores ad, nulla 
+Client received packet number 160of174
+
+Client sent packet # 161  to client gremlin.
+--Checksum values OK--
+Packet # 161 of 174: NOT CORRUPTED
+
+ACK for packet number 161
+
+MESSAGE(Packet# 161): mundi in quo, ut phaedrum incorrupte quaerendum qui. No solum accusamus maiestatis pri, usu possim alterum copiosae in, in falli docendi vix. Et eum scripta accusam dissentiunt, et pri alia paulo, nec vero nemore ne. Mea probo pertinacia voluptatum te. Justo animal ei cum, te melius fuisset nam. Duis tamquam quo ad, eu mea adipisci corrumpit interesset., , Eos vero congue discere ei. Vix liber similique deseruisse cu, delicata elaboraret dissentias vix at, suas repudiare pro ex. Oblique apeirian ref
+Client received packet number 161of174
+
+Client sent packet # 162  to client gremlin.
+--Checksum values OK--
+Packet # 162 of 174: NOT CORRUPTED
+
+ACK for packet number 162
+
+MESSAGE(Packet# 162): errentur mei ne, erant adipisci ius ad. Tota aeterno pro ne. Vel ad nominavi scribentur, nulla abhorreant et quo. In fuisset mentitum suscipiantur eam, in evertitur voluptaria disputando ius., , Periculis voluptatum eloquentiam his te. An alia legimus pertinacia sit, veniam impedit argumentum cu nec. Fugit delectus his ut, cum ea oratio inermis quaerendum. Denique assueverit scribentur has at, vim harum electram ad. Timeam recteque in sea, nonumes indoctum accusamus eum ex. Ius etiam fastidii id, la
+Client received packet number 162of174
+
+Client sent packet # 163  to client gremlin.
+--Checksum values OK--
+Packet # 163 of 174: NOT CORRUPTED
+
+ACK for packet number 163
+
+MESSAGE(Packet# 163): bore tamquam minimum id ius. Ad utamur legimus scriptorem sit., , Iusto consequat quaerendum id sit. At est inani deterruisset. Elit reprimique est in, ut pri fastidii quaestio instructior. In affert accumsan ius. Ea nec mentitum splendide vulputate, veniam antiopam ut mea, mel at illud adipiscing., , Fierent constituam duo et. No mei tation disputando. Mucius appetere lucilius et pri. Et est malorum explicari. Cibo inermis ocurreret no duo, in vis sint salutandi necessitatibus. Nam graeci sapientem
+Client received packet number 163of174
+
+Client sent packet # 156  to client gremlin.
+--Checksum values OK--
+Packet # 156 of 174: NOT CORRUPTED
+
+ACK for packet number 156
+
+Window moved 157 to 164
+
+MESSAGE(Packet# 156): eo dicit id ius. Dicant reformidans te cum. Ex antiopam sapientem adolescens pro. Fabulas utroque repudiare sed at, vel ad solum perpetua, sea porro eruditi urbanitas id. No nec mucius dolores, ea nemore laoreet partiendo eum. Noster forensibus ea nam., , Duo augue prodesset cu, ne solum dicat sed. Pri enim audiam at, at sed offendit gubergren. Te per possit malorum euismod, oratio aliquip ne pri. Eam ex reque elaboraret, eos ut possit tamquam. Id graeci vocibus vis, case veri meis ea usu. Vis ea am
+Client received packet number 156of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 157
+
+Client sent packet # 164  to client gremlin.
+--Checksum values OK--
+Packet # 164 of 174: NOT CORRUPTED
+
+ACK for packet number 164
+
+MESSAGE(Packet# 164):  ad, in est causae atomorum philosophia, aliquip feugait reformidans nec in., , Ad commune salutandi assueverit sea, qui tamquam deserunt et, et vivendum deterruisset vis. Te harum gloriatur sea. Inermis copiosae ullamcorper mei an, cum ea simul primis viderer, odio torquatos interesset vis te. Modus epicuri praesent pro ex, ex aperiri virtute his. Ut illum interesset per, eu sed augue democritum., , Elit cetero id nec. Et mei vitae quaeque, odio convenire mei ei. Ad corpora dissentiunt contentiones
+Client received packet number 164of174
+
+Client sent packet # 157  to client gremlin.
+--Checksum values OK--
+Packet # 157 of 174: NOT CORRUPTED
+
+ACK for packet number 157
+
+Window moved 158 to 165
+
+Window moved 159 to 166
+
+Window moved 160 to 167
+
+Window moved 161 to 168
+
+Window moved 162 to 169
+
+Window moved 163 to 170
+
+Window moved 164 to 171
+
+Window moved 165 to 172
+
+MESSAGE(Packet# 157): et ipsum aliquip, mel regione nominavi sententiae ei., , Dicat inermis voluptatibus per ut. Singulis conceptam ne quo, stet ludus neglegentur qui ei. Sit ea enim quodsi, idque everti has id. Munere soleat ut duo, consul tincidunt percipitur eu ius, alienum qualisque ut mea. Oratio altera interesset te ius., , Errem forensibus id per. Vim exerci antiopam oportere in, quo laudem abhorreant suscipiantur ne. Affert nonumes quaerendum eum et, id mel nobis efficiendi, ne essent accumsan mnesarchum vix. Te
+Client received packet number 157of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 165
+
+Client sent packet # 166  to client gremlin.
+--Checksum values OK--
+Packet # 166 of 174: NOT CORRUPTED
+
+ACK for packet number 166
+
+MESSAGE(Packet# 166): l. Id est reque integre, laoreet accusam sapientem mei ne. Homero ancillae facilisis vel in, tale expetenda duo ad. Copiosae senserit disputationi nec ad, errem senserit vel an. Per vidit sonet cu., , Vel solum novum cetero cu. Tota semper copiosae quo id, duo et wisi primis epicuri. Nam nostrum reprehendunt no, pri id alii eius, modo movet consul ut sit. Ad sea iusto tibique, et eum ferri legere contentiones., , Odio expetendis et pro, est no congue liberavisse delicatissimi. Ea his alii vidit repu
+Client received packet number 166of174
+
+
+
+Client LOST packet
+
+NAK(lost) for packet number 167
+
+Client sent packet # 168  to client gremlin.
+--Checksum values OK--
+Packet # 168 of 174: NOT CORRUPTED
+
+ACK for packet number 168
+
+MESSAGE(Packet# 168): neglegentur definitionem no cum. Cu his dicat viris feugiat, duo placerat ullamcorper ei., , Sea falli eripuit invenire cu. Odio menandri nominati eam ea, agam nibh vis ne. Iudico utinam volumus est id, usu ad probo timeam delicatissimi. Graecis reprimique cu sea, vel copiosae prodesset ne. Ut assum fierent urbanitas duo, pri eu munere iisque, ad stet probo eos. Latine rationibus eu pro., , Oporteat vivendum reprimique et pro, mei et singulis lobortis adversarium. Justo dicunt ius ne, ut eum lorem n
+Client received packet number 168of174
+
+Client sent packet # 169  to client gremlin.
+--Checksum values OK--
+Packet # 169 of 174: NOT CORRUPTED
+
+ACK for packet number 169
+
+MESSAGE(Packet# 169): onumy, utinam deserunt pro ei. Ullum invenire te cum. Mel ex everti fuisset vulputate. Semper definitiones vituperatoribus et vel, antiopam partiendo et sit. Pri inermis aliquando et., , Sit labore referrentur complectitur ei, sed ei adversarium definitionem. His id sumo integre, soleat rationibus his cu, vel erant inermis blandit eu. Lorem laboramus ea qui, eu delenit instructior mei. Porro virtute nam ea., , Dicam patrioque in vix, porro vivendo cu usu. Vix ad quodsi facilisis disputando, ne graec
+Client received packet number 169of174
+
+Client sent packet # 170  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46119, EXPECTED checksum: 46189
+Packet # 170 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 170
+
+Client sent packet # 171  to client gremlin.
+--Checksum values OK--
+Packet # 171 of 174: NOT CORRUPTED
+
+ACK for packet number 171
+
+MESSAGE(Packet# 171): um, an instructior voluptatibus qui. Ut pri aliquid percipitur., , Sit ea dicant volutpat, per cu noster constituam. Ne sea purto doming veritus, suas adipisci ad sit. Ex cum saepe decore, et ipsum maluisset definiebas vis. No eos nonumy quidam mediocritatem. Elitr dicam cu eum, ex his vide putent eripuit. Per solum invidunt id, vel eu omnes mollis adipisci., , Et ipsum vitae equidem sea, pri tota iudicabit in. Usu homero dicunt at. Mea ea consul feugiat invidunt, vel brute primis forensibus in, no 
+Client received packet number 171of174
+
+Client sent packet # 172  to client gremlin.
+***CHECKSUM ERROR***: ACTUAL checksum: 46398, EXPECTED checksum: 46496
+Packet # 172 of 174: ***CORRUPTED***
+
+NAK(corruption) for packet number 172
+
+Client sent packet # 165  to client gremlin.
+--Checksum values OK--
+Packet # 165 of 174: NOT CORRUPTED
+
+ACK for packet number 165
+
+Window moved 166 to 173
+
+Window moved 167 to 174
+
+MESSAGE(Packet# 165):  vis. Quo principes argumentum in, et petentium incorrupte honestatis eum. Ne nam regione eligendi. Cu nibh dolorem nec., , Amet verear fuisset at has. Et munere utamur signiferumque nec, corpora euripidis adolescens te qui. Ne tincidunt appellantur sit, ex solum nobis ponderum sed. Lorem expetenda constituam has ut, cu nec duis inermis pertinax, stet virtute expetendis ne mea. Cum ipsum fuisset neglegentur eu, suas sint tibique in usu., , Id mazim eruditi theophrastus vix, enim iisque debitis et me
+Client received packet number 165of174
+
+Client sent packet # 167  to client gremlin.
+--Checksum values OK--
+Packet # 167 of 174: NOT CORRUPTED
+
+ACK for packet number 167
+
+Window moved 168 to 175
+
+Window moved 169 to 176
+
+Window moved 170 to 177
+
+MESSAGE(Packet# 167): diare, quo brute partem feugiat ut, nam habeo posidonium instructior ei. Te eam ocurreret splendide. Has elitr possit reprehendunt id, pri fugit timeam id., , Deserunt salutandi id has. Eos ei quodsi efficiantur, oratio intellegam eu sit. Vix alia meis mandamus in. Vocent veritus copiosae te vis, ea pro sonet percipit eloquentiam. Inermis salutatus qui an., , No cibo perfecto deseruisse est. Malorum prodesset te usu. Et eum iusto simul, est eu esse dissentiunt. Ius et corpora definitiones, mandamus 
+Client received packet number 167of174
+
+Client sent packet # 170  to client gremlin.
+--Checksum values OK--
+Packet # 170 of 174: NOT CORRUPTED
+
+ACK for packet number 170
+
+Window moved 171 to 178
+
+Window moved 172 to 179
+
+MESSAGE(Packet# 170): e mucius perfecto usu. Vix ferri accusam mandamus eu. Odio nisl ea has, has no iracundia urbanitas constituam. Tincidunt scripserit mea ex, sit at summo omnesque. Te mel tale libris, commune fastidii postulant an ius., , Ea dicit facilis deleniti mea, te per facilisi electram maiestatis. In esse harum periculis vim, ad his veniam dolore. Ad oratio percipit deseruisse eam, et vis debet omnes. Dicta omnium adolescens mei ea., , Vis id meis graeci. Cu modus eirmod iisque sit. Ut sea elit aperiam indoct
+Client received packet number 170of174
+
+Client sent packet # 172  to client gremlin.
+--Checksum values OK--
+Packet # 172 of 174: NOT CORRUPTED
+
+ACK for packet number 172
+
+Window moved 173 to 180
+
+MESSAGE(Packet# 172): per nobis dicant constituto. No probo saperet cum, ut cum dolor graeco., , Ea quem principes pro. Mei ad atqui error dignissim, posse nulla vel te. Vel vidisse splendide id. Quidam deseruisse vel ut, te usu munere debitis torquatos, errem deserunt ad eos. Ei fabellas intellegat qui, sea copiosae intellegat te., , No his vitae vocent repudiare. Cu per laudem contentiones disputationi, falli graeci eu pro. Reque mandamus ex ius, illum legendos et eum. Te legendos assentior nam, eam tation docendi omit
+Client received packet number 172of174
+
+Client sent packet # 173  to client gremlin.
+--Checksum values OK--
+Packet # 173 of 174: NOT CORRUPTED
+
+ACK for packet number 173
+
+Window moved 174 to 181
+
+MESSAGE(Packet# 173): tam ut, nam aliquip aperiri no. Deserunt principes in sit. Ne vix oratio officiis. Falli eruditi accusam nam id, alii solet qui ne., , Ignota adipiscing reprehendunt eos an. Agam epicuri eloquentiam ad sea. Vim elit corpora detracto ad, per et mutat evertitur appellantur, in discere definitionem eos. Eos timeam scripta deseruisse no, mucius noster eu mea. Ut mel inani fabulas suscipit. Tota idque veritus has ex., , Meis homero quaestio has in, usu ex erant philosophia. Pri an laudem laboramus, vix p
+Client received packet number 173of174
+
+Client sent packet # 174  to client gremlin.
+--Checksum values OK--
+Packet # 174 of 174: NOT CORRUPTED
+
+ACK for packet number 174
+
+MESSAGE(Packet# 174): robo eruditi consequat an. Id errem legere nec, sonet impedit id sit, ut docendi dignissim adolescens eam. Splendide elaboraret at ius. Duis congue periculis ne his, ignota mentitum eu vim. Iracundia adversarium usu.]                                                                                                                                                                                                                                                                                               
+Client received packet number 174of174
+
+
+
+***SERVER FINISHED***
+
+
+bash-4.2$ exit
+
+Script done on Thu 26 Jul 2018 04:18:26 PM CDT

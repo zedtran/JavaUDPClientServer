@@ -34,18 +34,24 @@ public class UDPClient {
          return;
       }
       // The probability of packet corruption
-      final double CORRUPT_PROBABILITY = Double.parseDouble(args[1]);  // Ensure: 0 <= CORRUPT_PROBABILITY < 1
+      final double CORRUPT_PROBABILITY = Double.parseDouble(args[1]);
+      final double LOSS_PROBABILITY = Double.parseDouble(args[2]);  // Ensure: 0 <= CORRUPT_PROBABILITY < 1
    
       // Ensuring command line arg probability is between 0 and 1
       if (CORRUPT_PROBABILITY < 0 || CORRUPT_PROBABILITY >= 1) {
          System.out.println("\nThe argument for runtime probability of packet corruption must be between 0 (inclusive) and 1 (exclusive).\n");
          System.exit(0);
       }
+      
+      if (LOSS_PROBABILITY < 0 || LOSS_PROBABILITY >= 1) {
+         System.out.println("\nThe argument for runtime probability of packet loss must be between 0 (inclusive) and 1 (exclusive).\n");
+         System.exit(0);
+      }
    
       //String hostname = InetAddress.getLocalHost().getHostName().trim();
       int port = Integer.parseInt(args[0]);
     
-      try {
+      try { 
          
          // Create Client Socket
          DatagramSocket clientSocket = new DatagramSocket();
@@ -65,32 +71,117 @@ public class UDPClient {
          // numPackets contains the number of packets that are being sent by the Server
          // containing the file data
          byte[] numPacketsBeingSent = new byte[4];
-         int j = 1;
-         DatagramPacket firstResponse = new DatagramPacket(numPacketsBeingSent, numPacketsBeingSent.length, InetAddress.getByName("131.204.14.55"), 10003);
+         //int j = 1;
+         DatagramPacket firstResponse = new DatagramPacket(numPacketsBeingSent, numPacketsBeingSent.length, InetAddress.getByName("131.204.14.55"), 10001);
          clientSocket.receive(firstResponse);
          int packetCount = ByteBuffer.wrap(numPacketsBeingSent).order(ByteOrder.BIG_ENDIAN).getInt();
-         System.out.println("\nClient received number of packets for requested file: " + (++packetCount) + "\n");
+         //System.out.println("\nClient received number of packets for requested file: " + (++packetCount) + "\n");
          
+         int[] array = new int[packetCount + 1];
+         int first = 0;
+         int last = 7;
          
-         while (j < packetCount + 1) {     
-            byte[] buffer = new byte[256];
-            DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length, InetAddress.getByName("131.204.14.55"), 10003);
+         while (first < packetCount + 1) {     
+            byte[] buffer = new byte[512];
+            DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length, InetAddress.getByName("131.204.14.55"), 10001);
             clientSocket.receive(responsePacket);
-            System.out.println("\n\nClient received packet # " + j + "  of " + packetCount);  
+            int pNum = getNum(buffer);
+            Double randomProb = new BigDecimal(Math.random()).setScale(1, BigDecimal.ROUND_HALF_DOWN).doubleValue(); 
+            if (pNum > last) {
+               //send NAK
+               byte[] p = new byte[5];
+               //p = intToBytes(pNum);
+               for (int b = 0; b < 4; b++) {
+                  p[b] = buffer[b+4];
+               }
+               p[4] = 0;
+               DatagramPacket NAK = new DatagramPacket(p, 5, IPAddress, port);
+               clientSocket.send(NAK);
+               System.out.println("\nNAK(not in window) for packet number " + pNum + "\n");
+               continue;
+            }
+            if (randomProb < LOSS_PROBABILITY) {
+               System.out.println("\n\nClient LOST packet");
+               //send NAK
+               byte[] p = new byte[5];
+               for (int b = 0; b < 4; b++) {
+                  p[b] = buffer[b+4];
+               }
+            //p = intToBytes(pNum);
+               p[4] = 0;
+               DatagramPacket NAK = new DatagramPacket(p, 5, IPAddress, port);
+               clientSocket.send(NAK);
+               System.out.println("\nNAK(lost) for packet number " + pNum + "\n");
+               continue;
+            }
+            
+                        
             clientGremlin(responsePacket, CORRUPT_PROBABILITY);
-            System.out.println("Client sent packet # " + j + "  to client gremlin.");  
+            System.out.println("Client sent packet # " + pNum + "  to client gremlin.");  
             
             // Performs error detection following client gremlin function (true if packet was corrupted, false otherwise)
             if (detectErrors(buffer)) {
-               System.out.println("Packet # " + j + " of " + packetCount + ": ***CORRUPTED***");
+              
+	       System.out.println("Packet # " + pNum + " of " + packetCount + ": ***CORRUPTED***");
+               //send NAK
+               byte[] p = new byte[5];
+               for (int b = 0; b < 4; b++) {
+                  p[b] = buffer[b+4];
+               }
+               p[4] = 0;
+               DatagramPacket NAK = new DatagramPacket(p, 5, IPAddress, port);
+               clientSocket.send(NAK);
+               System.out.println("\nNAK(corruption) for packet number " + pNum + "\n");
+               continue;
             }
             else {
-               System.out.println("Packet # " + j + " of " + packetCount + ": NOT CORRUPTED");
-            }
+               System.out.println("Packet # " + pNum + " of " + packetCount + ": NOT CORRUPTED");
+               //send ACK  
+               byte[] p = new byte[5];
+               for (int b = 0; b < 4; b++) {
+                  p[b] = buffer[b+4];
+               }
+               p[4] = 1;
+               DatagramPacket NAK = new DatagramPacket(p, 5, IPAddress, port);
+               clientSocket.send(NAK);
+               System.out.println("\nACK for packet number " + pNum + "\n");
+               array[pNum] = 1; 
+               if(pNum > first) {
+                  for(int c = first; c < pNum; c++) {
+                     if(array[c] == 1) {
+                        first++;
+                        last++;
+                        System.out.println("The Window moved " + first + " to " + last + "\n");	
+                     }
+                     else {
+                        break;}
+                  }
+               }
+               if (pNum == first) {
+                  if (pNum == packetCount) {
+                     first++;
+                     last++;
+                  }
+                  for (int e = first; ((e < last + 1) && (e < packetCount + 1)); e++) {
+                     if(array[e] == 1) { 
+                        first++;
+                        last++;
+                        System.out.println("Window moved " + first + " to " + last + "\n");
+                     }
+                     else {
+                        break;}   
+                  }
+               }
+               //byte[] bufNoChkSum = Arrays.copyOfRange(buffer, 8, buffer.length);   
+               byte[] bufNoChkSum = Arrays.copyOfRange(buffer, 8, buffer.length);   
+               System.out.println("MESSAGE(Packet# " + pNum + "): " + new String(bufNoChkSum));
+               //pNum++; // Increment packet index
             
-            byte[] bufNoChkSum = Arrays.copyOfRange(buffer, 4, buffer.length);   
-            System.out.println("MESSAGE(Packet# " + j + "): " + new String(bufNoChkSum));
-            j++; // Increment packet index
+	    	System.out.println("Client received packet number " + pNum + "of" + packetCount + "\n");
+	    	//array[pNum] = 1;
+		//pNum++;   
+            }
+		//pNum++;
          }
       
          clientSocket.close();   
@@ -112,7 +203,7 @@ public class UDPClient {
       boolean errorsDetected = false;
       int sum = 0, checkSum = 0, temp = 0;
       Byte tempByte;
-      for (int i = 4; i < packet.length; i++) {
+      for (int i = 8; i < packet.length; i++) {
          tempByte = packet[i];
          sum += tempByte.intValue();
       }
@@ -165,17 +256,17 @@ public class UDPClient {
         /** This condition will scale to handle cases of variable packet length
          *  s.t. the packet length is between 4 and 256
          */
-         if (responseData.length <= 256 && responseData.length > 3) {
+         if (responseData.length <= 512 && responseData.length > 8) {
             // Conditional check for 50% chance of damaging 1 byte (0.0 <= P(X) < 0.5)
             if (0 <= randomProbability && randomProbability < corruptOneUpperBound) {
                numBytesToCorrupt = 1;
-               corruptIndexOne = getRandomIntBetween(4, responseData.length - 1);
+               corruptIndexOne = getRandomIntBetween(8, responseData.length - 1);
                responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
             }
             // Conditional check for 30% chance of damaging 2 bytes (0.5 <= P(X) < 0.8)
             else if (corruptOneUpperBound <= randomProbability && randomProbability < corruptTwoUpperBound) {
                numBytesToCorrupt = 2;
-               corruptIndexOne = getRandomIntBetween(4, (int)((responseData.length + 3)/2));
+               corruptIndexOne = getRandomIntBetween(8, (int)((responseData.length + 3)/2));
                corruptIndexTwo = getRandomIntBetween((int)((responseData.length + 3)/2), responseData.length - 1);
                responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                responseData[corruptIndexTwo] = reverseBitsByte(responseData[corruptIndexTwo]);
@@ -183,7 +274,7 @@ public class UDPClient {
             // Conditional check for 20% chance of damaging 3 bytes (0.8 <= P(X) < 1)
             else if (corruptTwoUpperBound <= randomProbability && randomProbability < 1) {
                numBytesToCorrupt = 3;
-               corruptIndexOne = getRandomIntBetween(4, (int)((responseData.length + 3)/3));
+               corruptIndexOne = getRandomIntBetween(8, (int)((responseData.length + 3)/3));
                corruptIndexTwo = getRandomIntBetween((int)((responseData.length + 3)/3), (int)(2*(responseData.length + 3)/3));
                corruptIndexThree = getRandomIntBetween((int)(2*(responseData.length + 3)/3), responseData.length - 1);
                responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
@@ -195,22 +286,22 @@ public class UDPClient {
          else {
             // If there is only one byte in the packet to consider
             // 4 bytes for checksum + 1 byte data
-            if (responseData.length == 5) {
+            if (responseData.length == 9) {
                 /**
                  *  Here the probabilistic determination for which bytes get affected doesn't matter, because
                  *  there is only one byte to consider in this packet.
                  */
                numBytesToCorrupt = 1;
-               corruptIndexOne = 4;
+               corruptIndexOne = 8;
                responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
             }
             // If there are only two bytes in the packet to consider
             // 4 bytes for checksum + 2 bytes for data
-            else if (responseData.length == 6) {
+            else if (responseData.length == 10) {
                // 50% chance of damaging 1 byte
                if (0 <= randomProbability && randomProbability < corruptOneUpperBound) {
                   numBytesToCorrupt = 1;
-                  corruptIndexOne = getRandomIntBetween(4, responseData.length - 1);
+                  corruptIndexOne = getRandomIntBetween(8, responseData.length - 1);
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                }
                // 20% chance of damaging 3 bytes or 30% chance of damaging 2 bytes
@@ -218,29 +309,28 @@ public class UDPClient {
                // third byte to consider.
                else if (randomProbability != 1.0) {
                   numBytesToCorrupt = 2;
-                  corruptIndexOne = 4;
-                  corruptIndexTwo = 5;
-                  responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
+                  corruptIndexOne = 8;
+                  corruptIndexTwo = 9;
                   responseData[corruptIndexTwo] = reverseBitsByte(responseData[corruptIndexTwo]);
                }
             }
             // If there are only 3 bytes in the packet to consider
             // 4 bytes for checksum + 3 bytes for data
-            else if (responseData.length == 7) {
+            else if (responseData.length == 11) {
                 // 50% chance of damaging 1 byte
                if (0 <= randomProbability && randomProbability < corruptOneUpperBound) {
                   numBytesToCorrupt = 1;
-                  corruptIndexOne = getRandomIntBetween(4, responseData.length - 1);
+                  corruptIndexOne = getRandomIntBetween(8, responseData.length - 1);
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                }
                 // 30% chance of damaging 2 bytes
                else if (corruptOneUpperBound <= randomProbability && randomProbability < corruptTwoUpperBound) {
                   numBytesToCorrupt = 2;
-                  corruptIndexOne = getRandomIntBetween(4, responseData.length - 1);
+                  corruptIndexOne = getRandomIntBetween(8, responseData.length - 1);
                
                     // Randomly choose a byte index != to an index already selected
                   do {
-                     corruptIndexTwo = getRandomIntBetween(4, responseData.length - 1);
+                     corruptIndexTwo = getRandomIntBetween(8, responseData.length - 1);
                   } while (corruptIndexTwo == corruptIndexOne);
                
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
@@ -249,9 +339,9 @@ public class UDPClient {
                 // 20% chance of damaging 3 bytes
                else if (randomProbability != 1.0) {
                   numBytesToCorrupt = 3;
-                  corruptIndexOne = 4;
-                  corruptIndexTwo = 5;
-                  corruptIndexThree = 6;
+                  corruptIndexOne = 8;
+                  corruptIndexTwo = 9;
+                  corruptIndexThree = 10;
                   responseData[corruptIndexOne] = reverseBitsByte(responseData[corruptIndexOne]);
                   responseData[corruptIndexTwo] = reverseBitsByte(responseData[corruptIndexTwo]);
                   responseData[corruptIndexThree] = reverseBitsByte(responseData[corruptIndexThree]);
@@ -277,5 +367,16 @@ public class UDPClient {
          x >>= 1;
       }
       return y;
+   }
+   
+   //get Packet #
+   public static int getNum(byte[] packet){
+      byte[] temp = new byte[4];
+      temp = Arrays.copyOfRange(packet, 4, 8);
+      int num = ByteBuffer.wrap(temp).order(ByteOrder.BIG_ENDIAN).getInt();
+      return num;
+   }
+   private static byte[] intToBytes(int myInteger) {
+      return ByteBuffer.allocate(4).order(ByteOrder.BIG_ENDIAN).putInt(myInteger).array();
    }
 }
